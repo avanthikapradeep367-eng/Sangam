@@ -29,6 +29,12 @@ export default function Header() {
             நூல்கள்
           </Link>
           <Link
+            to="/bookmarks"
+            aria-current={isActive('/bookmarks') ? 'page' : undefined}
+          >
+            குறிப்புகள்
+          </Link>
+          <Link
             to="/about"
             aria-current={isActive('/about') ? 'page' : undefined}
           >

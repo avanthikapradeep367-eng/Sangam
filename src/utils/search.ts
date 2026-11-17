@@ -1,7 +1,9 @@
-import type { DictionaryEntry, SearchResult } from '../types';
+import type { DictionaryEntry, LangCode, SearchResult } from '../types';
 import entriesRaw from '../data/dictionary.json';
+import { truncate } from './languages';
 
 const entries = entriesRaw as DictionaryEntry[];
+const MEANING_LANGS: Exclude<LangCode, 'ta'>[] = ['en', 'hi', 'ml', 'te'];
 
 export function getAllEntries(): DictionaryEntry[] {
   return entries;
@@ -17,6 +19,10 @@ export function getEntryByHeadword(headword: string): DictionaryEntry | undefine
   );
 }
 
+function getPreview(entry: DictionaryEntry): string {
+  return truncate(entry.senses[0]?.definition ?? '');
+}
+
 export function search(query: string): SearchResult[] {
   if (!query.trim()) return [];
 
@@ -24,11 +30,6 @@ export function search(query: string): SearchResult[] {
   const qLower = q.toLowerCase();
   const results: SearchResult[] = [];
   const seen = new Set<string>();
-
-  function getPreview(entry: DictionaryEntry): string {
-    const firstDef = entry.senses[0]?.definition ?? '';
-    return firstDef.length > 80 ? firstDef.slice(0, 77) + '…' : firstDef;
-  }
 
   // Exact headword match
   for (const entry of entries) {
@@ -86,6 +87,34 @@ export function search(query: string): SearchResult[] {
     }
   }
 
+  // Reverse lookup: query appears inside a translated meaning (lowest rank)
+  if (qLower.length >= 2) {
+    for (const entry of entries) {
+      if (seen.has(entry.id)) continue;
+      let matched: { lang: LangCode; snippet: string } | undefined;
+      for (const sense of entry.senses) {
+        for (const lang of MEANING_LANGS) {
+          const translation = sense.translations[lang];
+          if (translation && translation.text.toLowerCase().includes(qLower)) {
+            matched = { lang, snippet: truncate(translation.text) };
+            break;
+          }
+        }
+        if (matched) break;
+      }
+      if (matched) {
+        results.push({
+          entry,
+          matchType: 'meaning',
+          preview: getPreview(entry),
+          matchedLang: matched.lang,
+          matchedSnippet: matched.snippet,
+        });
+        seen.add(entry.id);
+      }
+    }
+  }
+
   return results;
 }
 
@@ -103,6 +132,19 @@ export function getAllInitialLetters(): string[] {
     if (entry.headword[0]) letters.add(entry.headword[0]);
   }
   return Array.from(letters).sort();
+}
+
+/** Only entries with an editorially-verified தினை tag; empty today since no such data exists. */
+export function getAllTinai(): string[] {
+  const tinaiSet = new Set<string>();
+  for (const entry of entries) {
+    if (entry.tinai) tinaiSet.add(entry.tinai);
+  }
+  return Array.from(tinaiSet).sort();
+}
+
+export function getEntriesByTinai(tinai: string): DictionaryEntry[] {
+  return entries.filter((e) => e.tinai === tinai);
 }
 
 export function getSuggestions(query: string): DictionaryEntry[] {

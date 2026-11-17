@@ -4,13 +4,18 @@
     "headword": "அம்பல்",
     "transliteration": "ampal",
     "partOfSpeech": "பெயர்ச்சொல்",
-    "aliases": ["அம்பல்"],
+    "aliases": [],
     "senses": [
       {
         "id": "ampal-1",
         "number": 1,
         "definition": "பொது மக்கள் ஒன்றுகூடும் திறந்த வெளி; ஊர்க்கூடம்.",
-        "englishGloss": "public gathering place; village square",
+        "translations": {
+          "en": { "text": "public gathering place; village square", "reviewStatus": "unreviewed" },
+          "hi": { "text": "सार्वजनिक सभा स्थल; गाँव का चौक", "reviewStatus": "unreviewed" },
+          "ml": { "text": "പൊതു സമ്മേളന സ്ഥലം; ഗ്രാമ ചത്വരം", "reviewStatus": "unreviewed" },
+          "te": { "text": "ప్రజా సమావేశ స్థలం; గ్రామ చౌరస్తా", "reviewStatus": "unreviewed" }
+        },
         "quotations": [
           {
             "id": "ampal-q1",
@@ -26,7 +31,12 @@
         "id": "ampal-2",
         "number": 2,
         "definition": "மக்கள் பேசிப் பரப்பும் அலர்; வதந்தி.",
-        "englishGloss": "rumour; gossip spread among the public",
+        "translations": {
+          "en": { "text": "rumour; gossip spread among the public", "reviewStatus": "unreviewed" },
+          "hi": { "text": "अफ़वाह; जनता में फैली गपशप", "reviewStatus": "unreviewed" },
+          "ml": { "text": "കിംവദന്തി; പൊതുജനങ്ങൾക്കിടയിൽ പരക്കുന്ന സംസാരം", "reviewStatus": "unreviewed" },
+          "te": { "text": "పుకారు; ప్రజల మధ్య వ్యాపించే గాసిప్", "reviewStatus": "unreviewed" }
+        },
         "quotations": [
           {
             "id": "ampal-q2",
@@ -47,13 +57,18 @@
     "headword": "குறிஞ்சி",
     "transliteration": "kurinji",
     "partOfSpeech": "பெயர்ச்சொல்",
-    "aliases": ["குறிஞ்சி", "kurinji"],
+    "aliases": ["kurinji"],
     "senses": [
       {
         "id": "kurinji-1",
         "number": 1,
         "definition": "மலை நிலம்; தமிழ் அகப்பொருள் மரபில் ஐந்து திணைகளில் ஒன்றான குறிஞ்சி நிலம் மலைப் பகுதியைக் குறிக்கும்.",
-        "englishGloss": "mountain region; one of the five tinai (landscape-genres) in Sangam poetics, associated with the mountains and waterfalls",
+        "translations": {
+          "en": { "text": "mountain region; one of the five tinai (landscape-genres) in Sangam poetics, associated with the mountains and waterfalls", "isExplanatoryGloss": true, "reviewStatus": "unreviewed" },
+          "hi": { "text": "पर्वतीय प्रदेश; संगम काव्य-परंपरा के पाँच 'तிணை' (भू-दृश्य विधाओं) में से एक, पर्वतों और झरनों से संबद्ध", "isExplanatoryGloss": true, "reviewStatus": "unreviewed" },
+          "ml": { "text": "പർവതപ്രദേശം; സംഘകാല കാവ്യസമ്പ്രദായത്തിലെ അഞ്ച് 'തிணை' (ഭൂപ്രകൃതി വിഭാഗങ്ങളിൽ) ഒന്ന്, പർവതങ്ങളും വെള്ളച്ചാട്ടങ്ങളുമായി ബന്ധപ്പെട്ടത്", "isExplanatoryGloss": true, "reviewStatus": "unreviewed" },
+          "te": { "text": "పర్వత ప్రాంతం; సంగమ కావ్య సంప్రదాయంలోని ఐదు 'తிணை' (భూదృశ్య ప్రక్రియల)లో ఒకటి, పర్వతాలు మరియు జలపాతాలతో ముడిపడినది", "isExplanatoryGloss": true, "reviewStatus": "unreviewed" }
+        },
         "quotations": [
           {
             "id": "kurinji-q1",
@@ -69,7 +84,12 @@
         "id": "kurinji-2",
         "number": 2,
         "definition": "ஒரு மலர்; ஸ்ட்ரோபிலாந்தஸ் குன்தியானஸ்; பன்னிரண்டு ஆண்டுகளுக்கு ஒரு முறை மலரும் மலர்.",
-        "englishGloss": "Strobilanthes kunthiana; a blue mountain flower that blooms once in twelve years",
+        "translations": {
+          "en": { "text": "Strobilanthes kunthiana; a blue mountain flower that blooms once in twelve years", "reviewStatus": "unreviewed" },
+          "hi": { "text": "स्ट्रोबिलैंथस कुंथियाना; एक नीला पर्वतीय पुष्प जो बारह वर्षों में एक बार खिलता है", "reviewStatus": "unreviewed" },
+          "ml": { "text": "സ്ട്രോബിലാന്തസ് കുന്തിയാന; പന്ത്രണ്ട് വർഷത്തിലൊരിക്കൽ പൂക്കുന്ന നീല പർവത പുഷ്പം", "reviewStatus": "unreviewed" },
+          "te": { "text": "స్ట్రోబిలాంథస్ కుంథియానా; పన్నెండేళ్లకు ఒకసారి పూసే నీలి పర్వత పుష్పం", "reviewStatus": "unreviewed" }
+        },
         "quotations": [
           {
             "id": "kurinji-q2",
@@ -90,13 +110,18 @@
     "headword": "முல்லை",
     "transliteration": "mullai",
     "partOfSpeech": "பெயர்ச்சொல்",
-    "aliases": ["முல்லை", "mullai"],
+    "aliases": ["mullai"],
     "senses": [
       {
         "id": "mullai-1",
         "number": 1,
         "definition": "காடு மற்றும் காட்டின் சார்பான நிலம்; தமிழ் அகப்பொருள் மரபில் பிரிவின் வருத்தத்தை உணர்த்தும் திணை.",
-        "englishGloss": "forest region; the tinai of patient waiting and separation in Sangam poetics",
+        "translations": {
+          "en": { "text": "forest region; the tinai of patient waiting and separation in Sangam poetics", "isExplanatoryGloss": true, "reviewStatus": "unreviewed" },
+          "hi": { "text": "वन प्रदेश; संगम काव्य में धैर्यपूर्ण प्रतीक्षा और विरह का 'तிணை'", "isExplanatoryGloss": true, "reviewStatus": "unreviewed" },
+          "ml": { "text": "വനപ്രദേശം; സംഘകാല കാവ്യത്തിലെ ക്ഷമയോടെയുള്ള കാത്തിരിപ്പിന്റെയും വേർപാടിന്റെയും 'തிணை'", "isExplanatoryGloss": true, "reviewStatus": "unreviewed" },
+          "te": { "text": "అటవీ ప్రాంతం; సంగమ కావ్యంలో సహనంతో వేచి ఉండటం మరియు ఎడబాటుకు సంబంధించిన 'తிணை'", "isExplanatoryGloss": true, "reviewStatus": "unreviewed" }
+        },
         "quotations": [
           {
             "id": "mullai-q1",
@@ -112,7 +137,11 @@
         "id": "mullai-2",
         "number": 2,
         "definition": "முல்லை மலர்; யாஸ்மினம் ஜாதிகம்; வெண்மையான நறுமணமிக்க மலர்.",
-        "englishGloss": "jasmine; Jasminum sambac; white fragrant flower",
+        "translations": {
+          "en": { "text": "jasmine; Jasminum sambac; white fragrant flower", "reviewStatus": "unreviewed" },
+          "hi": { "text": "चमेली; जैस्मिनम सांबैक; सफेद सुगंधित पुष्प", "reviewStatus": "unreviewed" },
+          "ml": { "text": "മുല്ല; ജാസ്മിനം സാംബാക്; വെളുത്ത സുഗന്ധമുള്ള പുഷ്പം", "reviewStatus": "unreviewed" }
+        },
         "quotations": []
       }
     ],
@@ -124,13 +153,18 @@
     "headword": "நெய்தல்",
     "transliteration": "neytal",
     "partOfSpeech": "பெயர்ச்சொல்",
-    "aliases": ["நெய்தல்", "neytal"],
+    "aliases": ["neytal"],
     "senses": [
       {
         "id": "neytal-1",
         "number": 1,
         "definition": "கடற்கரை நிலம்; தமிழ் அகப்பொருள் மரபில் ஐந்து திணைகளில் ஒன்று; ஆற்றாமையையும் இரங்கலையும் உணர்த்தும் திணை.",
-        "englishGloss": "coastal landscape; the tinai associated with anguish and longing, set by the seashore",
+        "translations": {
+          "en": { "text": "coastal landscape; the tinai associated with anguish and longing, set by the seashore", "isExplanatoryGloss": true, "reviewStatus": "unreviewed" },
+          "hi": { "text": "तटीय भूभाग; समुद्र तट पर स्थित पीड़ा और विरह-वेदना से जुड़ा 'तிணை'", "isExplanatoryGloss": true, "reviewStatus": "unreviewed" },
+          "ml": { "text": "തീരപ്രദേശം; കടൽത്തീരത്ത് സ്ഥിതി ചെയ്യുന്ന വേദനയും കാത്തിരിപ്പും ബന്ധപ്പെട്ട 'തிணை'", "isExplanatoryGloss": true, "reviewStatus": "unreviewed" },
+          "te": { "text": "తీర ప్రాంతం; సముద్ర తీరంలో ఉండే వేదన మరియు ఎదురుచూపుకు సంబంధించిన 'తிணை'", "isExplanatoryGloss": true, "reviewStatus": "unreviewed" }
+        },
         "quotations": [
           {
             "id": "neytal-q1",
@@ -146,7 +180,12 @@
         "id": "neytal-2",
         "number": 2,
         "definition": "நீலோத்பல மலர்; ஒரு நீர்மலர்.",
-        "englishGloss": "blue water lily; Nymphaea nouchali",
+        "translations": {
+          "en": { "text": "blue water lily; Nymphaea nouchali", "reviewStatus": "unreviewed" },
+          "hi": { "text": "नीला जल-कमल; निम्फेया नोकाली", "reviewStatus": "unreviewed" },
+          "ml": { "text": "നീല ആമ്പൽ; നിംഫിയ നൗചാലി", "reviewStatus": "unreviewed" },
+          "te": { "text": "నీలి కలువ పువ్వు; నింఫియా నౌచాలి", "reviewStatus": "unreviewed" }
+        },
         "quotations": []
       }
     ],
@@ -158,13 +197,18 @@
     "headword": "பாலை",
     "transliteration": "palai",
     "partOfSpeech": "பெயர்ச்சொல்",
-    "aliases": ["பாலை", "palai"],
+    "aliases": ["palai"],
     "senses": [
       {
         "id": "palai-1",
         "number": 1,
         "definition": "வறண்ட பாலைவன நிலம்; தமிழ் அகப்பொருள் மரபில் பிரிவின் வலியையும் நீண்ட பயணத்தையும் உணர்த்தும் திணை.",
-        "englishGloss": "arid wasteland; the tinai of hardship, departure, and long journeys",
+        "translations": {
+          "en": { "text": "arid wasteland; the tinai of hardship, departure, and long journeys", "isExplanatoryGloss": true, "reviewStatus": "unreviewed" },
+          "hi": { "text": "शुष्क बंजर भूमि; कष्ट, विदाई और लंबी यात्राओं का 'तிணை'", "isExplanatoryGloss": true, "reviewStatus": "unreviewed" },
+          "ml": { "text": "വരണ്ട തരിശുഭൂമി; കഷ്ടപ്പാടിന്റെയും വേർപാടിന്റെയും ദീർഘയാത്രകളുടെയും 'തிணை'", "isExplanatoryGloss": true, "reviewStatus": "unreviewed" },
+          "te": { "text": "ఎడారి బంజరు భూమి; కష్టం, వీడ్కోలు మరియు సుదీర్ఘ ప్రయాణాలకు సంబంధించిన 'తிணை'", "isExplanatoryGloss": true, "reviewStatus": "unreviewed" }
+        },
         "quotations": [
           {
             "id": "palai-q1",
@@ -185,13 +229,18 @@
     "headword": "மருதம்",
     "transliteration": "marutam",
     "partOfSpeech": "பெயர்ச்சொல்",
-    "aliases": ["மருதம்", "marutam"],
+    "aliases": ["marutam"],
     "senses": [
       {
         "id": "marutam-1",
         "number": 1,
         "definition": "வயல் வெளி, ஆற்றங்கரை நிலம்; தமிழ் அகப்பொருள் மரபில் காதலனின் பரத்தமையால் காதலி ஊடல் கொள்வதை உணர்த்தும் திணை.",
-        "englishGloss": "agricultural lowland; the tinai of lovers' quarrels and infidelity, set in fertile river plains",
+        "translations": {
+          "en": { "text": "agricultural lowland; the tinai of lovers' quarrels and infidelity, set in fertile river plains", "isExplanatoryGloss": true, "reviewStatus": "unreviewed" },
+          "hi": { "text": "कृषि तराई; उपजाऊ नदी-मैदानों में बसा प्रेमी-कलह और बेवफाई का 'तிணை'", "isExplanatoryGloss": true, "reviewStatus": "unreviewed" },
+          "ml": { "text": "കാർഷിക സമതലം; ഫലഭൂയിഷ്ഠമായ നദീതടങ്ങളിൽ സ്ഥിതി ചെയ്യുന്ന കാമുകരുടെ പിണക്കത്തിന്റെയും അവിശ്വസ്തതയുടെയും 'തிணை'", "isExplanatoryGloss": true, "reviewStatus": "unreviewed" },
+          "te": { "text": "వ్యవసాయ మైదానం; సారవంతమైన నదీ మైదానాల్లో ఉండే ప్రేమికుల కలహం మరియు విశ్వాసఘాతుకతకు సంబంధించిన 'తிணை'", "isExplanatoryGloss": true, "reviewStatus": "unreviewed" }
+        },
         "quotations": [
           {
             "id": "marutam-q1",
@@ -207,7 +256,9 @@
         "id": "marutam-2",
         "number": 2,
         "definition": "மருத மரம்; அர்ஜுன மரம்; Terminalia arjuna.",
-        "englishGloss": "Arjuna tree; Terminalia arjuna",
+        "translations": {
+          "en": { "text": "Arjuna tree; Terminalia arjuna", "reviewStatus": "unreviewed" }
+        },
         "quotations": []
       }
     ],
@@ -219,13 +270,18 @@
     "headword": "அகம்",
     "transliteration": "akam",
     "partOfSpeech": "பெயர்ச்சொல்",
-    "aliases": ["அகம்", "akam"],
+    "aliases": ["akam"],
     "senses": [
       {
         "id": "akam-1",
         "number": 1,
         "definition": "உள்ளம்; நெஞ்சம்.",
-        "englishGloss": "inner self; heart; mind",
+        "translations": {
+          "en": { "text": "inner self; heart; mind", "reviewStatus": "unreviewed" },
+          "hi": { "text": "अंतर्मन; हृदय; मन", "reviewStatus": "unreviewed" },
+          "ml": { "text": "അന്തരംഗം; ഹൃദയം; മനസ്സ്", "reviewStatus": "unreviewed" },
+          "te": { "text": "అంతరంగం; హృదయం; మనసు", "reviewStatus": "unreviewed" }
+        },
         "quotations": [
           {
             "id": "akam-q1",
@@ -241,14 +297,24 @@
         "id": "akam-2",
         "number": 2,
         "definition": "இல்லம்; வீடு.",
-        "englishGloss": "home; house; dwelling",
+        "translations": {
+          "en": { "text": "home; house; dwelling", "reviewStatus": "unreviewed" },
+          "hi": { "text": "घर; निवास", "reviewStatus": "unreviewed" },
+          "ml": { "text": "വീട്; വാസസ്ഥലം", "reviewStatus": "unreviewed" },
+          "te": { "text": "ఇల్లు; నివాసం", "reviewStatus": "unreviewed" }
+        },
         "quotations": []
       },
       {
         "id": "akam-3",
         "number": 3,
         "definition": "காதல் நூல்; அகப்பொருள் இலக்கியம் (சங்க இலக்கிய வகைப்பாட்டில்).",
-        "englishGloss": "love poetry; the genre of interior poetry (akam) in Sangam classification",
+        "translations": {
+          "en": { "text": "love poetry; the genre of interior poetry (akam) in Sangam classification", "isExplanatoryGloss": true, "reviewStatus": "unreviewed" },
+          "hi": { "text": "प्रेम-काव्य; संगम वर्गीकरण में आंतरिक काव्य ('அகம்') की विधा", "isExplanatoryGloss": true, "reviewStatus": "unreviewed" },
+          "ml": { "text": "പ്രണയകാവ്യം; സംഘകാല വർഗ്ഗീകരണത്തിലെ ആന്തരിക കാവ്യശാഖ ('அகம்')", "isExplanatoryGloss": true, "reviewStatus": "unreviewed" },
+          "te": { "text": "ప్రేమ కవిత్వం; సంగమ వర్గీకరణలో అంతరంగ కవితా ప్రక్రియ ('அகம்')", "isExplanatoryGloss": true, "reviewStatus": "unreviewed" }
+        },
         "quotations": []
       }
     ],
@@ -260,20 +326,27 @@
     "headword": "புறம்",
     "transliteration": "puram",
     "partOfSpeech": "பெயர்ச்சொல்",
-    "aliases": ["புறம்", "puram"],
+    "aliases": ["puram"],
     "senses": [
       {
         "id": "puram-1",
         "number": 1,
         "definition": "வெளி; புறப்பக்கம்.",
-        "englishGloss": "exterior; outside",
+        "translations": {
+          "en": { "text": "exterior; outside", "reviewStatus": "unreviewed" }
+        },
         "quotations": []
       },
       {
         "id": "puram-2",
         "number": 2,
         "definition": "வீரம், கொடை, போர் முதலியவற்றை உள்ளடக்கிய புறப்பொருள் இலக்கியம் (சங்க இலக்கிய வகைப்பாட்டில்).",
-        "englishGloss": "heroic poetry; the genre of exterior poetry (puram) dealing with war, valour, and generosity",
+        "translations": {
+          "en": { "text": "heroic poetry; the genre of exterior poetry (puram) dealing with war, valour, and generosity", "isExplanatoryGloss": true, "reviewStatus": "unreviewed" },
+          "hi": { "text": "वीर-काव्य; युद्ध, शौर्य और उदारता से संबंधित बाह्य काव्य ('புறம்') की विधा", "isExplanatoryGloss": true, "reviewStatus": "unreviewed" },
+          "ml": { "text": "വീരകാവ്യം; യുദ്ധം, വീര്യം, ഔദാര്യം എന്നിവ പ്രമേയമാക്കുന്ന ബാഹ്യകാവ്യശാഖ ('புறம்')", "isExplanatoryGloss": true, "reviewStatus": "unreviewed" },
+          "te": { "text": "వీర కవిత్వం; యుద్ధం, శౌర్యం, దాతృత్వానికి సంబంధించిన బాహ్య కవితా ప్రక్రియ ('புறம்')", "isExplanatoryGloss": true, "reviewStatus": "unreviewed" }
+        },
         "quotations": [
           {
             "id": "puram-q1",
@@ -294,13 +367,18 @@
     "headword": "திணை",
     "transliteration": "tinai",
     "partOfSpeech": "பெயர்ச்சொல்",
-    "aliases": ["திணை", "tinai"],
+    "aliases": ["tinai"],
     "senses": [
       {
         "id": "tinai-1",
         "number": 1,
         "definition": "நிலப்பிரிவு; சங்க அகப்பொருள் மரபில் நிலம், காலம், தலைவன், தலைவி, தோழி, செவிலித்தாய், மலர், பறவை முதலியவற்றை உள்ளடக்கிய ஒரு கவிதைக் கட்டுமான முறை.",
-        "englishGloss": "landscape-genre; a system in Sangam poetics that associates landscape, season, flora, fauna, and emotional situation to organize akam (love) poetry",
+        "translations": {
+          "en": { "text": "landscape-genre; a system in Sangam poetics that associates landscape, season, flora, fauna, and emotional situation to organize akam (love) poetry", "isExplanatoryGloss": true, "reviewStatus": "unreviewed" },
+          "hi": { "text": "भू-दृश्य विधा प्रणाली; संगम काव्यशास्त्र की वह व्यवस्था जो भूदृश्य, ऋतु, वनस्पति, जीव-जंतु और भावनात्मक स्थिति को जोड़कर அகம் (प्रेम) काव्य को संगठित करती है", "isExplanatoryGloss": true, "reviewStatus": "unreviewed" },
+          "ml": { "text": "ഭൂപ്രകൃതി-വിഭാഗ സമ്പ്രദായം; ഭൂപ്രകൃതി, ഋതു, സസ്യജന്തുജാലം, വൈകാരിക സാഹചര്യം എന്നിവ ബന്ധിപ്പിച്ച് அகம் (പ്രണയ) കാവ്യത്തെ ക്രമീകരിക്കുന്ന സംഘകാല കാവ്യശാസ്ത്ര സമ്പ്രദായം", "isExplanatoryGloss": true, "reviewStatus": "unreviewed" },
+          "te": { "text": "భూదృశ్య-ప్రక్రియ విధానం; భూదృశ్యం, ఋతువు, వృక్షజంతుజాలం, భావోద్వేగ స్థితిని అనుసంధానించి அகம் (ప్రేమ) కవిత్వాన్ని వ్యవస్థీకరించే సంగమ కావ్యశాస్త్ర విధానం", "isExplanatoryGloss": true, "reviewStatus": "unreviewed" }
+        },
         "quotations": [
           {
             "id": "tinai-q1",
@@ -321,13 +399,18 @@
     "headword": "தலைவன்",
     "transliteration": "talaivan",
     "partOfSpeech": "பெயர்ச்சொல்",
-    "aliases": ["தலைவன்", "talaivan"],
+    "aliases": ["talaivan"],
     "senses": [
       {
         "id": "talaivan-1",
         "number": 1,
         "definition": "காதலன்; அகப்பொருள் கவிதையில் ஆண் கதாபாத்திரம்.",
-        "englishGloss": "hero; the male protagonist in akam (love) poetry",
+        "translations": {
+          "en": { "text": "hero; the male protagonist in akam (love) poetry", "isExplanatoryGloss": true, "reviewStatus": "unreviewed" },
+          "hi": { "text": "नायक; அகம் (प्रेम) काव्य का पुरुष प्रधान पात्र", "isExplanatoryGloss": true, "reviewStatus": "unreviewed" },
+          "ml": { "text": "നായകൻ; அகம் (പ്രണയ) കാവ്യത്തിലെ പുരുഷ കേന്ദ്രകഥാപാത്രം", "isExplanatoryGloss": true, "reviewStatus": "unreviewed" },
+          "te": { "text": "నాయకుడు; அகம் (ప్రేమ) కవిత్వంలోని పురుష ప్రధాన పాత్ర", "isExplanatoryGloss": true, "reviewStatus": "unreviewed" }
+        },
         "quotations": [
           {
             "id": "talaivan-q1",
@@ -348,13 +431,18 @@
     "headword": "தலைவி",
     "transliteration": "talaivi",
     "partOfSpeech": "பெயர்ச்சொல்",
-    "aliases": ["தலைவி", "talaivi"],
+    "aliases": ["talaivi"],
     "senses": [
       {
         "id": "talaivi-1",
         "number": 1,
         "definition": "காதலி; அகப்பொருள் கவிதையில் பெண் கதாபாத்திரம்.",
-        "englishGloss": "heroine; the female protagonist in akam (love) poetry",
+        "translations": {
+          "en": { "text": "heroine; the female protagonist in akam (love) poetry", "isExplanatoryGloss": true, "reviewStatus": "unreviewed" },
+          "hi": { "text": "नायिका; அகம் (प्रेम) काव्य की स्त्री प्रधान पात्र", "isExplanatoryGloss": true, "reviewStatus": "unreviewed" },
+          "ml": { "text": "നായിക; அகம் (പ്രണയ) കാവ്യത്തിലെ സ്ത്രീ കേന്ദ്രകഥാപാത്രം", "isExplanatoryGloss": true, "reviewStatus": "unreviewed" },
+          "te": { "text": "నాయిక; அகம் (ప్రేమ) కవిత్వంలోని స్త్రీ ప్రధాన పాత్ర", "isExplanatoryGloss": true, "reviewStatus": "unreviewed" }
+        },
         "quotations": [
           {
             "id": "talaivi-q1",
@@ -375,13 +463,18 @@
     "headword": "தோழி",
     "transliteration": "tozi",
     "partOfSpeech": "பெயர்ச்சொல்",
-    "aliases": ["தோழி", "tozi", "thoži"],
+    "aliases": ["tozi", "thoži"],
     "senses": [
       {
         "id": "tozhi-1",
         "number": 1,
         "definition": "நண்பி; அகப்பொருள் கவிதையில் தலைவியின் தோழி; காதல் மொழியாடலில் இடைத்தூது போவோள்.",
-        "englishGloss": "confidante; the heroine's friend in akam poetry; often acts as an intermediary in love",
+        "translations": {
+          "en": { "text": "confidante; the heroine's friend in akam poetry; often acts as an intermediary in love", "isExplanatoryGloss": true, "reviewStatus": "unreviewed" },
+          "hi": { "text": "विश्वासपात्र सखी; அகம் काव्य में नायिका की सहेली, जो अक्सर प्रेम-संवाद में मध्यस्थ की भूमिका निभाती है", "isExplanatoryGloss": true, "reviewStatus": "unreviewed" },
+          "ml": { "text": "വിശ്വസ്ത തോഴി; அகம் കാവ്യത്തിൽ നായികയുടെ കൂട്ടുകാരി; പ്രണയത്തിൽ പലപ്പോഴും മധ്യസ്ഥയായി പ്രവർത്തിക്കുന്നു", "isExplanatoryGloss": true, "reviewStatus": "unreviewed" },
+          "te": { "text": "నమ్మకమైన స్నేహితురాలు; அகம் కవిత్వంలో నాయిక స్నేహితురాలు; ప్రేమలో తరచూ మధ్యవర్తిగా వ్యవహరిస్తుంది", "isExplanatoryGloss": true, "reviewStatus": "unreviewed" }
+        },
         "quotations": [
           {
             "id": "tozhi-q1",
@@ -402,13 +495,17 @@
     "headword": "மன்றம்",
     "transliteration": "manram",
     "partOfSpeech": "பெயர்ச்சொல்",
-    "aliases": ["மன்றம்", "manram"],
+    "aliases": ["manram"],
     "senses": [
       {
         "id": "manram-1",
         "number": 1,
         "definition": "பொது இடம்; ஊரின் நடுவில் மரத்தடியில் உள்ள திறந்த வெளி; மக்கள் ஒன்றுகூடி ஆலோசனை செய்யும் இடம்.",
-        "englishGloss": "public commons; an open space under a central tree where villagers gather; the town assembly ground",
+        "translations": {
+          "en": { "text": "public commons; an open space under a central tree where villagers gather; the town assembly ground", "reviewStatus": "unreviewed" },
+          "hi": { "text": "सार्वजनिक सभा-स्थल; गाँव के बीचों-बीच एक पेड़ के नीचे का खुला स्थान जहाँ ग्रामवासी एकत्र होते हैं", "reviewStatus": "unreviewed" },
+          "te": { "text": "ప్రజా సభాస్థలం; గ్రామం మధ్యలో ఒక చెట్టు కింద ఉన్న బహిరంగ స్థలం, గ్రామస్థులు సమావేశమయ్యే చోటు", "reviewStatus": "unreviewed" }
+        },
         "quotations": [
           {
             "id": "manram-q1",
@@ -429,20 +526,29 @@
     "headword": "அலர்",
     "transliteration": "alar",
     "partOfSpeech": "பெயர்ச்சொல்",
-    "aliases": ["அலர்", "alar"],
+    "aliases": ["alar"],
     "senses": [
       {
         "id": "alar-1",
         "number": 1,
         "definition": "மலர்தல்; மொட்டு மலராதல்.",
-        "englishGloss": "blossoming; the act of a flower opening",
+        "translations": {
+          "en": { "text": "blossoming; the act of a flower opening", "reviewStatus": "unreviewed" },
+          "hi": { "text": "पुष्पित होना; फूल का खिलना", "reviewStatus": "unreviewed" },
+          "ml": { "text": "പൂവിടൽ; പൂവ് വിരിയുന്ന പ്രവൃത്തി", "reviewStatus": "unreviewed" }
+        },
         "quotations": []
       },
       {
         "id": "alar-2",
         "number": 2,
         "definition": "மக்கள் பரப்பும் வதந்தி; ஊராரின் வாயிலாக பரவும் காதல் செய்தி.",
-        "englishGloss": "rumour; gossip, especially about a love affair spread through the village",
+        "translations": {
+          "en": { "text": "rumour; gossip, especially about a love affair spread through the village", "reviewStatus": "unreviewed" },
+          "hi": { "text": "अफ़वाह; विशेष रूप से प्रेम-प्रसंग के बारे में गाँव में फैली गपशप", "reviewStatus": "unreviewed" },
+          "ml": { "text": "കിംവദന്തി; പ്രത്യേകിച്ച് പ്രണയബന്ധത്തെക്കുറിച്ച് ഗ്രാമത്തിൽ പരക്കുന്ന സംസാരം", "reviewStatus": "unreviewed" },
+          "te": { "text": "పుకారు; ప్రత్యేకించి ప్రేమ వ్యవహారం గురించి గ్రామంలో వ్యాపించే గాసిప్", "reviewStatus": "unreviewed" }
+        },
         "quotations": [
           {
             "id": "alar-q1",
@@ -463,13 +569,17 @@
     "headword": "வானம்",
     "transliteration": "vanam",
     "partOfSpeech": "பெயர்ச்சொல்",
-    "aliases": ["வானம்", "vanam", "vaanam"],
+    "aliases": ["vanam", "vaanam"],
     "senses": [
       {
         "id": "vaanam-1",
         "number": 1,
         "definition": "வானில்; ஆகாயம்.",
-        "englishGloss": "sky; the heavens",
+        "translations": {
+          "en": { "text": "sky; the heavens", "reviewStatus": "unreviewed" },
+          "ml": { "text": "ആകാശം; വാനം", "reviewStatus": "unreviewed" },
+          "te": { "text": "ఆకాశం; నింగి", "reviewStatus": "unreviewed" }
+        },
         "quotations": [
           {
             "id": "vaanam-q1",
@@ -490,13 +600,18 @@
     "headword": "கடல்",
     "transliteration": "kadal",
     "partOfSpeech": "பெயர்ச்சொல்",
-    "aliases": ["கடல்", "kadal"],
+    "aliases": ["kadal"],
     "senses": [
       {
         "id": "kadal-1",
         "number": 1,
         "definition": "கடல்; சமுத்திரம்.",
-        "englishGloss": "sea; ocean",
+        "translations": {
+          "en": { "text": "sea; ocean", "reviewStatus": "unreviewed" },
+          "hi": { "text": "समुद्र; सागर", "reviewStatus": "unreviewed" },
+          "ml": { "text": "കടൽ; സമുദ്രം", "reviewStatus": "unreviewed" },
+          "te": { "text": "సముద్రం; సాగరం", "reviewStatus": "unreviewed" }
+        },
         "quotations": [
           {
             "id": "kadal-q1",

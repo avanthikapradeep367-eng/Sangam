@@ -6,6 +6,8 @@ import EntryPage from './pages/EntryPage';
 import WorksPage from './pages/WorksPage';
 import WorkDetailPage from './pages/WorkDetailPage';
 import AboutPage from './pages/AboutPage';
+import BookmarksPage from './pages/BookmarksPage';
+import { LanguageProvider } from './context/LanguageContext';
 import './styles/main.css';
 
 function Footer() {
@@ -24,33 +26,36 @@ function Footer() {
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <a href="#main-content" className="visually-hidden" style={{ position: 'absolute', top: '8px', left: '8px', zIndex: 9999, background: 'var(--color-bg)', padding: '8px 16px', borderRadius: '4px' }}>
-        முதன்மை உள்ளடக்கத்திற்கு செல்
-      </a>
-      <Header />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/search" element={<SearchResultsPage />} />
-        <Route path="/entry/:id" element={<EntryPage />} />
-        <Route path="/works" element={<WorksPage />} />
-        <Route path="/works/:id" element={<WorkDetailPage />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="*" element={
-          <main className="about-page" id="main-content">
-            <div className="container">
-              <div className="empty-state" style={{ paddingTop: '4rem' }}>
-                <div className="empty-state__icon">🔍</div>
-                <p className="empty-state__title">பக்கம் கிடைக்கவில்லை</p>
-                <p className="empty-state__hint">
-                  <a href="/">முகப்புக்கு திரும்பு</a>
-                </p>
+    <LanguageProvider>
+      <BrowserRouter>
+        <a href="#main-content" className="visually-hidden" style={{ position: 'absolute', top: '8px', left: '8px', zIndex: 9999, background: 'var(--color-bg)', padding: '8px 16px', borderRadius: '4px' }}>
+          முதன்மை உள்ளடக்கத்திற்கு செல்
+        </a>
+        <Header />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/search" element={<SearchResultsPage />} />
+          <Route path="/entry/:id" element={<EntryPage />} />
+          <Route path="/works" element={<WorksPage />} />
+          <Route path="/works/:id" element={<WorkDetailPage />} />
+          <Route path="/bookmarks" element={<BookmarksPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="*" element={
+            <main className="about-page" id="main-content">
+              <div className="container">
+                <div className="empty-state" style={{ paddingTop: '4rem' }}>
+                  <div className="empty-state__icon">🔍</div>
+                  <p className="empty-state__title">பக்கம் கிடைக்கவில்லை</p>
+                  <p className="empty-state__hint">
+                    <a href="/">முகப்புக்கு திரும்பு</a>
+                  </p>
+                </div>
               </div>
-            </div>
-          </main>
-        } />
-      </Routes>
-      <Footer />
-    </BrowserRouter>
+            </main>
+          } />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </LanguageProvider>
   );
 }

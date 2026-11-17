@@ -2,6 +2,7 @@ import { useSearchParams, useNavigate, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import SearchBar from '../components/SearchBar';
 import EntryRow from '../components/EntryRow';
+import MeaningLanguageSelector from '../components/MeaningLanguageSelector';
 import { search } from '../utils/search';
 import type { SearchResult } from '../types';
 
@@ -10,6 +11,7 @@ const MATCH_LABELS: Record<string, string> = {
   prefix: 'தொடக்க பொருத்தம்',
   alias: 'மாறு எழுத்துரு',
   transliteration: 'ஒலிப்பெயர்ப்பு',
+  meaning: 'பொருள் பொருத்தம்',
 };
 
 export default function SearchResultsPage() {
@@ -41,6 +43,7 @@ export default function SearchResultsPage() {
       <div className="container">
         <div className="results-page__header">
           <SearchBar initialValue={query} onSearch={handleSearch} />
+          <MeaningLanguageSelector />
         </div>
 
         {query && (
@@ -91,7 +94,15 @@ export default function SearchResultsPage() {
             ) : (
               <nav className="entry-list" aria-label="தேடல் முடிவுகள்">
                 {filtered.map((result) => (
-                  <EntryRow key={result.entry.id} entry={result.entry} />
+                  <EntryRow
+                    key={result.entry.id}
+                    entry={result.entry}
+                    matchNote={
+                      result.matchType === 'meaning' && result.matchedLang && result.matchedSnippet
+                        ? { lang: result.matchedLang, snippet: result.matchedSnippet }
+                        : undefined
+                    }
+                  />
                 ))}
               </nav>
             )}

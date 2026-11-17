@@ -1,14 +1,33 @@
 import type { Quotation } from '../types';
+import { useMeaningLanguage } from '../context/LanguageContext';
 
 interface QuotationBlockProps {
   quotation: Quotation;
+  /** Word forms to highlight within the quotation text (e.g. the headword). */
+  highlightTerms?: string[];
 }
 
-export default function QuotationBlock({ quotation }: QuotationBlockProps) {
+function highlight(text: string, terms: string[]) {
+  const cleanTerms = terms.filter(Boolean);
+  if (cleanTerms.length === 0) return text;
+  const pattern = new RegExp(`(${cleanTerms.map((t) => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})`, 'g');
+  const parts = text.split(pattern);
+  return parts.map((part, i) =>
+    cleanTerms.includes(part) ? <mark key={i} className="quotation__highlight">{part}</mark> : part
+  );
+}
+
+export default function QuotationBlock({ quotation, highlightTerms = [] }: QuotationBlockProps) {
+  const [lang] = useMeaningLanguage();
+  const translation = lang !== 'ta' ? quotation.translations?.[lang] : undefined;
+
   return (
-    <blockquote className="quotation">
-      <div className="quotation__label">இலக்கியச் சான்று</div>
-      <p className="quotation__text">{quotation.text}</p>
+    <details className="quotation">
+      <summary className="quotation__label">பாடலில் காண்க</summary>
+      <p className="quotation__text" lang="ta">{highlight(quotation.text, highlightTerms)}</p>
+      {translation && (
+        <p className="quotation__translation">{translation.text}</p>
+      )}
       <footer className="quotation__cite">
         <span className="quotation__work">{quotation.work}</span>
         {quotation.poemNumber && (
@@ -16,7 +35,7 @@ export default function QuotationBlock({ quotation }: QuotationBlockProps) {
         )}
         {quotation.source && (
           <span className="quotation__poem" title={quotation.source}>
-            {quotation.source}
+            பதிப்பு: {quotation.source}
           </span>
         )}
         {quotation.verified ? (
@@ -25,6 +44,6 @@ export default function QuotationBlock({ quotation }: QuotationBlockProps) {
           <span className="quotation__unverified" title="இந்த மேற்கோள் முழுமையாக சரிபார்க்கப்படவில்லை">⚠ சரிபார்க்கப்படவில்லை</span>
         )}
       </footer>
-    </blockquote>
+    </details>
   );
 }
