@@ -1,0 +1,293 @@
+sense_id,lang,text,explanatory,review_status,source_id
+ampal-1,en,public gathering place; village square,,unreviewed,legacy-sample
+ampal-1,hi,सार्वजनिक सभा स्थल; गाँव का चौक,,unreviewed,legacy-sample
+ampal-1,ml,പൊതു സമ്മേളന സ്ഥലം; ഗ്രാമ ചത്വരം,,unreviewed,legacy-sample
+ampal-1,te,ప్రజా సమావేశ స్థలం; గ్రామ చౌరస్తా,,unreviewed,legacy-sample
+ampal-2,en,rumour; gossip spread among the public,,unreviewed,legacy-sample
+ampal-2,hi,अफ़वाह; जनता में फैली गपशप,,unreviewed,legacy-sample
+ampal-2,ml,കിംവദന്തി; പൊതുജനങ്ങൾക്കിടയിൽ പരക്കുന്ന സംസാരം,,unreviewed,legacy-sample
+ampal-2,te,పుకారు; ప్రజల మధ్య వ్యాపించే గాసిప్,,unreviewed,legacy-sample
+kurinji-1,en,"mountain region; one of the five tinai (landscape-genres) in Sangam poetics, associated with the mountains and waterfalls",y,unreviewed,legacy-sample
+kurinji-1,hi,"पर्वतीय प्रदेश; संगम काव्य-परंपरा के पाँच 'तिणै' (भू-दृश्य विधाओं) में से एक, पर्वतों और झरनों से संबद्ध",y,unreviewed,legacy-sample
+kurinji-1,ml,"പർവതപ്രദേശം; സംഘകാല കാവ്യസമ്പ്രദായത്തിലെ അഞ്ച് 'തിണൈ' (ഭൂപ്രകൃതി വിഭാഗങ്ങളിൽ) ഒന്ന്, പർവതങ്ങളും വെള്ളച്ചാട്ടങ്ങളുമായി ബന്ധപ്പെട്ടത്",y,unreviewed,legacy-sample
+kurinji-1,te,"పర్వత ప్రాంతం; సంగమ కావ్య సంప్రదాయంలోని ఐదు 'తిణై' (భూదృశ్య ప్రక్రియల)లో ఒకటి, పర్వతాలు మరియు జలపాతాలతో ముడిపడినది",y,unreviewed,legacy-sample
+kurinji-2,en,Strobilanthes kunthiana; a blue mountain flower that blooms once in twelve years,,unreviewed,legacy-sample
+kurinji-2,hi,स्ट्रोबिलैंथस कुंथियाना; एक नीला पर्वतीय पुष्प जो बारह वर्षों में एक बार खिलता है,,unreviewed,legacy-sample
+kurinji-2,ml,സ്ട്രോബിലാന്തസ് കുന്തിയാന; പന്ത്രണ്ട് വർഷത്തിലൊരിക്കൽ പൂക്കുന്ന നീല പർവത പുഷ്പം,,unreviewed,legacy-sample
+kurinji-2,te,స్ట్రోబిలాంథస్ కుంథియానా; పన్నెండేళ్లకు ఒకసారి పూసే నీలి పర్వత పుష్పం,,unreviewed,legacy-sample
+mullai-1,en,forest region; the tinai of patient waiting and separation in Sangam poetics,y,unreviewed,legacy-sample
+mullai-1,hi,वन प्रदेश; संगम काव्य में धैर्यपूर्ण प्रतीक्षा और विरह का 'तिणै',y,unreviewed,legacy-sample
+mullai-1,ml,വനപ്രദേശം; സംഘകാല കാവ്യത്തിലെ ക്ഷമയോടെയുള്ള കാത്തിരിപ്പിന്റെയും വേർപാടിന്റെയും 'തിണൈ',y,unreviewed,legacy-sample
+mullai-1,te,అటవీ ప్రాంతం; సంగమ కావ్యంలో సహనంతో వేచి ఉండటం మరియు ఎడబాటుకు సంబంధించిన 'తిణై',y,unreviewed,legacy-sample
+neytal-1,en,"coastal landscape; the tinai associated with anguish and longing, set by the seashore",y,unreviewed,legacy-sample
+neytal-1,hi,तटीय भूभाग; समुद्र तट पर स्थित पीड़ा और विरह-वेदना से जुड़ा 'तिणै',y,unreviewed,legacy-sample
+neytal-1,ml,തീരപ്രദേശം; കടൽത്തീരത്ത് സ്ഥിതി ചെയ്യുന്ന വേദനയും കാത്തിരിപ്പും ബന്ധപ്പെട്ട 'തിണൈ',y,unreviewed,legacy-sample
+neytal-1,te,తీర ప్రాంతం; సముద్ర తీరంలో ఉండే వేదన మరియు ఎదురుచూపుకు సంబంధించిన 'తిణై',y,unreviewed,legacy-sample
+neytal-2,en,blue water lily; Nymphaea nouchali,,unreviewed,legacy-sample
+neytal-2,hi,नीला जल-कमल; निम्फेया नोकाली,,unreviewed,legacy-sample
+neytal-2,ml,നീല ആമ്പൽ; നിംഫിയ നൗചാലി,,unreviewed,legacy-sample
+neytal-2,te,నీలి కలువ పువ్వు; నింఫియా నౌచాలి,,unreviewed,legacy-sample
+marutam-1,en,"agricultural lowland; the tinai of lovers' quarrels and infidelity, set in fertile river plains",y,unreviewed,legacy-sample
+marutam-1,hi,कृषि तराई; उपजाऊ नदी-मैदानों में बसा प्रेमी-कलह और बेवफाई का 'तिणै',y,unreviewed,legacy-sample
+marutam-1,ml,കാർഷിക സമതലം; ഫലഭൂയിഷ്ഠമായ നദീതടങ്ങളിൽ സ്ഥിതി ചെയ്യുന്ന കാമുകരുടെ പിണക്കത്തിന്റെയും അവിശ്വസ്തതയുടെയും 'തിണൈ',y,unreviewed,legacy-sample
+marutam-1,te,వ్యవసాయ మైదానం; సారవంతమైన నదీ మైదానాల్లో ఉండే ప్రేమికుల కలహం మరియు విశ్వాసఘాతుకతకు సంబంధించిన 'తిణై',y,unreviewed,legacy-sample
+marutam-2,en,Arjuna tree; Terminalia arjuna,,unreviewed,legacy-sample
+akam-1,en,inner self; heart; mind,,unreviewed,legacy-sample
+akam-1,hi,अंतर्मन; हृदय; मन,,unreviewed,legacy-sample
+akam-1,ml,അന്തരംഗം; ഹൃദയം; മനസ്സ്,,unreviewed,legacy-sample
+akam-1,te,అంతరంగం; హృదయం; మనసు,,unreviewed,legacy-sample
+akam-2,en,home; house; dwelling,,unreviewed,legacy-sample
+akam-2,hi,घर; निवास,,unreviewed,legacy-sample
+akam-2,ml,വീട്; വാസസ്ഥലം,,unreviewed,legacy-sample
+akam-2,te,ఇల్లు; నివాసం,,unreviewed,legacy-sample
+akam-3,en,love poetry; the genre of interior poetry (akam) in Sangam classification,y,unreviewed,legacy-sample
+akam-3,hi,प्रेम-काव्य; संगम वर्गीकरण में आंतरिक काव्य ('अकम्') की विधा,y,unreviewed,legacy-sample
+akam-3,ml,പ്രണയകാവ്യം; സംഘകാല വർഗ്ഗീകരണത്തിലെ ആന്തരിക കാവ്യശാഖ ('അകം'),y,unreviewed,legacy-sample
+akam-3,te,ప్రేమ కవిత్వం; సంగమ వర్గీకరణలో అంతరంగ కవితా ప్రక్రియ ('అకం'),y,unreviewed,legacy-sample
+puram-1,en,exterior; outside,,unreviewed,legacy-sample
+puram-2,en,"heroic poetry; the genre of exterior poetry (puram) dealing with war, valour, and generosity",y,unreviewed,legacy-sample
+puram-2,hi,"वीर-काव्य; युद्ध, शौर्य और उदारता से संबंधित बाह्य काव्य ('पुऱम्') की विधा",y,unreviewed,legacy-sample
+puram-2,ml,"വീരകാവ്യം; യുദ്ധം, വീര്യം, ഔദാര്യം എന്നിവ പ്രമേയമാക്കുന്ന ബാഹ്യകാവ്യശാഖ ('പുറം')",y,unreviewed,legacy-sample
+puram-2,te,"వీర కవిత్వం; యుద్ధం, శౌర్యం, దాతృత్వానికి సంబంధించిన బాహ్య కవితా ప్రక్రియ ('పుఱం')",y,unreviewed,legacy-sample
+tinai-1,en,"landscape-genre; a system in Sangam poetics that associates landscape, season, flora, fauna, and emotional situation to organize akam (love) poetry",y,unreviewed,legacy-sample
+tinai-1,hi,"भू-दृश्य विधा प्रणाली; संगम काव्यशास्त्र की वह व्यवस्था जो भूदृश्य, ऋतु, वनस्पति, जीव-जंतु और भावनात्मक स्थिति को जोड़कर अकम् (प्रेम) काव्य को संगठित करती है",y,unreviewed,legacy-sample
+tinai-1,ml,"ഭൂപ്രകൃതി-വിഭാഗ സമ്പ്രദായം; ഭൂപ്രകൃതി, ഋതു, സസ്യജന്തുജാലം, വൈകാരിക സാഹചര്യം എന്നിവ ബന്ധിപ്പിച്ച് അകം (പ്രണയ) കാവ്യത്തെ ക്രമീകരിക്കുന്ന സംഘകാല കാവ്യശാസ്ത്ര സമ്പ്രദായം",y,unreviewed,legacy-sample
+tinai-1,te,"భూదృశ్య-ప్రక్రియ విధానం; భూదృశ్యం, ఋతువు, వృక్షజంతుజాలం, భావోద్వేగ స్థితిని అనుసంధానించి అకం (ప్రేమ) కవిత్వాన్ని వ్యవస్థీకరించే సంగమ కావ్యశాస్త్ర విధానం",y,unreviewed,legacy-sample
+talaivan-1,en,hero; the male protagonist in akam (love) poetry,y,unreviewed,legacy-sample
+talaivan-1,hi,नायक; अकम् (प्रेम) काव्य का पुरुष प्रधान पात्र,y,unreviewed,legacy-sample
+talaivan-1,ml,നായകൻ; അകം (പ്രണയ) കാവ്യത്തിലെ പുരുഷ കേന്ദ്രകഥാപാത്രം,y,unreviewed,legacy-sample
+talaivan-1,te,నాయకుడు; అకం (ప్రేమ) కవిత్వంలోని పురుష ప్రధాన పాత్ర,y,unreviewed,legacy-sample
+talaivi-1,en,heroine; the female protagonist in akam (love) poetry,y,unreviewed,legacy-sample
+talaivi-1,hi,नायिका; अकम् (प्रेम) काव्य की स्त्री प्रधान पात्र,y,unreviewed,legacy-sample
+talaivi-1,ml,നായിക; അകം (പ്രണയ) കാവ്യത്തിലെ സ്ത്രീ കേന്ദ്രകഥാപാത്രം,y,unreviewed,legacy-sample
+talaivi-1,te,నాయిక; అకం (ప్రేమ) కవిత్వంలోని స్త్రీ ప్రధాన పాత్ర,y,unreviewed,legacy-sample
+tozhi-1,en,confidante; the heroine's friend in akam poetry; often acts as an intermediary in love,y,unreviewed,legacy-sample
+tozhi-1,hi,"विश्वासपात्र सखी; अकम् काव्य में नायिका की सहेली, जो अक्सर प्रेम-संवाद में मध्यस्थ की भूमिका निभाती है",y,unreviewed,legacy-sample
+tozhi-1,ml,വിശ്വസ്ത തോഴി; അകം കാവ്യത്തിൽ നായികയുടെ കൂട്ടുകാരി; പ്രണയത്തിൽ പലപ്പോഴും മധ്യസ്ഥയായി പ്രവർത്തിക്കുന്നു,y,unreviewed,legacy-sample
+tozhi-1,te,నమ్మకమైన స్నేహితురాలు; అకం కవిత్వంలో నాయిక స్నేహితురాలు; ప్రేమలో తరచూ మధ్యవర్తిగా వ్యవహరిస్తుంది,y,unreviewed,legacy-sample
+manram-1,en,public commons; an open space under a central tree where villagers gather; the town assembly ground,,unreviewed,legacy-sample
+manram-1,hi,सार्वजनिक सभा-स्थल; गाँव के बीचों-बीच एक पेड़ के नीचे का खुला स्थान जहाँ ग्रामवासी एकत्र होते हैं,,unreviewed,legacy-sample
+manram-1,te,"ప్రజా సభాస్థలం; గ్రామం మధ్యలో ఒక చెట్టు కింద ఉన్న బహిరంగ స్థలం, గ్రామస్థులు సమావేశమయ్యే చోటు",,unreviewed,legacy-sample
+alar-1,en,blossoming; the act of a flower opening,,unreviewed,legacy-sample
+alar-1,hi,पुष्पित होना; फूल का खिलना,,unreviewed,legacy-sample
+alar-1,ml,പൂവിടൽ; പൂവ് വിരിയുന്ന പ്രവൃത്തി,,unreviewed,legacy-sample
+alar-2,en,"rumour; gossip, especially about a love affair spread through the village",,unreviewed,legacy-sample
+alar-2,hi,अफ़वाह; विशेष रूप से प्रेम-प्रसंग के बारे में गाँव में फैली गपशप,,unreviewed,legacy-sample
+alar-2,ml,കിംവദന്തി; പ്രത്യേകിച്ച് പ്രണയബന്ധത്തെക്കുറിച്ച് ഗ്രാമത്തിൽ പരക്കുന്ന സംസാരം,,unreviewed,legacy-sample
+alar-2,te,పుకారు; ప్రత్యేకించి ప్రేమ వ్యవహారం గురించి గ్రామంలో వ్యాపించే గాసిప్,,unreviewed,legacy-sample
+vaanam-1,en,sky; the heavens,,unreviewed,legacy-sample
+vaanam-1,ml,ആകാശം; വാനം,,unreviewed,legacy-sample
+vaanam-1,te,ఆకాశం; నింగి,,unreviewed,legacy-sample
+kadal-1,en,sea; ocean,,unreviewed,legacy-sample
+kadal-1,hi,समुद्र; सागर,,unreviewed,legacy-sample
+kadal-1,ml,കടൽ; സമുദ്രം,,unreviewed,legacy-sample
+kadal-1,te,సముద్రం; సాగరం,,unreviewed,legacy-sample
+mullai-2,en,"the mullai creeper and its flower; a white, fragrant wild jasmine (usually identified as Jasminum auriculatum)",,unreviewed,editorial-draft
+mullai-2,hi,"मुल्लै लता और उसका फूल; सफ़ेद, सुगंधित जंगली चमेली (प्रायः Jasminum auriculatum)",,unreviewed,editorial-draft
+mullai-2,ml,"മുല്ലവള്ളിയും അതിന്റെ പൂവും; വെളുത്ത, സുഗന്ധമുള്ള കാട്ടുമുല്ല (സാധാരണയായി Jasminum auriculatum)",,unreviewed,editorial-draft
+palai-1,en,"parched land: hill or forest country dried out by heat, not a sand desert; the tiṇai of separation and dangerous journeys",y,unreviewed,editorial-draft
+palai-1,hi,"झुलसी भूमि: गर्मी से सूखा पहाड़ी या वन प्रदेश, रेगिस्तान नहीं; वियोग और कठिन यात्रा का तिणै",y,unreviewed,editorial-draft
+palai-1,ml,"വരണ്ടുണങ്ങിയ നിലം: ചൂടിൽ ഉണങ്ങിയ മലയോ കാടോ, മണൽമരുഭൂമിയല്ല; വേർപാടിന്റെയും ദുർഘടയാത്രയുടെയും തിണൈ",y,unreviewed,editorial-draft
+palai-1,te,"ఎండిపోయిన నేల: వేడికి ఎండిన కొండ లేదా అడవి ప్రాంతం, ఇసుక ఎడారి కాదు; వియోగం, కఠిన ప్రయాణాల తిణై",y,unreviewed,editorial-draft
+neytal-3,en,the funeral drum: the drum beaten in a house where someone has died (contrasted in Puṟanāṉūṟu 194 with the wedding drum),y,unreviewed,editorial-draft
+neytal-3,ml,മരണവീട്ടിൽ മുഴക്കുന്ന പറ (ചാവുപറ),y,unreviewed,editorial-draft
+nenjam-1,en,"heart; mind; the seat of thought and feeling. Speakers in akam poems often address their own heart (neñcē, 'O heart')",y,unreviewed,editorial-draft
+nenjam-1,hi,हृदय; मन; विचार और भावना का स्थान। अकम् कविताओं में वक्ता अक्सर अपने ही हृदय को संबोधित करते हैं,y,unreviewed,editorial-draft
+nenjam-1,ml,നെഞ്ച്; മനസ്സ്; ചിന്തയുടെയും വികാരത്തിന്റെയും ഇരിപ്പിടം. അകം കവിതകളിൽ പറയുന്നയാൾ സ്വന്തം നെഞ്ചിനെ വിളിച്ചു സംസാരിക്കാറുണ്ട്,y,unreviewed,editorial-draft
+nenjam-1,te,"హృదయం; మనసు; ఆలోచనలకు, భావాలకు నెలవు. అకం కవితల్లో మాట్లాడేవారు తమ హృదయాన్నే సంబోధిస్తారు",y,unreviewed,editorial-draft
+kelir-1,en,kin; relatives; one's own people,,unreviewed,editorial-draft
+kelir-1,hi,संबंधी; स्वजन; अपने लोग,,unreviewed,editorial-draft
+kelir-1,ml,ബന്ധുക്കൾ; സ്വജനങ്ങൾ,,unreviewed,editorial-draft
+kelir-1,te,బంధువులు; స్వజనులు,,unreviewed,editorial-draft
+natan-1,en,man of the hill country; the name for the hero in kuṟiñci (mountain) poems,y,unreviewed,editorial-draft
+natan-1,hi,पहाड़ी देश का पुरुष; कुऱिञ्चि (पर्वत) कविताओं में नायक का नाम,y,unreviewed,editorial-draft
+natan-1,ml,മലനാട്ടുകാരൻ; കുറിഞ്ചി (മല) കവിതകളിൽ നായകനെ വിളിക്കുന്ന പേര്,y,unreviewed,editorial-draft
+natan-1,te,కొండ దేశపు పురుషుడు; కుఱించి (పర్వత) కవితల్లో నాయకుని పేరు,y,unreviewed,editorial-draft
+uran-1,en,man of the farmland town; the name for the hero in marutam (riverine farmland) poems,y,unreviewed,editorial-draft
+uran-1,hi,खेतों से घिरे गाँव का पुरुष; मरुतम् कविताओं में नायक का नाम,y,unreviewed,editorial-draft
+uran-1,ml,വയൽനാട്ടിലെ ഊരിന്റെ അധിപൻ; മരുതം കവിതകളിൽ നായകന്റെ പേര്,y,unreviewed,editorial-draft
+uran-1,te,పొలాల ఊరి పురుషుడు; మరుతం కవితల్లో నాయకుని పేరు,y,unreviewed,editorial-draft
+turaivan-1,en,lord of the seashore; the name for the hero in neytal (seashore) poems,y,unreviewed,editorial-draft
+turaivan-1,hi,समुद्र-तट का स्वामी; नेय्तल् (तट) कविताओं में नायक का नाम,y,unreviewed,editorial-draft
+turaivan-1,ml,കടൽത്തുറയുടെ അധിപൻ; നെയ്തൽ കവിതകളിൽ നായകന്റെ പേര്,y,unreviewed,editorial-draft
+turaivan-1,te,సముద్ర తీరపు అధిపతి; నెయ్తల్ కవితల్లో నాయకుని పేరు,y,unreviewed,editorial-draft
+pulampan-1,en,man of the seashore; another name for the hero in neytal poems,y,unreviewed,editorial-draft
+pulampan-1,hi,तटवासी पुरुष; नेय्तल् कविताओं में नायक का एक और नाम,y,unreviewed,editorial-draft
+pulampan-1,ml,കടൽത്തീരവാസി; നെയ്തൽ കവിതകളിൽ നായകന്റെ മറ്റൊരു പേര്,y,unreviewed,editorial-draft
+kuruku-1,en,"heron, egret or similar wading bird",,unreviewed,editorial-draft
+kuruku-1,hi,बगुला या उसके जैसा जल-पक्षी,,unreviewed,editorial-draft
+kuruku-1,ml,"കൊക്ക്, ഞാറ പോലുള്ള നീർപ്പക്ഷി",,unreviewed,editorial-draft
+kuruku-1,te,కొంగ లేదా అలాంటి నీటి పక్షి,,unreviewed,editorial-draft
+punnai-1,en,"Alexandrian laurel (Calophyllum inophyllum), a shady seashore tree",,unreviewed,editorial-draft
+punnai-1,hi,"पुन्नाग वृक्ष (Calophyllum inophyllum), समुद्र-तट का छायादार पेड़",,unreviewed,editorial-draft
+punnai-1,ml,"പുന്ന (Calophyllum inophyllum), കടൽത്തീരത്തെ തണൽമരം",,unreviewed,editorial-draft
+punnai-1,te,"పొన్న చెట్టు (Calophyllum inophyllum), సముద్ర తీరపు నీడ చెట్టు",,unreviewed,editorial-draft
+venkai-1,en,"Indian kino tree (Pterocarpus marsupium), with golden-yellow blossoms; a tree of the hills",,unreviewed,editorial-draft
+venkai-1,hi,"विजयसार वृक्ष (Pterocarpus marsupium), सुनहरे फूलों वाला पहाड़ी पेड़",,unreviewed,editorial-draft
+venkai-1,ml,"വേങ്ങ (Pterocarpus marsupium), സ്വർണ്ണനിറപ്പൂക്കളുള്ള മലമരം",,unreviewed,editorial-draft
+venkai-1,te,"వేగిస చెట్టు (Pterocarpus marsupium), బంగారు రంగు పూల కొండ చెట్టు",,unreviewed,editorial-draft
+kantal-1,en,"glory lily (Gloriosa superba), a red-flowered climber of the hills",,unreviewed,editorial-draft
+kantal-1,hi,"कलिहारी (Gloriosa superba), लाल फूलों वाली पहाड़ी बेल",,unreviewed,editorial-draft
+kantal-1,ml,"മേന്തോന്നി (Gloriosa superba), ചുവന്ന പൂക്കളുള്ള മലവള്ളി",,unreviewed,editorial-draft
+kantal-1,te,"అగ్నిశిఖ (Gloriosa superba), ఎర్రని పూల కొండ తీగ",,unreviewed,editorial-draft
+konrai-1,en,"Indian laburnum (Cassia fistula), with hanging clusters of golden flowers; in mullai poems its flowering marks the rainy season",y,unreviewed,editorial-draft
+konrai-1,hi,"अमलतास (Cassia fistula), सुनहरे फूलों के गुच्छों वाला पेड़; मुल्लै कविताओं में इसका खिलना वर्षा ऋतु का संकेत है",y,unreviewed,editorial-draft
+konrai-1,ml,കണിക്കൊന്ന (Cassia fistula); മുല്ലൈ കവിതകളിൽ ഇതിന്റെ പൂക്കൽ മഴക്കാലത്തിന്റെ അടയാളം,y,unreviewed,editorial-draft
+konrai-1,te,రేల చెట్టు (Cassia fistula); ముల్లై కవితల్లో దీని పూత వర్షాకాలానికి సూచన,y,unreviewed,editorial-draft
+vempu-1,en,neem tree (Azadirachta indica),,unreviewed,editorial-draft
+vempu-1,hi,नीम (Azadirachta indica),,unreviewed,editorial-draft
+vempu-1,ml,വേപ്പ് (Azadirachta indica),,unreviewed,editorial-draft
+vempu-1,te,వేప చెట్టు (Azadirachta indica),,unreviewed,editorial-draft
+pala-1,en,jackfruit tree and its large fruit (Artocarpus heterophyllus),,unreviewed,editorial-draft
+pala-1,hi,कटहल का पेड़ और उसका बड़ा फल,,unreviewed,editorial-draft
+pala-1,ml,പ്ലാവും ചക്കയും,,unreviewed,editorial-draft
+pala-1,te,"పనస చెట్టు, పనస పండు",,unreviewed,editorial-draft
+kuvalai-1,en,blue water lily; a common comparison for a woman's eyes,,unreviewed,editorial-draft
+kuvalai-1,hi,नील कमल (नीली कुमुदिनी); स्त्री की आँखों की सामान्य उपमा,,unreviewed,editorial-draft
+kuvalai-1,ml,നീലാമ്പൽ; സ്ത്രീയുടെ കണ്ണുകൾക്കുള്ള പതിവ് ഉപമ,,unreviewed,editorial-draft
+kuvalai-1,te,నల్ల కలువ; స్త్రీ కన్నులకు సాధారణ ఉపమానం,,unreviewed,editorial-draft
+tumpi-1,en,bee; a nectar-seeking winged insect,,unreviewed,editorial-draft
+tumpi-1,hi,भौंरा; मधु खोजने वाला कीट,,unreviewed,editorial-draft
+tumpi-1,ml,തുമ്പി; തേൻ തേടുന്ന വണ്ട്,,unreviewed,editorial-draft
+tumpi-1,te,తుమ్మెద,,unreviewed,editorial-draft
+manjai-1,en,peacock,,unreviewed,editorial-draft
+manjai-1,hi,मोर,,unreviewed,editorial-draft
+manjai-1,ml,മയിൽ,,unreviewed,editorial-draft
+manjai-1,te,నెమలి,,unreviewed,editorial-draft
+tokai-1,en,a peacock's train of long tail feathers,,unreviewed,editorial-draft
+tokai-1,hi,मोर के लंबे पंखों का समूह,,unreviewed,editorial-draft
+tokai-1,ml,മയിൽപ്പീലിക്കൂട്ടം,,unreviewed,editorial-draft
+tokai-1,te,నెమలి పింఛం,,unreviewed,editorial-draft
+tokai-2,en,peacock (named for its train),,unreviewed,editorial-draft
+tokai-2,hi,मोर,,unreviewed,editorial-draft
+tokai-2,ml,മയിൽ,,unreviewed,editorial-draft
+tokai-2,te,నెమలి,,unreviewed,editorial-draft
+manti-1,en,female monkey,,unreviewed,editorial-draft
+manti-1,hi,मादा बंदर,,unreviewed,editorial-draft
+manti-1,ml,പെൺകുരങ്ങ്,,unreviewed,editorial-draft
+manti-1,te,ఆడ కోతి,,unreviewed,editorial-draft
+katuvan-1,en,male monkey,,unreviewed,editorial-draft
+katuvan-1,hi,नर बंदर,,unreviewed,editorial-draft
+katuvan-1,ml,ആൺകുരങ്ങ്,,unreviewed,editorial-draft
+katuvan-1,te,మగ కోతి,,unreviewed,editorial-draft
+yanai-1,en,elephant,,unreviewed,editorial-draft
+yanai-1,hi,हाथी,,unreviewed,editorial-draft
+yanai-1,ml,ആന,,unreviewed,editorial-draft
+yanai-1,te,ఏనుగు,,unreviewed,editorial-draft
+velam-1,en,"elephant, usually a tusker",,unreviewed,editorial-draft
+velam-1,hi,"हाथी, प्रायः नर हाथी",,unreviewed,editorial-draft
+velam-1,ml,"ആന, സാധാരണ കൊമ്പനാന",,unreviewed,editorial-draft
+velam-1,te,"ఏనుగు, సాధారణంగా మగ ఏనుగు",,unreviewed,editorial-draft
+pasalai-1,en,"love-pallor: the discoloured, sallow skin of a heroine separated from her lover, a conventional sign of lovesickness",y,unreviewed,editorial-draft
+pasalai-1,hi,"विरह-पीलापन: प्रेमी से बिछड़ी नायिका की त्वचा का फीका पड़ना, प्रेम-व्याकुलता का पारंपरिक लक्षण",y,unreviewed,editorial-draft
+pasalai-1,ml,"വിരഹവിളർച്ച: കാമുകനിൽ നിന്ന് അകന്ന നായികയുടെ മേനിയിൽ പടരുന്ന നിറംമാറ്റം, പ്രണയവേദനയുടെ പരമ്പരാഗത അടയാളം",y,unreviewed,editorial-draft
+kamam-1,en,love; desire between lovers. In Sangam usage the word is not pejorative,y,unreviewed,editorial-draft
+kamam-1,hi,प्रेम; प्रेमियों के बीच की चाह। संगम प्रयोग में यह शब्द निंदार्थक नहीं है,y,unreviewed,editorial-draft
+kamam-1,ml,പ്രണയം; കമിതാക്കൾ തമ്മിലുള്ള ആഗ്രഹം. സംഘകാല പ്രയോഗത്തിൽ ഈ വാക്കിന് ദോഷാർത്ഥമില്ല,y,unreviewed,editorial-draft
+kamam-1,te,ప్రేమ; ప్రేమికుల మధ్య కోరిక. సంగమ ప్రయోగంలో ఈ పదానికి నిందార్థం లేదు,y,unreviewed,editorial-draft
+matal-1,en,palmyra frond; palmyra stalk,,unreviewed,editorial-draft
+matal-1,hi,ताड़ का पत्ता या डंठल,,unreviewed,editorial-draft
+matal-1,ml,പനമ്പട്ട,,unreviewed,editorial-draft
+matal-1,te,తాటి మట్ట,,unreviewed,editorial-draft
+matal-2,en,riding the palmyra horse: the custom in which a rejected lover rides a horse made of palmyra stalks through the street to make his love public,y,unreviewed,editorial-draft
+matal-2,hi,ताड़ के घोड़े पर चढ़ना: वह प्रथा जिसमें ठुकराया गया प्रेमी ताड़ के डंठलों से बने घोड़े पर गली में निकलकर अपना प्रेम सबके सामने प्रकट करता है,y,unreviewed,editorial-draft
+matal-2,ml,മടലേറൽ: നിരസിക്കപ്പെട്ട കാമുകൻ പനമ്പട്ട കൊണ്ടുണ്ടാക്കിയ കുതിരപ്പുറത്ത് തെരുവിലൂടെ വന്ന് തന്റെ പ്രണയം പരസ്യമാക്കുന്ന ആചാരം,y,unreviewed,editorial-draft
+maruku-1,en,street; the village thoroughfare,,unreviewed,editorial-draft
+maruku-1,hi,गली; गाँव का मार्ग,,unreviewed,editorial-draft
+maruku-1,ml,തെരുവ്; ഊരിലെ വീഥി,,unreviewed,editorial-draft
+maruku-1,te,వీధి,,unreviewed,editorial-draft
+ur-1,en,village; town; one's home place,,unreviewed,editorial-draft
+ur-1,hi,गाँव; बस्ती; अपना स्थान,,unreviewed,editorial-draft
+ur-1,ml,ഊര്; ഗ്രാമം; സ്വന്തം നാട്,,unreviewed,editorial-draft
+ur-1,te,ఊరు; గ్రామం; సొంత స్థలం,,unreviewed,editorial-draft
+ur-2,en,the townspeople; in akam poems often the gossiping town or the sleeping town,y,unreviewed,editorial-draft
+ur-2,hi,गाँव के लोग; अकम् कविताओं में प्रायः बातें बनाने वाला या सोता हुआ गाँव,y,unreviewed,editorial-draft
+ur-2,ml,ഊരാർ; അകം കവിതകളിൽ പലപ്പോഴും അപവാദം പറയുന്നവരോ ഉറങ്ങുന്ന ഊരോ,y,unreviewed,editorial-draft
+ur-2,te,ఊరి ప్రజలు; అకం కవితల్లో తరచూ పుకార్లు చెప్పే లేదా నిద్రించే ఊరు,y,unreviewed,editorial-draft
+yamam-1,en,the middle watch of the night; midnight,,unreviewed,editorial-draft
+yamam-1,hi,रात का मध्य पहर; आधी रात,,unreviewed,editorial-draft
+yamam-1,ml,രാത്രിയുടെ നടുയാമം; അർദ്ധരാത്രി,,unreviewed,editorial-draft
+yamam-1,te,అర్ధరాత్రి యామం,,unreviewed,editorial-draft
+tunju-1,en,to sleep,,unreviewed,editorial-draft
+tunju-1,hi,सोना; नींद में होना,,unreviewed,editorial-draft
+tunju-1,ml,ഉറങ്ങുക,,unreviewed,editorial-draft
+tunju-1,te,నిద్రించు,,unreviewed,editorial-draft
+kuntal-1,en,a woman's hair; tresses,,unreviewed,editorial-draft
+kuntal-1,hi,स्त्री के केश,,unreviewed,editorial-draft
+kuntal-1,ml,സ്ത്രീയുടെ മുടി; കൂന്തൽ,,unreviewed,editorial-draft
+kuntal-1,te,స్త్రీ కురులు,,unreviewed,editorial-draft
+valai-1,en,"bangle. In akam poems, bangles slipping from a wasted arm are a sign of the grief of separation",y,unreviewed,editorial-draft
+valai-1,hi,चूड़ी। अकम् कविताओं में दुबली कलाई से चूड़ियों का खिसकना विरह-दुःख का संकेत है,y,unreviewed,editorial-draft
+valai-1,ml,വള. അകം കവിതകളിൽ മെലിഞ്ഞ കൈയിൽ നിന്ന് വള ഊരിപ്പോകുന്നത് വിരഹദുഃഖത്തിന്റെ അടയാളം,y,unreviewed,editorial-draft
+valai-1,te,గాజు. అకం కవితల్లో చిక్కిన చేతి నుండి గాజులు జారడం వియోగ దుఃఖానికి సూచన,y,unreviewed,editorial-draft
+suram-1,en,a hard path through parched wasteland (pālai country),,unreviewed,editorial-draft
+suram-1,hi,झुलसी बंजर भूमि (पालै प्रदेश) का कठिन मार्ग,,unreviewed,editorial-draft
+suram-1,ml,വരണ്ട പാലൈ നിലത്തിലൂടെയുള്ള ദുർഘടപാത,,unreviewed,editorial-draft
+suram-1,te,ఎండిన పాలై నేల గుండా వెళ్ళే కఠిన మార్గం,,unreviewed,editorial-draft
+panan-1,en,bard; a travelling singer who performed with the yāḻ (harp) and other instruments,,unreviewed,editorial-draft
+panan-1,hi,पाणन्; याऴ् (वीणा जैसा वाद्य) के साथ गाने वाला घुमंतू गायक,,unreviewed,editorial-draft
+panan-1,ml,പാണൻ; യാഴ് മുതലായ വാദ്യങ്ങളോടെ പാടി നടക്കുന്ന ഗായകൻ,,unreviewed,editorial-draft
+panan-1,te,పాణుడు; యాళ్ వంటి వాద్యాలతో పాడుతూ తిరిగే గాయకుడు,,unreviewed,editorial-draft
+manra-1,en,surely; certainly (an emphatic particle),,unreviewed,editorial-draft
+manra-1,ml,തീർച്ചയായും; ഉറപ്പായും (ഊന്നൽ നൽകുന്ന നിപാതം),,unreviewed,editorial-draft
+manra-1,te,నిశ్చయంగా; తప్పక (నొక్కి చెప్పే అవ్యయం),,unreviewed,editorial-draft
+ma-horse-1,en,animal; especially a horse,,unreviewed,editorial-draft
+ma-horse-1,hi,पशु; विशेषकर घोड़ा,,unreviewed,editorial-draft
+ma-horse-1,ml,മൃഗം; പ്രത്യേകിച്ച് കുതിര,,unreviewed,editorial-draft
+ma-horse-1,te,జంతువు; ముఖ్యంగా గుర్రం,,unreviewed,editorial-draft
+ma-mango-1,en,mango tree; mango fruit,,unreviewed,editorial-draft
+ma-mango-1,hi,आम का पेड़; आम,,unreviewed,editorial-draft
+ma-mango-1,ml,മാവ്; മാമ്പഴം,,unreviewed,editorial-draft
+ma-mango-1,te,మామిడి చెట్టు; మామిడి పండు,,unreviewed,editorial-draft
+kanal-1,en,seashore grove; the belt of trees along the coast (not the modern sense 'mirage'),y,unreviewed,editorial-draft
+kanal-1,hi,समुद्र-तटीय उपवन; तट के साथ पेड़ों की पट्टी (आधुनिक अर्थ 'मृगतृष्णा' नहीं),y,unreviewed,editorial-draft
+kanal-1,ml,കടൽത്തീരത്തെ സോല; തീരത്തോട് ചേർന്ന മരക്കൂട്ടം (ആധുനിക അർത്ഥമായ 'മരീചിക' അല്ല),y,unreviewed,editorial-draft
+kanal-1,te,సముద్ర తీరపు తోట; తీరం వెంబడి చెట్ల వరుస (ఆధునిక అర్థం 'ఎండమావి' కాదు),y,unreviewed,editorial-draft
+tinai-millet-1,en,"foxtail millet (Setaria italica), grown in the hills",,unreviewed,editorial-draft
+tinai-millet-1,hi,"कंगनी (Setaria italica), पहाड़ों में उगाया जाने वाला मोटा अनाज",,unreviewed,editorial-draft
+tinai-millet-1,ml,"തിന (Setaria italica), മലകളിൽ വിളയുന്ന ചെറുധാന്യം",,unreviewed,editorial-draft
+tinai-millet-1,te,"కొర్రలు (Setaria italica), కొండల్లో పండే చిరుధాన్యం",,unreviewed,editorial-draft
+varaku-1,en,"kodo millet (Paspalum scrobiculatum), grown on dry land",,unreviewed,editorial-draft
+varaku-1,hi,"कोदो (Paspalum scrobiculatum), सूखी भूमि का अनाज",,unreviewed,editorial-draft
+varaku-1,ml,"വരക് (Paspalum scrobiculatum), വരണ്ട നിലത്തെ ധാന്യം",,unreviewed,editorial-draft
+varaku-1,te,"అరికెలు (Paspalum scrobiculatum), మెట్ట పంట",,unreviewed,editorial-draft
+parai-1,en,drum: a skin drum that is struck,,unreviewed,editorial-draft
+parai-1,hi,पऱै; चमड़े का ढोल,,unreviewed,editorial-draft
+parai-1,ml,പറ; തോൽവാദ്യം,,unreviewed,editorial-draft
+parai-1,te,"పఱై; చర్మ వాద్యం, డప్పు",,unreviewed,editorial-draft
+mulavu-1,en,"a barrel drum like the mattaḷam, played at festivals and weddings",,unreviewed,editorial-draft
+mulavu-1,hi,"मृदंग जैसा ढोल, उत्सवों और विवाहों में बजाया जाने वाला",,unreviewed,editorial-draft
+mulavu-1,ml,"മിഴാവ് പോലുള്ള തോൽവാദ്യം, ഉത്സവങ്ങളിലും വിവാഹങ്ങളിലും",,unreviewed,editorial-draft
+mulavu-1,te,"మృదంగం వంటి వాద్యం, ఉత్సవాలలో, పెళ్ళిళ్ళలో వాయించేది",,unreviewed,editorial-draft
+anpu-1,en,love; affection; attachment to another,,unreviewed,editorial-draft
+anpu-1,hi,स्नेह; प्रेम; लगाव,,unreviewed,editorial-draft
+anpu-1,ml,അൻപ്; സ്നേഹം; വാത്സല്യം,,unreviewed,editorial-draft
+anpu-1,te,ప్రేమ; అనురాగం,,unreviewed,editorial-draft
+kalvan-1,en,thief; highway robber,,unreviewed,editorial-draft
+kalvan-1,hi,चोर; लुटेरा,,unreviewed,editorial-draft
+kalvan-1,ml,കള്ളൻ; വഴിക്കൊള്ളക്കാരൻ,,unreviewed,editorial-draft
+kalvan-1,te,దొంగ; దారిదోపిడీదారు,,unreviewed,editorial-draft
+kalvan-2,en,"the secret lover; the hero of a clandestine (kaḷavu) love, as the heroine reproachfully calls him",y,unreviewed,editorial-draft
+kalvan-2,hi,"गुप्त प्रेमी; छिपे प्रेम (कळवु) का नायक, जिसे नायिका उलाहने में यह कहती है",y,unreviewed,editorial-draft
+kalvan-2,ml,രഹസ്യ കാമുകൻ; കളവ് (ഒളിപ്രണയം) നായകനെ നായിക കുറ്റപ്പെടുത്തി വിളിക്കുന്ന പേര്,y,unreviewed,editorial-draft
+vatai-1,en,the cold north wind of the dewy season,,unreviewed,editorial-draft
+vatai-1,hi,ओस के मौसम की ठंडी उत्तरी हवा,,unreviewed,editorial-draft
+vatai-1,ml,മഞ്ഞുകാലത്തെ തണുത്ത വടക്കൻ കാറ്റ്,,unreviewed,editorial-draft
+vatai-1,te,మంచు కాలపు చల్లని ఉత్తర గాలి,,unreviewed,editorial-draft
+nan-1,en,"modesty; shyness; reserve, regarded as a feminine virtue",,unreviewed,editorial-draft
+nan-1,hi,लज्जा; संकोच; स्त्री-गुण माना गया संयम,,unreviewed,editorial-draft
+nan-1,ml,നാണം; ലജ്ജ,,unreviewed,editorial-draft
+nan-1,te,సిగ్గు; లజ్జ,,unreviewed,editorial-draft
+punai-1,en,raft; float of lashed logs for crossing water,,unreviewed,editorial-draft
+punai-1,hi,बेड़ा; पानी पार करने के लिए बाँधे गए लट्ठे,,unreviewed,editorial-draft
+punai-1,ml,ചങ്ങാടം,,unreviewed,editorial-draft
+punai-1,te,తెప్ప,,unreviewed,editorial-draft
+malai-1,en,cloud; rain-cloud,,unreviewed,editorial-draft
+malai-1,hi,बादल; वर्षा-मेघ,,unreviewed,editorial-draft
+malai-1,ml,മേഘം; മഴമേഘം,,unreviewed,editorial-draft
+malai-1,te,మేఘం; వాన మబ్బు,,unreviewed,editorial-draft
+malai-2,en,rain,,unreviewed,editorial-draft
+malai-2,hi,वर्षा,,unreviewed,editorial-draft
+malai-2,ml,മഴ,,unreviewed,editorial-draft
+malai-2,te,వర్షం; వాన,,unreviewed,editorial-draft
+manra-1,hi,निश्चय ही; अवश्य (बल देने वाला निपात),,unreviewed,editorial-draft

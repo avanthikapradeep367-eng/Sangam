@@ -1,63 +1,72 @@
 import { useState } from 'react';
-import { getAllInitialLetters } from '../utils/search';
+import { Link } from 'react-router-dom';
+import { TAMIL_ALPHABET, indexLetter } from '../utils/tamil';
+import { entries } from '../data';
 
-interface LetterIndexProps {
-  activeLetter?: string;
-  onSelect: (letter: string) => void;
-}
+const used = new Set(entries.map((e) => indexLetter(e.headword)));
 
-export default function LetterIndex({ activeLetter, onSelect }: LetterIndexProps) {
-  const [expanded, setExpanded] = useState(false);
-  const letters = getAllInitialLetters();
-
+/** Tamil alphabet index (vowels, then consonants). Collapsed behind a button on small screens. */
+export default function LetterIndex({ active, hrefFor, title = 'எழுத்து வரிசை' }: {
+  active?: string;
+  /** Where a letter links to; defaults to the letter browser. The search page uses it to filter results. */
+  hrefFor?: (letter: string) => string;
+  title?: string;
+}) {
+  const [open, setOpen] = useState(false);
   return (
-    <div className="letter-index">
-      {/* Mobile toggle */}
-      <button
-        className="letter-index__toggle"
-        onClick={() => setExpanded(!expanded)}
-        aria-expanded={expanded}
-        aria-controls="letter-index-letters"
-      >
-        <span>எழுத்து வரிசை</span>
-        <svg
-          width="16" height="16"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          style={{ transform: expanded ? 'rotate(180deg)' : 'none', transition: '150ms' }}
+    <nav className={`letter-index${open ? ' is-open' : ''}`} aria-labelledby="letter-index-label">
+      <div className="letter-index__head">
+        <h2 id="letter-index-label" className="section-label">{title}</h2>
+        <button
+          type="button"
+          className="letter-index__toggle"
+          aria-expanded={open}
+          aria-controls="letter-index-list"
+          onClick={() => setOpen((o) => !o)}
         >
-          <polyline points="6 9 12 15 18 9" />
-        </svg>
-      </button>
-
-      {/* Desktop label */}
-      <div className="letter-index__label-row" aria-hidden="true">
-        எழுத்து வரிசை
+          {open ? 'மூடு' : active ? `${active} — மாற்று` : 'எழுத்துகளைக் காட்டு'}
+        </button>
       </div>
-
-      <ul
-        id="letter-index-letters"
-        className={`letter-index__letters${expanded ? ' letter-index__letters--open' : ''}`}
-        role="list"
-        aria-label="தமிழ் எழுத்துக்கள் வழி தேடு"
-      >
-        {letters.map((letter) => (
-          <li key={letter} role="listitem">
-            <button
-              className={`letter-btn${activeLetter === letter ? ' letter-btn--active' : ''}`}
-              onClick={() => onSelect(activeLetter === letter ? '' : letter)}
-              aria-pressed={activeLetter === letter}
-              aria-label={`${letter} எழுத்தில் தொடங்கும் சொற்கள்`}
-            >
-              {letter}
-            </button>
+      <ul id="letter-index-list" className="letter-index__list">
+        {TAMIL_ALPHABET.map((l) => (
+          <li key={l}>
+            {used.has(l) ? (
+              <Link
+                to={hrefFor ? hrefFor(l) : `/letters?l=${encodeURIComponent(l)}`}
+                className={`letter${active === l ? ' is-active' : ''}`}
+                aria-current={active === l ? 'true' : undefined}
+                aria-label={`${l} — இவ்வெழுத்தில் தொடங்கும் சொற்கள்`}
+                lang="ta"
+              >
+                {l}
+              </Link>
+            ) : (
+              <span className="letter is-empty" aria-label={`${l} — சொற்கள் இல்லை`} lang="ta">{l}</span>
+            )}
           </li>
         ))}
       </ul>
-    </div>
+      <p className="letter-index__more"><Link to="/letters">உயிர்மெய், கிரந்த எழுத்துகளுடன் முழு எழுத்து வரிசை →</Link></p>
+    </nav>
+  );
+}
+
+/** Narrow vertical alphabet beside search results (desktop). */
+export function LetterRail({ active, hrefFor }: { active?: string; hrefFor: (letter: string) => string }) {
+  return (
+    <nav className="letter-rail" aria-label="எழுத்து வாரியாக வடிகட்டு">
+      <p className="letter-rail__title" aria-hidden="true">எழுத்து</p>
+      <ul>
+        {TAMIL_ALPHABET.map((l) => (
+          <li key={l}>
+            {used.has(l) ? (
+              <Link to={hrefFor(l)} className={`letter${active === l ? ' is-active' : ''}`} aria-current={active === l ? 'true' : undefined} lang="ta">{l}</Link>
+            ) : (
+              <span className="letter is-empty" aria-hidden="true" lang="ta">{l}</span>
+            )}
+          </li>
+        ))}
+      </ul>
+    </nav>
   );
 }

@@ -1,0 +1,46 @@
+[
+  {
+    "id": "wikisource-kuruntokai",
+    "kind": "edition",
+    "title": "குறுந்தொகை — தமிழ் விக்கிமூலம்",
+    "url": "https://ta.wikisource.org/wiki/குறுந்தொகை",
+    "license": "Transcription: CC BY-SA 4.0 (Wikisource). The classical text itself is in the public domain.",
+    "retrieved": "2026-11-17",
+    "covers": "குறுந்தொகை 1–40 (பாடல் மூலம், திணை, கூற்று, பாடியவர்)",
+    "notes": "Verse is given in the traditional புணர்ச்சி-joined layout (e.g. 'யாயு ஞாயும்'). The page does not name the print edition it follows, so every poem is marked unreviewed until compared with a print edition. Alternate readings printed in parentheses on the page are kept as reading notes, not in the verse line. Only the verse and metadata were taken; Wikisource's modern commentary was not copied.",
+    "origin": "book"
+  },
+  {
+    "id": "wikisource-purananuru",
+    "kind": "edition",
+    "title": "புறநானூறு — தமிழ் விக்கிமூலம் (பாடல் 191–200)",
+    "url": "https://ta.wikisource.org/wiki/புறநானூறு/பாடல்_191-200",
+    "license": "Transcription: CC BY-SA 4.0 (Wikisource). The classical text itself is in the public domain.",
+    "retrieved": "2026-11-17",
+    "covers": "புறநானூறு 191–200 (பாடல் மூலம், திணை, துறை, பாடியவர்)",
+    "notes": "Verse is given in a modern word-separated layout, unlike the Kuruntokai pages. Poem 194 has no poet, திணை or துறை on the source page, so those fields are left empty here. Possible transcription slips were noticed (for example 'இவுளியடு' in 197.1 and 'தானையடு' in 197.3, where '-ஒடு' is expected); they are reproduced as found and need checking against a print edition.",
+    "origin": "book"
+  },
+  {
+    "id": "editorial-draft",
+    "kind": "editorial",
+    "title": "சங்கச் சொல் — ஆசிரியர் வரைவு",
+    "url": null,
+    "license": "CC BY 4.0",
+    "retrieved": null,
+    "covers": "நவீனத் தமிழ் வரையறைகள், மொழிபெயர்ப்புகள், இலக்கணக் குறிப்புகள், சொல்–பாடல் இணைப்புகள்",
+    "notes": "Drafted for this site in November 2026 with AI assistance (Claude). Not yet reviewed by a Tamil scholar or by native speakers of Hindi, Malayalam or Telugu. Grammar notes describe only what is visible in the cited line (sandhi, case form); they are not taken from a published grammar. Because they were AI-drafted, meanings from this source are labelled as machine translations (origin \"machine\") until an editor reviews them.",
+    "origin": "machine"
+  },
+  {
+    "id": "legacy-sample",
+    "kind": "editorial",
+    "title": "முந்தைய மாதிரித் தரவு (commit d9e0b36)",
+    "url": null,
+    "license": "Unknown",
+    "retrieved": null,
+    "covers": "16 சொற்களின் வரையறைகளும் மொழிபெயர்ப்புகளும்",
+    "notes": "The first version of this site attributed its quotations to கழக வெளியீடு and the Madras Tamil Lexicon. On review most of those quotations do not match the cited poems (for example, குறுந்தொகை 25 begins 'யாரும் இல்லைத் தானே கள்வன்'), so all of them were removed. Their definitions and translations were kept but are treated as unreviewed drafts with undocumented origin.",
+    "origin": "unknown"
+  }
+]

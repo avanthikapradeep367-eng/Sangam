@@ -1,81 +1,58 @@
-# சங்கச் சொல் — Sangam Literature Tamil Dictionary
+# சங்கச் சொல் — Sangam Tamil dictionary and reading companion
 
-A modern, Tamil-first digital dictionary for Sangam literature (சங்க இலக்கியம்), built with React, TypeScript, and Vite.
-
-## Features
-
-- **Full Tamil Unicode search** — exact, prefix, alias, and transliteration matching
-- **Keyboard-accessible** suggestions dropdown
-- **Letter browse index** — expandable on mobile
-- **Entry pages** — headword, part of speech, numbered Tamil definitions, English glosses, transliterations, and verified quotations with citation info
-- **Works browser** — browse by literary work (குறுந்தொகை, நற்றிணை, அகநானூறு, etc.)
-- **Responsive** — optimised for mobile Tamil rendering
-- **Accessible** — ARIA roles, skip links, focus management
-
-## Design
-
-- Background: warm ivory (`#faf8f4`)
-- Text: charcoal (`#2a2a2a`)
-- Accent: deep maroon (`#7a1c2e`)
-- Typography: Noto Serif Tamil (headwords, quotations) + Noto Sans Tamil (UI)
-
-## Project Structure
-
-```
-src/
-├── components/       # Reusable UI components
-│   ├── Header.tsx
-│   ├── SearchBar.tsx
-│   ├── LetterIndex.tsx
-│   ├── EntryRow.tsx
-│   └── QuotationBlock.tsx
-├── data/             # JSON dataset (separate from UI)
-│   ├── dictionary.json
-│   └── works.json
-├── pages/            # Route-level page components
-│   ├── HomePage.tsx
-│   ├── SearchResultsPage.tsx
-│   ├── EntryPage.tsx
-│   ├── WorksPage.tsx
-│   ├── WorkDetailPage.tsx
-│   └── AboutPage.tsx
-├── styles/
-│   └── main.css      # All styles (design tokens, components, responsive)
-├── types/
-│   └── index.ts      # TypeScript interfaces
-└── utils/
-    └── search.ts     # Search engine (exact/prefix/alias/transliteration)
-```
-
-## Data Structure
-
-Each dictionary entry has:
-- `id` — stable URL slug
-- `headword` — Tamil headword
-- `transliteration` — ISO romanisation
-- `partOfSpeech` — Tamil part-of-speech label
-- `aliases` — spelling variants and transliterations
-- `senses` — numbered senses, each with definition, English gloss, and quotations
-- `quotations` — text, work, poem number, source edition, verification status
-- `relatedWords` — semantically related headwords
-- `work` — primary literary work
-
-## Getting Started
+A Tamil-first dictionary for Sangam literature. Readers can find a word, read its meaning
+in modern Tamil, English, Hindi, Malayalam or Telugu, open the poem where it occurs,
+and save or cite what they find. Built with React, TypeScript and Vite. There is no
+backend: saved words and preferences stay in the reader's browser.
 
 ```bash
 npm install
-npm run dev        # http://localhost:5173
-npm run build      # Production build to dist/
+npm run dev      # validates content/, then serves http://localhost:5173
+npm run build    # validates content/, type-checks, builds dist/
 ```
 
-## Data & Sources
+Production hosting must serve `index.html` for unknown paths (SPA fallback), because
+entry, poem and search URLs are client-side routes.
 
-Definitions and quotations are drawn from:
-- **கழக வெளியீடுகள்** (Saiva Siddhanta Book Publishing Society, Chennai)
-- **University of Madras Tamil Lexicon** (1924–1936)
-- **தொல்காப்பியம்**, கழக வெளியீடு
+## Features
 
-Quotations marked ✓ have been verified against published editions.  
-Quotations marked ⚠ are unverified — always check the primary source.
+- **Search** in three scopes, all shareable by URL (`/search?q=…&scope=word|meaning|poem&work=…&tinai=…&pos=…&topic=…&letter=…`):
+  - **Words:** headwords, spelling variants, inflected forms, sandhi forms attested in the poems, and romanized aliases. Exact headword matches rank first.
+  - **Meanings:** reverse lookup through translations in any language. Shows the sense that matched.
+  - **Poems:** verse text, ignoring word breaks and sandhi joins. Shows a snippet and its reference.
+  - Also: Tamil Unicode normalization, keyboard autocomplete (ARIA combobox), IME-safe input, a clear button, spelling suggestions, and empty-result recovery.
+- **Browse** by Tamil letter, work, part of speech, tiṇai and topic.
+- **Entry pages** (`/entry/<id>`, senses at `#<sense-id>`):
+  - Numbered senses, each showing the modern Tamil definition and the chosen translation, plus an "எல்லா மொழிகளிலும்" comparison.
+  - The Sangam quotation for each sense, with the attested form highlighted.
+  - Occurrences in other indexed poems, filterable by work.
+  - Forms, related words, notes with sources, separate homographs, and pronunciation audio when a recording exists.
+  - Save, copy link, copy citation, and report an error.
+- **Works index → work page → poem page** (`/works/<work>/<n>?line=…`):
+  - Linked words open a compact definition panel showing the sense recorded for that line. It works with touch and keyboard and returns focus on close.
+- **Saved words** (`/saved`): local storage, search, removal, and CSV export.
+- **Sources page** (`/sources`): editions, licences, and coverage counts generated from the data.
 
-**Do not add invented Sangam verses or poem numbers** — use the `verified: false` flag and clear attribution for any uncertain material.
+## Modern-Tamil vocabulary
+
+An optional second layer of about 1,000 modern-Tamil core words (literary and colloquial forms, Roman transcription, English meanings, verb classes, topics), imported from a reference book. Its data is kept outside this repository in `content/sources/vocab/`; without it the site builds with the Sangam dictionary only. Browse by letter at `/letters`, by topic at `/topics`; review in the dev-only editor at `/editor`. See DATA.md.
+
+## Content
+
+See [DATA.md](DATA.md) for the data model, stable IDs, the CSV/JSON import workflow, and
+the validator.
+
+Current corpus: Kuṟuntokai 1–40 and Puṟanāṉūṟu 191–200, from Tamil Wikisource (CC BY-SA 4.0).
+All definitions and translations are unreviewed drafts and are labelled as such in the UI.
+
+## Structure
+
+```
+content/            editable source data (CSV + JSON)  → see DATA.md
+scripts/            build-data, import, extract-wikisource, lib/content (validator)
+src/data/           typed access to the compiled data (generated/ is git-ignored)
+src/utils/          search, Tamil normalization, languages, storage, citation/CSV
+src/components/     header, search bar, letter index, entry rows, report dialog, …
+src/pages/          home, search, entry, works, work, poem, tiṇai, saved, about, sources
+src/styles/main.css design tokens and all styles
+```

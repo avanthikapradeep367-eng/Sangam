@@ -1,0 +1,831 @@
+[
+  {
+    "id": "kuruntokai-1",
+    "workId": "kuruntokai",
+    "number": "1",
+    "tinai": "குறிஞ்சி",
+    "turai": null,
+    "speaker": "தோழி கூற்று",
+    "poet": "திப்புத்தோளார்",
+    "lines": [
+      "செங்களம் படக்கொன் றவுணர்த் தேய்த்த",
+      "செங்கோ லம்பிற் செங்கோட் டியானைக்",
+      "கழல்தொடிச் சேஎய் குன்றம்",
+      "குருதிப் பூவின் குலைக்காந் தட்டே."
+    ],
+    "readings": [],
+    "sourceId": "wikisource-kuruntokai",
+    "reviewStatus": "unreviewed",
+    "provenance": "Extracted from Tamil Wikisource by scripts/extract-wikisource.mjs; not yet compared with a print edition."
+  },
+  {
+    "id": "kuruntokai-2",
+    "workId": "kuruntokai",
+    "number": "2",
+    "tinai": "குறிஞ்சி",
+    "turai": null,
+    "speaker": "தலைவன் கூற்று",
+    "poet": "இறையனார்",
+    "lines": [
+      "கொங்குதேர் வாழ்க்கை யஞ்சிறைத் தும்பி",
+      "காமஞ் செப்பாது கண்டது மொழிமோ",
+      "பயிலியது கெழீஇய நட்பின் மயிலியற்",
+      "செறியெயிற் றரிவை கூந்தலின்",
+      "நறியவு முளவோநீ யறியும் பூவே."
+    ],
+    "readings": [],
+    "sourceId": "wikisource-kuruntokai",
+    "reviewStatus": "unreviewed",
+    "provenance": "Extracted from Tamil Wikisource by scripts/extract-wikisource.mjs; not yet compared with a print edition."
+  },
+  {
+    "id": "kuruntokai-3",
+    "workId": "kuruntokai",
+    "number": "3",
+    "tinai": "குறிஞ்சி",
+    "turai": null,
+    "speaker": "தலைவி கூற்று",
+    "poet": "தேவகுலத்தார்",
+    "lines": [
+      "நிலத்தினும் பெரிதே வானினு முயர்ந்தன்று",
+      "நீரினு மாரள வின்றே சாரற்",
+      "கருங்கோற் குறிஞ்சிப் பூக்கொண்டு",
+      "பெருந்தே னிழைக்கு நாடனொடு நட்பே."
+    ],
+    "readings": [],
+    "sourceId": "wikisource-kuruntokai",
+    "reviewStatus": "unreviewed",
+    "provenance": "Extracted from Tamil Wikisource by scripts/extract-wikisource.mjs; not yet compared with a print edition."
+  },
+  {
+    "id": "kuruntokai-4",
+    "workId": "kuruntokai",
+    "number": "4",
+    "tinai": "நெய்தல்",
+    "turai": null,
+    "speaker": "தலைமகள் கூற்று",
+    "poet": "காமஞ்சேர் குளத்தார்",
+    "lines": [
+      "நோமென் னெஞ்சே நோமென் னெஞ்சே",
+      "இமைதீய்ப் பன்ன கண்ணீர் தாங்கி",
+      "அமைதற் கமைந்தநங் காதலர்",
+      "அமைவில ராகுதல் நோமென் னெஞ்சே."
+    ],
+    "readings": [],
+    "sourceId": "wikisource-kuruntokai",
+    "reviewStatus": "unreviewed",
+    "provenance": "Extracted from Tamil Wikisource by scripts/extract-wikisource.mjs; not yet compared with a print edition."
+  },
+  {
+    "id": "kuruntokai-5",
+    "workId": "kuruntokai",
+    "number": "5",
+    "tinai": "நெய்தல்",
+    "turai": null,
+    "speaker": "தலைவி கூற்று",
+    "poet": "நரிவெரூஉத் தலையார்",
+    "lines": [
+      "அதுகொ றோழி காம நோயே",
+      "வதிகுரு குறங்கு மின்னிழற் புன்னை",
+      "உடைதிரைத் திவலை யரும்புந் தீநீர்",
+      "மெல்லம் புலம்பன் பிரிந்தெனப்",
+      "பல்லித ழுண்கண் பாடொல் லாவே."
+    ],
+    "readings": [],
+    "sourceId": "wikisource-kuruntokai",
+    "reviewStatus": "unreviewed",
+    "provenance": "Extracted from Tamil Wikisource by scripts/extract-wikisource.mjs; not yet compared with a print edition."
+  },
+  {
+    "id": "kuruntokai-6",
+    "workId": "kuruntokai",
+    "number": "6",
+    "tinai": "நெய்தல்",
+    "turai": null,
+    "speaker": "தலைவி கூற்று",
+    "poet": "பதுமனார்",
+    "lines": [
+      "நள்ளென் றன்றே யாமஞ் சொல்லவிந்",
+      "தினிதடங் கினரே மாக்கண் முனிவின்று",
+      "நனந்தலை யுலகமுந் துஞ்சும்",
+      "ஓஒர்யான் மன்ற துஞ்சா தேனே."
+    ],
+    "readings": [],
+    "sourceId": "wikisource-kuruntokai",
+    "reviewStatus": "unreviewed",
+    "provenance": "Extracted from Tamil Wikisource by scripts/extract-wikisource.mjs; not yet compared with a print edition."
+  },
+  {
+    "id": "kuruntokai-7",
+    "workId": "kuruntokai",
+    "number": "7",
+    "tinai": "பாலை",
+    "turai": null,
+    "speaker": "கண்டோர் கூற்று",
+    "poet": "பெரும்பதுமனார்",
+    "lines": [
+      "மெல்லடி மேலவுஞ் சிலம்பே நல்லோர்",
+      "யார்கொ லளியர் தாமே யாரியர்",
+      "கயிறாடு பறையிற் கால்பொரக் கலங்கி",
+      "வாகை வெண்ணெற் றொலிக்கும்",
+      "வேய்பயி லழுவ முன்னி யோரே."
+    ],
+    "readings": [],
+    "sourceId": "wikisource-kuruntokai",
+    "reviewStatus": "unreviewed",
+    "provenance": "Extracted from Tamil Wikisource by scripts/extract-wikisource.mjs; not yet compared with a print edition."
+  },
+  {
+    "id": "kuruntokai-8",
+    "workId": "kuruntokai",
+    "number": "8",
+    "tinai": "மருதம்",
+    "turai": null,
+    "speaker": "காதற் பரத்தை கூற்று",
+    "poet": "ஆலங்குடி வங்கனார்",
+    "lines": [
+      "கழனி மாஅத்து விளைந்துகு தீம்பழம்",
+      "பழன வாளை கதூஉ மூரன்",
+      "எம்மிற் பெருமொழி கூறித் தம்மிற்",
+      "கையும் காலுந் தூக்கத் தூக்கும்",
+      "ஆடியல் பாவை போல",
+      "மேவன செய்யுந்தன் புதல்வன் றாய்க்கே."
+    ],
+    "readings": [],
+    "sourceId": "wikisource-kuruntokai",
+    "reviewStatus": "unreviewed",
+    "provenance": "Extracted from Tamil Wikisource by scripts/extract-wikisource.mjs; not yet compared with a print edition."
+  },
+  {
+    "id": "kuruntokai-9",
+    "workId": "kuruntokai",
+    "number": "9",
+    "tinai": null,
+    "turai": null,
+    "speaker": "தோழி கூற்று",
+    "poet": "கயமனார்",
+    "lines": [
+      "யாயா கியளே மாஅ யோளே",
+      "மடைமாண் செப்பிற் றமிய வைகிய",
+      "பெய்யாப் பூவின் மெய்சா யினளே",
+      "பாசடை நிவந்த கணைக்கா னெய்தல்",
+      "இனமீ னிருங்கழி யோத மல்குதொறும்",
+      "கயமூழ்கு மகளிர் கண்ணின் மானும்",
+      "தண்ணந் துறைவன் கொடுமை",
+      "நம்மு னாணிக் கரப்பா டும்மே."
+    ],
+    "readings": [],
+    "sourceId": "wikisource-kuruntokai",
+    "reviewStatus": "unreviewed",
+    "provenance": "Extracted from Tamil Wikisource by scripts/extract-wikisource.mjs; not yet compared with a print edition."
+  },
+  {
+    "id": "kuruntokai-10",
+    "workId": "kuruntokai",
+    "number": "10",
+    "tinai": null,
+    "turai": null,
+    "speaker": "தோழி கூற்று",
+    "poet": "ஓரம்போகியார்",
+    "lines": [
+      "யாயா கியளே விழவுமுத லாட்டி",
+      "பயறுபோ லிணர பைந்தாது படீஇயர்",
+      "உழவர் வாங்கிய கமழ்பூ மென்சினைக்",
+      "காஞ்சி யூரன் கொடுமை",
+      "கரந்தன ளாகலி னாணிய வருமே."
+    ],
+    "readings": [],
+    "sourceId": "wikisource-kuruntokai",
+    "reviewStatus": "unreviewed",
+    "provenance": "Extracted from Tamil Wikisource by scripts/extract-wikisource.mjs; not yet compared with a print edition."
+  },
+  {
+    "id": "kuruntokai-11",
+    "workId": "kuruntokai",
+    "number": "11",
+    "tinai": null,
+    "turai": null,
+    "speaker": "தலைவி கூற்று",
+    "poet": "மாமூலனார்",
+    "lines": [
+      "கோடீ ரிலங்கு வளை ஞெகிழ நாடொறும்",
+      "பாடில கலிழுங் கண்ணொடு புலம்பி",
+      "ஈங்கிவ ணுறைதலு முய்குவ மாங்கே",
+      "எழுவினி வாழியென் னெஞ்சே முனாது",
+      "குல்லைக் கண்ணி வடுகர் முனையது",
+      "பல்வேற் கட்டி நன்னாட் டும்பர்",
+      "மொழிபெயர் தேஎத்த ராயினும்",
+      "வழிபடல் சூழ்ந்திசி னவருடை நாட்டே."
+    ],
+    "readings": [],
+    "sourceId": "wikisource-kuruntokai",
+    "reviewStatus": "unreviewed",
+    "provenance": "Extracted from Tamil Wikisource by scripts/extract-wikisource.mjs; not yet compared with a print edition."
+  },
+  {
+    "id": "kuruntokai-12",
+    "workId": "kuruntokai",
+    "number": "12",
+    "tinai": "பாலை",
+    "turai": null,
+    "speaker": "தலைவி கூற்று",
+    "poet": "ஓதலாந்தையார்",
+    "lines": [
+      "எறும்பி யளையிற் குறும்பல் சுனைய",
+      "உலைக்க லன்ன பாறை யேறிக்",
+      "கொடுவி லெயினர் பகழி மாய்க்கும்",
+      "கவலைத் தென்பவவர் சென்ற வாறே",
+      "அதுமற் றவலங் கொள்ளாது",
+      "நொதுமற் கழறுமிவ் வழுங்க லூரே."
+    ],
+    "readings": [],
+    "sourceId": "wikisource-kuruntokai",
+    "reviewStatus": "unreviewed",
+    "provenance": "Extracted from Tamil Wikisource by scripts/extract-wikisource.mjs; not yet compared with a print edition."
+  },
+  {
+    "id": "kuruntokai-13",
+    "workId": "kuruntokai",
+    "number": "13",
+    "tinai": "குறிஞ்சி",
+    "turai": null,
+    "speaker": "தலைவி கூற்று",
+    "poet": "கபிலர்",
+    "lines": [
+      "மாசறக் கழீஇய யானை போலப்",
+      "பெரும்பெய லுழந்த விரும்பிணர்த் துறுகல்",
+      "பைத லொருகலை சேக்கு நாடன்",
+      "நோய்தந் தனனே தோழி",
+      "பசலை யார்ந்தநங் குவளையங் கண்ணே."
+    ],
+    "readings": [],
+    "sourceId": "wikisource-kuruntokai",
+    "reviewStatus": "unreviewed",
+    "provenance": "Extracted from Tamil Wikisource by scripts/extract-wikisource.mjs; not yet compared with a print edition."
+  },
+  {
+    "id": "kuruntokai-14",
+    "workId": "kuruntokai",
+    "number": "14",
+    "tinai": "குறிஞ்சி",
+    "turai": null,
+    "speaker": "தலைவன் கூற்று",
+    "poet": "தொல்கபிலர்",
+    "lines": [
+      "அமிழ்துபொதி செந்நா வஞ்ச வந்த",
+      "வார்ந்திலங்கு வையெயிற்றுச் சின்மொழி யரிவையைப்",
+      "பெறுகதில் லம்ம யானே பெற்றாங்",
+      "கறிகதில் லம்மவிவ் வூரே மறுகில்",
+      "நல்லோள் கணவ னிவனெனப்",
+      "பல்லோர் கூறயா நாணுகஞ் சிறிதே."
+    ],
+    "readings": [],
+    "sourceId": "wikisource-kuruntokai",
+    "reviewStatus": "unreviewed",
+    "provenance": "Extracted from Tamil Wikisource by scripts/extract-wikisource.mjs; not yet compared with a print edition."
+  },
+  {
+    "id": "kuruntokai-15",
+    "workId": "kuruntokai",
+    "number": "15",
+    "tinai": "பாலை",
+    "turai": null,
+    "speaker": "செவிலித்தாய் கூற்று",
+    "poet": "ஒளவையார்",
+    "lines": [
+      "பறைபடப் பணில மார்ப்ப விறைகொள்பு",
+      "தொன்மூ தாலத்துப் பொதியிற் றோன்றிய",
+      "நாலூர்க் கோசர் நன்மொழி போல",
+      "வாயா கின்றே தோழி யாய்கழற்",
+      "சேயிலை வெள்வேல் விடலையொடு",
+      "தொகுவளை முன்கை மடந்தை நட்பே."
+    ],
+    "readings": [],
+    "sourceId": "wikisource-kuruntokai",
+    "reviewStatus": "unreviewed",
+    "provenance": "Extracted from Tamil Wikisource by scripts/extract-wikisource.mjs; not yet compared with a print edition."
+  },
+  {
+    "id": "kuruntokai-16",
+    "workId": "kuruntokai",
+    "number": "16",
+    "tinai": "பாலை",
+    "turai": null,
+    "speaker": "தோழி கூற்று",
+    "poet": "பாலைபாடிய பெருங்கடுங்கோ",
+    "lines": [
+      "உள்ளார் கொல்லோ தோழி கள்வர்தம்",
+      "பொன்புனை பகழி செப்பங் கொண்மார்",
+      "உகிர்நுதி புரட்டு மோசை போலச்",
+      "செங்காற் பல்லி தன்றுணை பயிரும்",
+      "அங்காற் கள்ளியங் காடிறந் தோரே."
+    ],
+    "readings": [
+      {
+        "line": 1,
+        "note": "கள்வர் என்பதற்கு வேறு பாடம் கானவர்"
+      }
+    ],
+    "sourceId": "wikisource-kuruntokai",
+    "reviewStatus": "unreviewed",
+    "provenance": "Extracted from Tamil Wikisource by scripts/extract-wikisource.mjs; not yet compared with a print edition."
+  },
+  {
+    "id": "kuruntokai-17",
+    "workId": "kuruntokai",
+    "number": "17",
+    "tinai": "பாலை",
+    "turai": null,
+    "speaker": "தலைவன் கூற்று",
+    "poet": "பேரெயின் முறுவலார்",
+    "lines": [
+      "மாவென மடலு மூர்ப பூவெனக்",
+      "குவிமுகி ழெருக்கங் கண்ணியுஞ் சூடுப",
+      "மறுகி னார்க்கவும் படுப",
+      "பிறிது மாகுப காமங்காழ்க் கொளினே."
+    ],
+    "readings": [],
+    "sourceId": "wikisource-kuruntokai",
+    "reviewStatus": "unreviewed",
+    "provenance": "Extracted from Tamil Wikisource by scripts/extract-wikisource.mjs; not yet compared with a print edition."
+  },
+  {
+    "id": "kuruntokai-18",
+    "workId": "kuruntokai",
+    "number": "18",
+    "tinai": "குறிஞ்சி",
+    "turai": null,
+    "speaker": "தோழி கூற்று",
+    "poet": "கபிலர்",
+    "lines": [
+      "வேரல்வேலி வேர்க்கோட் பலவின்",
+      "சார னாட செவ்வியை யாகுமதி",
+      "யாரஃ தறிந்திசி னோரே சாரற்",
+      "சிறுகோட்டுப் பெரும்பழந் தூங்கி யாங்கிவள்",
+      "உயிர்தவச் சிறிதே காமமோ பெரிதே."
+    ],
+    "readings": [],
+    "sourceId": "wikisource-kuruntokai",
+    "reviewStatus": "unreviewed",
+    "provenance": "Extracted from Tamil Wikisource by scripts/extract-wikisource.mjs; not yet compared with a print edition."
+  },
+  {
+    "id": "kuruntokai-19",
+    "workId": "kuruntokai",
+    "number": "19",
+    "tinai": "மருதம்",
+    "turai": null,
+    "speaker": "தலைவன் கூற்று",
+    "poet": "பரணர்",
+    "lines": [
+      "எவ்வி யிழந்த வறுமையாழ்ப் பாணர்",
+      "பூவில் வறுந்தலை போலப் புல்லென்",
+      "றினைமதி வாழிய நெஞ்சே மனைமரத்",
+      "தெல்லுறு மௌவ னாறும்",
+      "பல்லிருங்கூந்தல் யாரளோ நமக்கே."
+    ],
+    "readings": [
+      {
+        "line": 1,
+        "note": "வறுமையர் பாணர்"
+      }
+    ],
+    "sourceId": "wikisource-kuruntokai",
+    "reviewStatus": "unreviewed",
+    "provenance": "Extracted from Tamil Wikisource by scripts/extract-wikisource.mjs; not yet compared with a print edition."
+  },
+  {
+    "id": "kuruntokai-20",
+    "workId": "kuruntokai",
+    "number": "20",
+    "tinai": "பாலை",
+    "turai": null,
+    "speaker": "தலைவி கூற்று",
+    "poet": "கோப்பெருஞ்சோழன்",
+    "lines": [
+      "அருளு மன்பு நீக்கித் துணைதுறந்து",
+      "பொருள்வயிற் பிரிவோ ருரவோ ராயின்",
+      "உரவோ ருரவோ ராக",
+      "மடவ மாக மடந்தை நாமே."
+    ],
+    "readings": [],
+    "sourceId": "wikisource-kuruntokai",
+    "reviewStatus": "unreviewed",
+    "provenance": "Extracted from Tamil Wikisource by scripts/extract-wikisource.mjs; not yet compared with a print edition."
+  },
+  {
+    "id": "kuruntokai-21",
+    "workId": "kuruntokai",
+    "number": "21",
+    "tinai": "முல்லை",
+    "turai": null,
+    "speaker": "தலைவி கூற்று",
+    "poet": "ஓதலாந்தையார்",
+    "lines": [
+      "வண்டுபடத் ததைந்த கொடியிண ரிடையிடுபு",
+      "பொன்செய் புனையிழை கட்டிய மகளிர்",
+      "கதுப்பிற் றோன்றும் புதுப்பூங் கொன்றைக்",
+      "கானங் காரெனக் கூறினும்",
+      "யானோ தேறேனவர் பொய்வழங் கலரே."
+    ],
+    "readings": [],
+    "sourceId": "wikisource-kuruntokai",
+    "reviewStatus": "unreviewed",
+    "provenance": "Extracted from Tamil Wikisource by scripts/extract-wikisource.mjs; not yet compared with a print edition."
+  },
+  {
+    "id": "kuruntokai-22",
+    "workId": "kuruntokai",
+    "number": "22",
+    "tinai": "பாலை",
+    "turai": null,
+    "speaker": "தோழி கூற்று",
+    "poet": "சேரமானெந்தை",
+    "lines": [
+      "நீர்வார் கண்ணை நீயிவ ணொழிய",
+      "யாரோ பிரிகிற் பவரே சாரற்",
+      "சிலம்பணி கொண்ட வலஞ்சுரி மராஅத்து",
+      "வேனி லஞ்சினை கமழும்",
+      "தேமூ ரொண்ணுத னின்னொடுஞ் செலவே."
+    ],
+    "readings": [],
+    "sourceId": "wikisource-kuruntokai",
+    "reviewStatus": "unreviewed",
+    "provenance": "Extracted from Tamil Wikisource by scripts/extract-wikisource.mjs; not yet compared with a print edition."
+  },
+  {
+    "id": "kuruntokai-23",
+    "workId": "kuruntokai",
+    "number": "23",
+    "tinai": "குறிஞ்சி",
+    "turai": null,
+    "speaker": "தோழி கூற்று",
+    "poet": "ஒளவையார்",
+    "lines": [
+      "அகவன் மகளே அகவன் மகளே",
+      "மனவுக்கோப் பன்ன நன்னெடுங் கூந்தல்",
+      "அகவன் மகளே பாடுக பாட்டே",
+      "இன்னும் பாடுக பாட்டே அவர்",
+      "நன்னெடுங் குன்றம் பாடிய பாட்டே."
+    ],
+    "readings": [],
+    "sourceId": "wikisource-kuruntokai",
+    "reviewStatus": "unreviewed",
+    "provenance": "Extracted from Tamil Wikisource by scripts/extract-wikisource.mjs; not yet compared with a print edition."
+  },
+  {
+    "id": "kuruntokai-24",
+    "workId": "kuruntokai",
+    "number": "24",
+    "tinai": "முல்லை",
+    "turai": null,
+    "speaker": "தலைவி கூற்று",
+    "poet": "பரணர்",
+    "lines": [
+      "கருங்கால் வேம்பி னொண்பூ யாணர்",
+      "என்னை யின்றியுங் கழிவது கொல்லோ",
+      "ஆற்றய லெழுந்த வெண்கோட் டதவத்",
+      "தெழுகுளிறு மிதித்த வொருபழம் போலக்",
+      "குழையக் கொடியோர் நாவே",
+      "காதல ரகலக் கல்லென் றவ்வே."
+    ],
+    "readings": [],
+    "sourceId": "wikisource-kuruntokai",
+    "reviewStatus": "unreviewed",
+    "provenance": "Extracted from Tamil Wikisource by scripts/extract-wikisource.mjs; not yet compared with a print edition."
+  },
+  {
+    "id": "kuruntokai-25",
+    "workId": "kuruntokai",
+    "number": "25",
+    "tinai": "குறிஞ்சி",
+    "turai": null,
+    "speaker": "தலைவி கூற்று",
+    "poet": "கபிலர்",
+    "lines": [
+      "யாரு மில்லைத் தானே கள்வன்",
+      "தானது பொய்ப்பின் யானெவன் செய்கோ",
+      "தினைத்தா ளன்ன சிறுபசுங் கால",
+      "ஒழுகுநீ ராரல் பார்க்கும்",
+      "குருகு முண்டுதான் மணந்த ஞான்றே."
+    ],
+    "readings": [],
+    "sourceId": "wikisource-kuruntokai",
+    "reviewStatus": "unreviewed",
+    "provenance": "Extracted from Tamil Wikisource by scripts/extract-wikisource.mjs; not yet compared with a print edition."
+  },
+  {
+    "id": "kuruntokai-26",
+    "workId": "kuruntokai",
+    "number": "26",
+    "tinai": "குறிஞ்சி",
+    "turai": null,
+    "speaker": "தோழி கூற்று",
+    "poet": "கொல்லன் அழிசி",
+    "lines": [
+      "அரும்பற மலர்ந்த கருங்கால் வேங்கை",
+      "மேக்கெழு பெருஞ்சினை யிருந்த தோகை",
+      "பூக்கொய் மகளிரிற் றோன்று நாடன்",
+      "தகாஅன் போலத் தான்றீது மொழியினும்",
+      "தன்கண் கண்டது பொய்க்குவ தன்றே",
+      "தேக்கொக் கருந்து முள்ளெயிற்றுத் துவர்வாய்",
+      "வரையாடு வன்பறழ்த் தந்தைக்",
+      "கடுவனு மறியுமக் கொடியோனையே."
+    ],
+    "readings": [],
+    "sourceId": "wikisource-kuruntokai",
+    "reviewStatus": "unreviewed",
+    "provenance": "Extracted from Tamil Wikisource by scripts/extract-wikisource.mjs; not yet compared with a print edition."
+  },
+  {
+    "id": "kuruntokai-27",
+    "workId": "kuruntokai",
+    "number": "27",
+    "tinai": "பாலை",
+    "turai": null,
+    "speaker": "தலைவி கூற்று",
+    "poet": "வெள்ளி வீதியார்",
+    "lines": [
+      "கன்று முண்ணாது கலத்தினும் படாது",
+      "நல்லான் றீம்பா னிலத்துக் காஅங்",
+      "கெனக்கு மாகா தென்னைக்கு முதவாது",
+      "பசலை யுணீஇயர் வேண்டும்",
+      "திதலை யல்குலென் மாமைக் கவினே."
+    ],
+    "readings": [],
+    "sourceId": "wikisource-kuruntokai",
+    "reviewStatus": "unreviewed",
+    "provenance": "Extracted from Tamil Wikisource by scripts/extract-wikisource.mjs; not yet compared with a print edition."
+  },
+  {
+    "id": "kuruntokai-28",
+    "workId": "kuruntokai",
+    "number": "28",
+    "tinai": "பாலை",
+    "turai": null,
+    "speaker": "தலைவி கூற்று",
+    "poet": "ஒளவையார்",
+    "lines": [
+      "முட்டு வேன்கொ றாக்கு வேன்கொல்",
+      "ஓரேன் யானுமோர் பெற்றி மேலிட்",
+      "டாஅ வொல்லெனக் கூவு வேன்கொல்",
+      "அலமர லசைவளி யலைப்பவென்",
+      "உயவுநோ யறியாது துஞ்சு மூர்க்கே."
+    ],
+    "readings": [],
+    "sourceId": "wikisource-kuruntokai",
+    "reviewStatus": "unreviewed",
+    "provenance": "Extracted from Tamil Wikisource by scripts/extract-wikisource.mjs; not yet compared with a print edition."
+  },
+  {
+    "id": "kuruntokai-29",
+    "workId": "kuruntokai",
+    "number": "29",
+    "tinai": "குறிஞ்சி",
+    "turai": null,
+    "speaker": "தலைவன் கூற்று",
+    "poet": "ஒளவையார்",
+    "lines": [
+      "நல்லுரை யிகந்து புல்லுரைத் தாஅய்ப்",
+      "பெயனீர்க் கேற்ற பசுங்கலம் போல",
+      "உள்ளந் தாங்கா வெள்ள நீந்தி",
+      "அரிதவா வுற்றனை நெஞ்சே நன்றும்",
+      "பெரிதா லம்மநின் பூச லுயர்கோட்டு",
+      "மகவுடை மந்தி போல",
+      "அகனுறத் தழீஇக் கேட்குநர்ப் பெறினே."
+    ],
+    "readings": [],
+    "sourceId": "wikisource-kuruntokai",
+    "reviewStatus": "unreviewed",
+    "provenance": "Extracted from Tamil Wikisource by scripts/extract-wikisource.mjs; not yet compared with a print edition."
+  },
+  {
+    "id": "kuruntokai-30",
+    "workId": "kuruntokai",
+    "number": "30",
+    "tinai": "பாலை",
+    "turai": null,
+    "speaker": "தலைவி கூற்று",
+    "poet": "கச்சிப்பேட்டு நன்னாகையார்",
+    "lines": [
+      "கேட்டிசின் வாழி தோழி யல்கற்",
+      "பொய்வ லாளன் மெய்யுற மரீஇ",
+      "வாய்த்தகைப் பொய்க்கனா மருட்ட வேற்றெழுந்",
+      "தமளி தைவந் தனனே குவளை",
+      "வண்டுபடு மலரிற் சாஅய்த்",
+      "தமியேன் மன்ற வளியேன் யானே."
+    ],
+    "readings": [],
+    "sourceId": "wikisource-kuruntokai",
+    "reviewStatus": "unreviewed",
+    "provenance": "Extracted from Tamil Wikisource by scripts/extract-wikisource.mjs; not yet compared with a print edition."
+  },
+  {
+    "id": "kuruntokai-31",
+    "workId": "kuruntokai",
+    "number": "31",
+    "tinai": "மருதம்",
+    "turai": null,
+    "speaker": "தலைவி கூற்று",
+    "poet": "ஆதிமந்தியார்",
+    "lines": [
+      "மள்ளர் குழீஇய விழவி னானும்",
+      "மகளிர் தழீஇய துணங்கை யானும்",
+      "யாண்டுங் காணேன் மாண்டக் கோனை",
+      "யானுமோ ராடுகள மகளே யென்கைக்",
+      "கோடீ ரிலங்குவளை நெகிழ்த்த",
+      "பீடுகெழு குரிசிலுமோ ராடுகள மகனே."
+    ],
+    "readings": [],
+    "sourceId": "wikisource-kuruntokai",
+    "reviewStatus": "unreviewed",
+    "provenance": "Extracted from Tamil Wikisource by scripts/extract-wikisource.mjs; not yet compared with a print edition."
+  },
+  {
+    "id": "kuruntokai-32",
+    "workId": "kuruntokai",
+    "number": "32",
+    "tinai": "குறிஞ்சி",
+    "turai": null,
+    "speaker": "தலைவன் கூற்று",
+    "poet": "அள்ளூர் நன்முல்லையார்",
+    "lines": [
+      "காலையும் பகலுங் கையறு மாலையும்",
+      "ஊர்துஞ் சியாமமும் விடியலு மென்றிப்",
+      "பொழுதிடை தெரியிற் பொய்யே காமம்",
+      "மாவென மடலொடு மறுகிற் றோன்றித்",
+      "தெற்றெனத் தூற்றலும் பழியே",
+      "வாழ்தலும் பழியே பிரிவுதலை வரினே."
+    ],
+    "readings": [],
+    "sourceId": "wikisource-kuruntokai",
+    "reviewStatus": "unreviewed",
+    "provenance": "Extracted from Tamil Wikisource by scripts/extract-wikisource.mjs; not yet compared with a print edition."
+  },
+  {
+    "id": "kuruntokai-33",
+    "workId": "kuruntokai",
+    "number": "33",
+    "tinai": "மருதம்",
+    "turai": null,
+    "speaker": "தலைவி கூற்று",
+    "poet": "படுமரத்து மோசிகீரன்",
+    "lines": [
+      "அன்னா யிவனோ ரிளமா ணாக்கன்",
+      "தன்னூர் மன்றத் தென்னன் கொல்லோ",
+      "இரந்தூ ணிரம்பா மேனியொடு",
+      "விருந்தி னூரும் பெருஞ்செம் மலனே."
+    ],
+    "readings": [],
+    "sourceId": "wikisource-kuruntokai",
+    "reviewStatus": "unreviewed",
+    "provenance": "Extracted from Tamil Wikisource by scripts/extract-wikisource.mjs; not yet compared with a print edition."
+  },
+  {
+    "id": "kuruntokai-34",
+    "workId": "kuruntokai",
+    "number": "34",
+    "tinai": "மருதம்",
+    "turai": null,
+    "speaker": "தோழி கூற்று",
+    "poet": "கொல்லிக் கண்ணன்",
+    "lines": [
+      "ஒறுப்ப வோவலர் மறுப்பத் தேறலர்",
+      "தமிய ருறங்குங் கௌவை யின்றாய்",
+      "இனியது கேட்டின் புறுகவிவ் வூரே",
+      "முனாஅ, தியானையங் குருகின் கானலம் பெருந்தோ",
+      "டட்ட மள்ள ரார்ப்பிசை வெரூஉம்",
+      "குட்டுவன் மரந்தை யன்னவெம்",
+      "குழல்விளங் காய்நுதற் கிழவனு மவனே."
+    ],
+    "readings": [],
+    "sourceId": "wikisource-kuruntokai",
+    "reviewStatus": "unreviewed",
+    "provenance": "Extracted from Tamil Wikisource by scripts/extract-wikisource.mjs; not yet compared with a print edition."
+  },
+  {
+    "id": "kuruntokai-35",
+    "workId": "kuruntokai",
+    "number": "35",
+    "tinai": null,
+    "turai": null,
+    "speaker": "தலைவி கூற்று",
+    "poet": "கிழார்க்கீரன் எயிற்றியார்",
+    "lines": [
+      "நாணில மன்றவெங் கண்ணே நாணேர்பு",
+      "சினைப்பசும் பாம்பின் சூன்முதிர்ப் பன்ன",
+      "கனைத்த கரும்பின் கூம்புபொதி யவிழ",
+      "நுண்ணுறை யழிதுளி தலைஇ",
+      "தண்வரல் வாடையும் பிரிந்திசினோர்க் கழலே."
+    ],
+    "readings": [],
+    "sourceId": "wikisource-kuruntokai",
+    "reviewStatus": "unreviewed",
+    "provenance": "Extracted from Tamil Wikisource by scripts/extract-wikisource.mjs; not yet compared with a print edition."
+  },
+  {
+    "id": "kuruntokai-36",
+    "workId": "kuruntokai",
+    "number": "36",
+    "tinai": null,
+    "turai": null,
+    "speaker": "தலைவி கூற்று",
+    "poet": "பரணர்",
+    "lines": [
+      "துறுக லயலது மாணை மாக்கொடி",
+      "துஞ்சுகளி றிவருங் குன்ற நாடன்",
+      "நெஞ்சுகள னாக நீயலென் யானென",
+      "நற்றோண் மணந்த ஞான்றை மற்றவன்",
+      "தாவா வஞ்சின முரைத்தது",
+      "நோயோ தோழி நின்வயி னானே."
+    ],
+    "readings": [],
+    "sourceId": "wikisource-kuruntokai",
+    "reviewStatus": "unreviewed",
+    "provenance": "Extracted from Tamil Wikisource by scripts/extract-wikisource.mjs; not yet compared with a print edition."
+  },
+  {
+    "id": "kuruntokai-37",
+    "workId": "kuruntokai",
+    "number": "37",
+    "tinai": "பாலை",
+    "turai": null,
+    "speaker": "தோழி கூற்று",
+    "poet": "பாலைபாடிய பெருங்கடுங்கோ",
+    "lines": [
+      "நசைபெரி துடையர் நல்கலு நல்குவர்",
+      "பிடிபசி களைஇய பெருங்கை வேழம்",
+      "மென்சினை யாஅம் பொளிக்கும்",
+      "அன்பின தோழியவர் சென்ற வாறே."
+    ],
+    "readings": [],
+    "sourceId": "wikisource-kuruntokai",
+    "reviewStatus": "unreviewed",
+    "provenance": "Extracted from Tamil Wikisource by scripts/extract-wikisource.mjs; not yet compared with a print edition."
+  },
+  {
+    "id": "kuruntokai-38",
+    "workId": "kuruntokai",
+    "number": "38",
+    "tinai": "குறிஞ்சி",
+    "turai": null,
+    "speaker": "தலைவி கூற்று",
+    "poet": "கபிலர்",
+    "lines": [
+      "கான மஞ்ஞை யறையீன் முட்டை",
+      "வெயிலாடு முசுவின் குருளை யுருட்டும்",
+      "குன்ற நாடன் கேண்மை யென்றும்",
+      "நன்றுமன் வாழி தோழி யுண்கண்",
+      "நீரொ டொராங்குத் தணப்ப",
+      "உள்ளா தாற்றல் வல்லு வோர்க்கே."
+    ],
+    "readings": [
+      {
+        "line": 6,
+        "note": "உள்ளாது அகறல் - என்பதும் ஓர் பாடம்"
+      }
+    ],
+    "sourceId": "wikisource-kuruntokai",
+    "reviewStatus": "unreviewed",
+    "provenance": "Extracted from Tamil Wikisource by scripts/extract-wikisource.mjs; not yet compared with a print edition."
+  },
+  {
+    "id": "kuruntokai-39",
+    "workId": "kuruntokai",
+    "number": "39",
+    "tinai": "பாலை",
+    "turai": null,
+    "speaker": "தலைவி கூற்று",
+    "poet": "ஔவையார்",
+    "lines": [
+      "வெந்திறற் கடுவளி பொங்கர்ப் போந்தென",
+      "நெற்றுவிளை யுழிஞ்சில் வற்ற லார்க்கும்",
+      "மலையுடை யருஞ்சுர மென்பநம்",
+      "முலையிடை முனிநர் சென்ற வாறே."
+    ],
+    "readings": [],
+    "sourceId": "wikisource-kuruntokai",
+    "reviewStatus": "unreviewed",
+    "provenance": "Extracted from Tamil Wikisource by scripts/extract-wikisource.mjs; not yet compared with a print edition."
+  },
+  {
+    "id": "kuruntokai-40",
+    "workId": "kuruntokai",
+    "number": "40",
+    "tinai": "குறிஞ்சி",
+    "turai": null,
+    "speaker": "தலைவன் கூற்று",
+    "poet": "செம்புலப் பெயனீரார்",
+    "lines": [
+      "யாயு ஞாயும் யாரா கியரோ",
+      "எந்தையு நுந்தையு மெம்முறைக் கேளிர்",
+      "யானு நீயு மெவ்வழி யறிதும்",
+      "செம்புலப் பெயனீர் போல",
+      "அன்புடை நெஞ்சந் தாங்கலந் தனவே."
+    ],
+    "readings": [],
+    "sourceId": "wikisource-kuruntokai",
+    "reviewStatus": "unreviewed",
+    "provenance": "Extracted from Tamil Wikisource by scripts/extract-wikisource.mjs; not yet compared with a print edition."
+  }
+]

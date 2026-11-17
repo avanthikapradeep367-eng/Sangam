@@ -1,0 +1,13 @@
+[
+  { "id": "landscape", "label": "நிலமும் இயற்கையும்" },
+  { "id": "plants", "label": "தாவரங்கள்" },
+  { "id": "animals", "label": "விலங்குகள்" },
+  { "id": "birds", "label": "பறவைகள்" },
+  { "id": "people", "label": "மக்களும் உறவும்" },
+  { "id": "daily-life", "label": "அன்றாட வாழ்வு" },
+  { "id": "music", "label": "இசைக் கருவிகள்" },
+  { "id": "emotion", "label": "உணர்வுகள்" },
+  { "id": "poetics", "label": "இலக்கிய மரபு" },
+  { "id": "time", "label": "காலமும் பொழுதும்" },
+  { "id": "body", "label": "உடலும் அணியும்" }
+]

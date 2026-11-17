@@ -1,0 +1,72 @@
+[
+  {
+    "id": "kuruntokai",
+    "title": "குறுந்தொகை",
+    "transliteration": "Kuṟuntokai",
+    "type": "அகம்",
+    "poemCount": 401,
+    "description": "நான்கு முதல் எட்டு அடிகள் கொண்ட சிறிய அகப்பாடல்களின் தொகுப்பு; கடவுள் வாழ்த்துடன் 401 பாடல்கள். எட்டுத்தொகை நூல்களுள் ஒன்று.",
+    "englishDescription": "An anthology of short akam (love) poems of four to eight lines; 401 poems including the invocation. One of the Eight Anthologies.",
+    "sourceId": "wikisource-kuruntokai"
+  },
+  {
+    "id": "purananuru",
+    "title": "புறநானூறு",
+    "transliteration": "Puṟanāṉūṟu",
+    "type": "புறம்",
+    "poemCount": 400,
+    "description": "போர், கொடை, அரசர், சான்றோர், வாழ்வின் நிலையாமை முதலியவற்றைப் பாடும் நானூறு புறப்பாடல்களின் தொகுப்பு.",
+    "englishDescription": "An anthology of 400 puram poems on war, patronage, kings, the wise, and the impermanence of life.",
+    "sourceId": "wikisource-purananuru"
+  },
+  {
+    "id": "narrinai",
+    "title": "நற்றிணை",
+    "transliteration": "Naṟṟiṇai",
+    "type": "அகம்",
+    "poemCount": 400,
+    "description": "ஒன்பது முதல் பன்னிரண்டு அடிகள் கொண்ட நானூறு அகப்பாடல்களின் தொகுப்பு.",
+    "englishDescription": "An anthology of 400 akam poems of nine to twelve lines.",
+    "sourceId": null
+  },
+  {
+    "id": "akananuru",
+    "title": "அகநானூறு",
+    "transliteration": "Akanāṉūṟu",
+    "type": "அகம்",
+    "poemCount": 400,
+    "description": "நீண்ட அகப்பாடல்களின் தொகுப்பு; நானூறு பாடல்கள்.",
+    "englishDescription": "An anthology of 400 longer akam poems.",
+    "sourceId": null
+  },
+  {
+    "id": "ainkurunuru",
+    "title": "ஐங்குறுநூறு",
+    "transliteration": "Aiṅkuṟunūṟu",
+    "type": "அகம்",
+    "poemCount": 500,
+    "description": "ஐந்து திணைகளுக்கும் தலா நூறு என ஐந்நூறு சிறிய அகப்பாடல்களின் தொகுப்பு.",
+    "englishDescription": "Five hundred very short akam poems, one hundred for each tiṇai.",
+    "sourceId": null
+  },
+  {
+    "id": "patirruppattu",
+    "title": "பதிற்றுப்பத்து",
+    "transliteration": "Patiṟṟuppattu",
+    "type": "புறம்",
+    "poemCount": 80,
+    "description": "சேர மன்னர்களைப் பாடும் பத்துப் பத்துப் பாடல்களின் தொகுப்பு; முதல் பத்தும் இறுதிப் பத்தும் கிடைக்கவில்லை; இன்று கிடைப்பவை 80 பாடல்கள்.",
+    "englishDescription": "Decades of poems on the Chera kings; the first and last decades are lost, leaving 80 poems.",
+    "sourceId": null
+  },
+  {
+    "id": "tolkappiyam",
+    "title": "தொல்காப்பியம்",
+    "transliteration": "Tolkāppiyam",
+    "type": "இலக்கணம்",
+    "poemCount": null,
+    "description": "எழுத்து, சொல், பொருள் என்னும் மூன்று அதிகாரங்களைக் கொண்ட பழந்தமிழ் இலக்கண நூல்.",
+    "englishDescription": "The early Tamil grammar in three books: phonology, morphology, and poetics.",
+    "sourceId": null
+  }
+]
