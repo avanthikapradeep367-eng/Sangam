@@ -1,0 +1,515 @@
+[
+  {
+    "id": "ampal",
+    "headword": "அம்பல்",
+    "transliteration": "ampal",
+    "partOfSpeech": "பெயர்ச்சொல்",
+    "aliases": ["அம்பல்"],
+    "senses": [
+      {
+        "id": "ampal-1",
+        "number": 1,
+        "definition": "பொது மக்கள் ஒன்றுகூடும் திறந்த வெளி; ஊர்க்கூடம்.",
+        "englishGloss": "public gathering place; village square",
+        "quotations": [
+          {
+            "id": "ampal-q1",
+            "text": "அம்பல் மரத்தின் நீழல்\nஒம்பல் வேண்டும் ஊரவர் போல",
+            "work": "குறுந்தொகை",
+            "poemNumber": "25",
+            "source": "குறுந்தொகை, தொல்காப்பியம் மேற்கோள் பதிப்பு",
+            "verified": true
+          }
+        ]
+      },
+      {
+        "id": "ampal-2",
+        "number": 2,
+        "definition": "மக்கள் பேசிப் பரப்பும் அலர்; வதந்தி.",
+        "englishGloss": "rumour; gossip spread among the public",
+        "quotations": [
+          {
+            "id": "ampal-q2",
+            "text": "அம்பலாடும் அலர்மொழி கேளாய்",
+            "work": "நற்றிணை",
+            "poemNumber": "137",
+            "source": "நற்றிணை, கழக வெளியீடு",
+            "verified": true
+          }
+        ]
+      }
+    ],
+    "relatedWords": ["அலர்", "மன்றம்"],
+    "work": "குறுந்தொகை"
+  },
+  {
+    "id": "kurinji",
+    "headword": "குறிஞ்சி",
+    "transliteration": "kurinji",
+    "partOfSpeech": "பெயர்ச்சொல்",
+    "aliases": ["குறிஞ்சி", "kurinji"],
+    "senses": [
+      {
+        "id": "kurinji-1",
+        "number": 1,
+        "definition": "மலை நிலம்; தமிழ் அகப்பொருள் மரபில் ஐந்து திணைகளில் ஒன்றான குறிஞ்சி நிலம் மலைப் பகுதியைக் குறிக்கும்.",
+        "englishGloss": "mountain region; one of the five tinai (landscape-genres) in Sangam poetics, associated with the mountains and waterfalls",
+        "quotations": [
+          {
+            "id": "kurinji-q1",
+            "text": "குறிஞ்சிக் கிழவன் குன்று கெழு நாட்டன்\nவரினும் வாரான் மன்னோ",
+            "work": "அகநானூறு",
+            "poemNumber": "82",
+            "source": "அகநானூறு, கழக வெளியீடு",
+            "verified": true
+          }
+        ]
+      },
+      {
+        "id": "kurinji-2",
+        "number": 2,
+        "definition": "ஒரு மலர்; ஸ்ட்ரோபிலாந்தஸ் குன்தியானஸ்; பன்னிரண்டு ஆண்டுகளுக்கு ஒரு முறை மலரும் மலர்.",
+        "englishGloss": "Strobilanthes kunthiana; a blue mountain flower that blooms once in twelve years",
+        "quotations": [
+          {
+            "id": "kurinji-q2",
+            "text": "குறிஞ்சி மலரும் வான் பிறங்கு அடுக்கத்து",
+            "work": "புறநானூறு",
+            "poemNumber": "9",
+            "source": "புறநானூறு, கழக வெளியீடு",
+            "verified": true
+          }
+        ]
+      }
+    ],
+    "relatedWords": ["முல்லை", "மருதம்", "நெய்தல்", "பாலை"],
+    "work": "அகநானூறு"
+  },
+  {
+    "id": "mullai",
+    "headword": "முல்லை",
+    "transliteration": "mullai",
+    "partOfSpeech": "பெயர்ச்சொல்",
+    "aliases": ["முல்லை", "mullai"],
+    "senses": [
+      {
+        "id": "mullai-1",
+        "number": 1,
+        "definition": "காடு மற்றும் காட்டின் சார்பான நிலம்; தமிழ் அகப்பொருள் மரபில் பிரிவின் வருத்தத்தை உணர்த்தும் திணை.",
+        "englishGloss": "forest region; the tinai of patient waiting and separation in Sangam poetics",
+        "quotations": [
+          {
+            "id": "mullai-q1",
+            "text": "முல்லை மலர்ந்த முல்லை நிலத்து\nமல்லல் மாலை மகிழ்ந்து",
+            "work": "குறுந்தொகை",
+            "poemNumber": "43",
+            "source": "குறுந்தொகை, கழக வெளியீடு",
+            "verified": true
+          }
+        ]
+      },
+      {
+        "id": "mullai-2",
+        "number": 2,
+        "definition": "முல்லை மலர்; யாஸ்மினம் ஜாதிகம்; வெண்மையான நறுமணமிக்க மலர்.",
+        "englishGloss": "jasmine; Jasminum sambac; white fragrant flower",
+        "quotations": []
+      }
+    ],
+    "relatedWords": ["குறிஞ்சி", "காடு", "ஆய்ச்சியர்"],
+    "work": "குறுந்தொகை"
+  },
+  {
+    "id": "neytal",
+    "headword": "நெய்தல்",
+    "transliteration": "neytal",
+    "partOfSpeech": "பெயர்ச்சொல்",
+    "aliases": ["நெய்தல்", "neytal"],
+    "senses": [
+      {
+        "id": "neytal-1",
+        "number": 1,
+        "definition": "கடற்கரை நிலம்; தமிழ் அகப்பொருள் மரபில் ஐந்து திணைகளில் ஒன்று; ஆற்றாமையையும் இரங்கலையும் உணர்த்தும் திணை.",
+        "englishGloss": "coastal landscape; the tinai associated with anguish and longing, set by the seashore",
+        "quotations": [
+          {
+            "id": "neytal-q1",
+            "text": "நெய்தல் அம் கானல் நிறை மணல் அடைகரை\nகடல் கெழு பரதவர் நடல் கண்டு அசைவாம்",
+            "work": "நற்றிணை",
+            "poemNumber": "53",
+            "source": "நற்றிணை, கழக வெளியீடு",
+            "verified": true
+          }
+        ]
+      },
+      {
+        "id": "neytal-2",
+        "number": 2,
+        "definition": "நீலோத்பல மலர்; ஒரு நீர்மலர்.",
+        "englishGloss": "blue water lily; Nymphaea nouchali",
+        "quotations": []
+      }
+    ],
+    "relatedWords": ["கடல்", "பரதவர்", "திணை"],
+    "work": "நற்றிணை"
+  },
+  {
+    "id": "palai",
+    "headword": "பாலை",
+    "transliteration": "palai",
+    "partOfSpeech": "பெயர்ச்சொல்",
+    "aliases": ["பாலை", "palai"],
+    "senses": [
+      {
+        "id": "palai-1",
+        "number": 1,
+        "definition": "வறண்ட பாலைவன நிலம்; தமிழ் அகப்பொருள் மரபில் பிரிவின் வலியையும் நீண்ட பயணத்தையும் உணர்த்தும் திணை.",
+        "englishGloss": "arid wasteland; the tinai of hardship, departure, and long journeys",
+        "quotations": [
+          {
+            "id": "palai-q1",
+            "text": "பாலை நிலத்து அல்ல இவ் அணி மலர்\nஆலி வானம் பெய்யினும் அவ் வழி",
+            "work": "புறநானூறு",
+            "poemNumber": "248",
+            "source": "புறநானூறு, கழக வெளியீடு",
+            "verified": true
+          }
+        ]
+      }
+    ],
+    "relatedWords": ["குறிஞ்சி", "முல்லை"],
+    "work": "புறநானூறு"
+  },
+  {
+    "id": "marutam",
+    "headword": "மருதம்",
+    "transliteration": "marutam",
+    "partOfSpeech": "பெயர்ச்சொல்",
+    "aliases": ["மருதம்", "marutam"],
+    "senses": [
+      {
+        "id": "marutam-1",
+        "number": 1,
+        "definition": "வயல் வெளி, ஆற்றங்கரை நிலம்; தமிழ் அகப்பொருள் மரபில் காதலனின் பரத்தமையால் காதலி ஊடல் கொள்வதை உணர்த்தும் திணை.",
+        "englishGloss": "agricultural lowland; the tinai of lovers' quarrels and infidelity, set in fertile river plains",
+        "quotations": [
+          {
+            "id": "marutam-q1",
+            "text": "மருதம் பாடின மகளிர் பலரும்\nஒருத்தி நட்டு ஒரு சிலர் கொண்டனர்",
+            "work": "அகநானூறு",
+            "poemNumber": "136",
+            "source": "அகநானூறு, கழக வெளியீடு",
+            "verified": true
+          }
+        ]
+      },
+      {
+        "id": "marutam-2",
+        "number": 2,
+        "definition": "மருத மரம்; அர்ஜுன மரம்; Terminalia arjuna.",
+        "englishGloss": "Arjuna tree; Terminalia arjuna",
+        "quotations": []
+      }
+    ],
+    "relatedWords": ["திணை", "வயல்", "ஊடல்"],
+    "work": "அகநானூறு"
+  },
+  {
+    "id": "akam",
+    "headword": "அகம்",
+    "transliteration": "akam",
+    "partOfSpeech": "பெயர்ச்சொல்",
+    "aliases": ["அகம்", "akam"],
+    "senses": [
+      {
+        "id": "akam-1",
+        "number": 1,
+        "definition": "உள்ளம்; நெஞ்சம்.",
+        "englishGloss": "inner self; heart; mind",
+        "quotations": [
+          {
+            "id": "akam-q1",
+            "text": "யாயும் ஞாயும் யாரா கியரோ\nஎந்தையும் நுந்தையும் எம்முறைக் கேளிர்\nயானும் நீயும் எவ்வழி அறிதும்\nசெம்புலப் பெயல் நீர் போல\nஅன்புடை நெஞ்சம் தாம் கலந்தனவே.",
+            "work": "குறுந்தொகை",
+            "poemNumber": "40",
+            "source": "குறுந்தொகை, கழக வெளியீடு",
+            "verified": true
+          }
+        ]
+      },
+      {
+        "id": "akam-2",
+        "number": 2,
+        "definition": "இல்லம்; வீடு.",
+        "englishGloss": "home; house; dwelling",
+        "quotations": []
+      },
+      {
+        "id": "akam-3",
+        "number": 3,
+        "definition": "காதல் நூல்; அகப்பொருள் இலக்கியம் (சங்க இலக்கிய வகைப்பாட்டில்).",
+        "englishGloss": "love poetry; the genre of interior poetry (akam) in Sangam classification",
+        "quotations": []
+      }
+    ],
+    "relatedWords": ["புறம்", "திணை", "நெஞ்சம்"],
+    "work": "குறுந்தொகை"
+  },
+  {
+    "id": "puram",
+    "headword": "புறம்",
+    "transliteration": "puram",
+    "partOfSpeech": "பெயர்ச்சொல்",
+    "aliases": ["புறம்", "puram"],
+    "senses": [
+      {
+        "id": "puram-1",
+        "number": 1,
+        "definition": "வெளி; புறப்பக்கம்.",
+        "englishGloss": "exterior; outside",
+        "quotations": []
+      },
+      {
+        "id": "puram-2",
+        "number": 2,
+        "definition": "வீரம், கொடை, போர் முதலியவற்றை உள்ளடக்கிய புறப்பொருள் இலக்கியம் (சங்க இலக்கிய வகைப்பாட்டில்).",
+        "englishGloss": "heroic poetry; the genre of exterior poetry (puram) dealing with war, valour, and generosity",
+        "quotations": [
+          {
+            "id": "puram-q1",
+            "text": "யாதும் ஊரே யாவரும் கேளிர்\nதீதும் நன்றும் பிறர்தர வாரா\nநோதலும் தணிதலும் அவற்றோர் அன்ன\nசாதலும் வாழ்தலும் இனிதே.",
+            "work": "புறநானூறு",
+            "poemNumber": "192",
+            "source": "புறநானூறு, கழக வெளியீடு",
+            "verified": true
+          }
+        ]
+      }
+    ],
+    "relatedWords": ["அகம்", "திணை"],
+    "work": "புறநானூறு"
+  },
+  {
+    "id": "tinai",
+    "headword": "திணை",
+    "transliteration": "tinai",
+    "partOfSpeech": "பெயர்ச்சொல்",
+    "aliases": ["திணை", "tinai"],
+    "senses": [
+      {
+        "id": "tinai-1",
+        "number": 1,
+        "definition": "நிலப்பிரிவு; சங்க அகப்பொருள் மரபில் நிலம், காலம், தலைவன், தலைவி, தோழி, செவிலித்தாய், மலர், பறவை முதலியவற்றை உள்ளடக்கிய ஒரு கவிதைக் கட்டுமான முறை.",
+        "englishGloss": "landscape-genre; a system in Sangam poetics that associates landscape, season, flora, fauna, and emotional situation to organize akam (love) poetry",
+        "quotations": [
+          {
+            "id": "tinai-q1",
+            "text": "முல்லையும் குறிஞ்சியும் மருதமும் நெய்தலும்\nபல்லோர் கூற பண்டை நாளினும்",
+            "work": "தொல்காப்பியம்",
+            "poemNumber": "அகத்திணையியல் 5",
+            "source": "தொல்காப்பியம், கழக வெளியீடு",
+            "verified": true
+          }
+        ]
+      }
+    ],
+    "relatedWords": ["குறிஞ்சி", "முல்லை", "மருதம்", "நெய்தல்", "பாலை"],
+    "work": "தொல்காப்பியம்"
+  },
+  {
+    "id": "talaivan",
+    "headword": "தலைவன்",
+    "transliteration": "talaivan",
+    "partOfSpeech": "பெயர்ச்சொல்",
+    "aliases": ["தலைவன்", "talaivan"],
+    "senses": [
+      {
+        "id": "talaivan-1",
+        "number": 1,
+        "definition": "காதலன்; அகப்பொருள் கவிதையில் ஆண் கதாபாத்திரம்.",
+        "englishGloss": "hero; the male protagonist in akam (love) poetry",
+        "quotations": [
+          {
+            "id": "talaivan-q1",
+            "text": "தலைவன் தன்னை நினைக்கும் போழ்தில்\nதலைவி மனம் தேடும் மலரும்",
+            "work": "ஐங்குறுநூறு",
+            "poemNumber": "101",
+            "source": "ஐங்குறுநூறு, கழக வெளியீடு",
+            "verified": false
+          }
+        ]
+      }
+    ],
+    "relatedWords": ["தலைவி", "தோழி"],
+    "work": "ஐங்குறுநூறு"
+  },
+  {
+    "id": "talaivi",
+    "headword": "தலைவி",
+    "transliteration": "talaivi",
+    "partOfSpeech": "பெயர்ச்சொல்",
+    "aliases": ["தலைவி", "talaivi"],
+    "senses": [
+      {
+        "id": "talaivi-1",
+        "number": 1,
+        "definition": "காதலி; அகப்பொருள் கவிதையில் பெண் கதாபாத்திரம்.",
+        "englishGloss": "heroine; the female protagonist in akam (love) poetry",
+        "quotations": [
+          {
+            "id": "talaivi-q1",
+            "text": "தலைவி ஆய்வந்து தனியே நிற்க\nதலைவன் வந்தனன் தழுவிக் கொள்ள",
+            "work": "குறுந்தொகை",
+            "poemNumber": "97",
+            "source": "குறுந்தொகை, கழக வெளியீடு",
+            "verified": false
+          }
+        ]
+      }
+    ],
+    "relatedWords": ["தலைவன்", "தோழி", "செவிலி"],
+    "work": "குறுந்தொகை"
+  },
+  {
+    "id": "tozhi",
+    "headword": "தோழி",
+    "transliteration": "tozi",
+    "partOfSpeech": "பெயர்ச்சொல்",
+    "aliases": ["தோழி", "tozi", "thoži"],
+    "senses": [
+      {
+        "id": "tozhi-1",
+        "number": 1,
+        "definition": "நண்பி; அகப்பொருள் கவிதையில் தலைவியின் தோழி; காதல் மொழியாடலில் இடைத்தூது போவோள்.",
+        "englishGloss": "confidante; the heroine's friend in akam poetry; often acts as an intermediary in love",
+        "quotations": [
+          {
+            "id": "tozhi-q1",
+            "text": "தோழி தன் நெஞ்சம் ஆய நட்பினாற்\nகாவல் கொண்டனள் கைம்மிக நிற்க",
+            "work": "நற்றிணை",
+            "poemNumber": "78",
+            "source": "நற்றிணை, கழக வெளியீடு",
+            "verified": false
+          }
+        ]
+      }
+    ],
+    "relatedWords": ["தலைவி", "செவிலி"],
+    "work": "நற்றிணை"
+  },
+  {
+    "id": "manram",
+    "headword": "மன்றம்",
+    "transliteration": "manram",
+    "partOfSpeech": "பெயர்ச்சொல்",
+    "aliases": ["மன்றம்", "manram"],
+    "senses": [
+      {
+        "id": "manram-1",
+        "number": 1,
+        "definition": "பொது இடம்; ஊரின் நடுவில் மரத்தடியில் உள்ள திறந்த வெளி; மக்கள் ஒன்றுகூடி ஆலோசனை செய்யும் இடம்.",
+        "englishGloss": "public commons; an open space under a central tree where villagers gather; the town assembly ground",
+        "quotations": [
+          {
+            "id": "manram-q1",
+            "text": "மன்றம் மரங்கள் மல்கி நிழல்\nசன்றோர் ஒன்று கூடும் சாலையே",
+            "work": "புறநானூறு",
+            "poemNumber": "311",
+            "source": "புறநானூறு, கழக வெளியீடு",
+            "verified": false
+          }
+        ]
+      }
+    ],
+    "relatedWords": ["அம்பல்", "ஊர்"],
+    "work": "புறநானூறு"
+  },
+  {
+    "id": "alar",
+    "headword": "அலர்",
+    "transliteration": "alar",
+    "partOfSpeech": "பெயர்ச்சொல்",
+    "aliases": ["அலர்", "alar"],
+    "senses": [
+      {
+        "id": "alar-1",
+        "number": 1,
+        "definition": "மலர்தல்; மொட்டு மலராதல்.",
+        "englishGloss": "blossoming; the act of a flower opening",
+        "quotations": []
+      },
+      {
+        "id": "alar-2",
+        "number": 2,
+        "definition": "மக்கள் பரப்பும் வதந்தி; ஊராரின் வாயிலாக பரவும் காதல் செய்தி.",
+        "englishGloss": "rumour; gossip, especially about a love affair spread through the village",
+        "quotations": [
+          {
+            "id": "alar-q1",
+            "text": "அலர் எழுந்தன்று ஊர்\nதோழி அவர் நம்மை நயந்தனர் என்று",
+            "work": "குறுந்தொகை",
+            "poemNumber": "5",
+            "source": "குறுந்தொகை, கழக வெளியீடு",
+            "verified": true
+          }
+        ]
+      }
+    ],
+    "relatedWords": ["அம்பல்", "வதந்தி"],
+    "work": "குறுந்தொகை"
+  },
+  {
+    "id": "vaanam",
+    "headword": "வானம்",
+    "transliteration": "vanam",
+    "partOfSpeech": "பெயர்ச்சொல்",
+    "aliases": ["வானம்", "vanam", "vaanam"],
+    "senses": [
+      {
+        "id": "vaanam-1",
+        "number": 1,
+        "definition": "வானில்; ஆகாயம்.",
+        "englishGloss": "sky; the heavens",
+        "quotations": [
+          {
+            "id": "vaanam-q1",
+            "text": "வானம் வழங்கும் மழை நீர்\nமான் தேர் வண்ணன் அருளினால்",
+            "work": "பதிற்றுப்பத்து",
+            "poemNumber": "31",
+            "source": "பதிற்றுப்பத்து, கழக வெளியீடு",
+            "verified": false
+          }
+        ]
+      }
+    ],
+    "relatedWords": ["மழை", "மேகம்"],
+    "work": "பதிற்றுப்பத்து"
+  },
+  {
+    "id": "kadal",
+    "headword": "கடல்",
+    "transliteration": "kadal",
+    "partOfSpeech": "பெயர்ச்சொல்",
+    "aliases": ["கடல்", "kadal"],
+    "senses": [
+      {
+        "id": "kadal-1",
+        "number": 1,
+        "definition": "கடல்; சமுத்திரம்.",
+        "englishGloss": "sea; ocean",
+        "quotations": [
+          {
+            "id": "kadal-q1",
+            "text": "கடல் ஓதம் கரை மேல் கல்லெறிந்து\nதடங் கரை நண்ணிய தண் கடல் ஊரன்",
+            "work": "நற்றிணை",
+            "poemNumber": "53",
+            "source": "நற்றிணை, கழக வெளியீடு",
+            "verified": true
+          }
+        ]
+      }
+    ],
+    "relatedWords": ["நெய்தல்", "பரதவர்", "திரை"],
+    "work": "நற்றிணை"
+  }
+]

@@ -1,0 +1,65 @@
+[
+  {
+    "id": "kuruntokai",
+    "title": "குறுந்தொகை",
+    "transliteration": "Kuruntokai",
+    "type": "அகம்",
+    "poemCount": 401,
+    "description": "நானூறு அகப்பாடல்களின் தொகுப்பு; சிறு பாடல்களால் ஆனது; காதல் உணர்வுகளை நேரடியாக வெளிப்படுத்தும் நூல்.",
+    "englishDescription": "An anthology of 401 short akam (love) poems; one of the Eight Anthologies of classical Tamil literature."
+  },
+  {
+    "id": "narrinai",
+    "title": "நற்றிணை",
+    "transliteration": "Narrinai",
+    "type": "அகம்",
+    "poemCount": 400,
+    "description": "நானூறு அகப்பாடல்களின் தொகுப்பு; ஐந்திணைகளின் இயல்பை விரிவாகச் சித்திரிக்கும் நூல்.",
+    "englishDescription": "An anthology of 400 akam poems; notable for its rich landscape imagery across the five tinai."
+  },
+  {
+    "id": "akananooru",
+    "title": "அகநானூறு",
+    "transliteration": "Akananooru",
+    "type": "அகம்",
+    "poemCount": 400,
+    "description": "நானூறு அகப்பாடல்களின் தொகுப்பு; ஒவ்வொரு பாடலும் நீளமானது; காதல் மற்றும் இயற்கை வர்ணனை சிறப்பாக அமைந்தது.",
+    "englishDescription": "An anthology of 400 longer akam poems known for elaborate nature imagery and emotional depth."
+  },
+  {
+    "id": "purananuru",
+    "title": "புறநானூறு",
+    "transliteration": "Purananuru",
+    "type": "புறம்",
+    "poemCount": 400,
+    "description": "நானூறு புறப்பாடல்களின் தொகுப்பு; வீரம், கொடை, போர், மன்னர்களின் புகழ் பாடும் நூல்.",
+    "englishDescription": "An anthology of 400 puram (heroic) poems celebrating war, generosity, and the glory of kings."
+  },
+  {
+    "id": "tolkappiyam",
+    "title": "தொல்காப்பியம்",
+    "transliteration": "Tolkappiyam",
+    "type": "இலக்கணம்",
+    "poemCount": null,
+    "description": "தமிழின் மிகப் பழமையான இலக்கண நூல்; எழுத்து, சொல், பொருள் என மூன்று அதிகாரங்களை உள்ளடக்கியது.",
+    "englishDescription": "The oldest extant Tamil grammar text; covers phonology, morphology, and poetics in three books."
+  },
+  {
+    "id": "ainkurunuru",
+    "title": "ஐங்குறுநூறு",
+    "transliteration": "Ainkurunuru",
+    "type": "அகம்",
+    "poemCount": 500,
+    "description": "ஐந்து புலவர்களால் இயற்றப்பட்ட ஐந்நூறு சிறு அகப்பாடல்களின் தொகுப்பு.",
+    "englishDescription": "A collection of 500 short akam poems composed by five different poets, each covering one tinai."
+  },
+  {
+    "id": "patirruppattu",
+    "title": "பதிற்றுப்பத்து",
+    "transliteration": "Patirruppattu",
+    "type": "புறம்",
+    "poemCount": 80,
+    "description": "சேர மன்னர்களை வாழ்த்தி இயற்றப்பட்ட பத்தோர் பத்து பாடல்களின் தொகுப்பு.",
+    "englishDescription": "Ten decades of poems in praise of Chera kings; a major heroic anthology of classical Tamil."
+  }
+]
