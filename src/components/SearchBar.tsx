@@ -5,12 +5,22 @@ import type { WordResult } from '../utils/search';
 import { entryPath, headwordLabel } from '../data';
 import { useMeaningLanguage } from '../context/LanguageContext';
 import { previewMeaning, truncate } from '../utils/languages';
+import { searchHistory } from '../utils/history';
+import { IconSearch } from './book/Art';
 
 interface Props {
   compact?: boolean;
   autoFocus?: boolean;
   /** Visible label above the field (the compact header field keeps its label for screen readers only). */
   label?: string;
+  placeholder?: string;
+  buttonLabel?: string;
+  /** Search scope added to the results URL (word, meaning, poem). */
+  scope?: string;
+  /** "plate": the large bookplate field on the home and discovery pages, with the lens on the left. */
+  variant?: 'default' | 'plate';
+  /** Called just before a search runs (e.g. to apply the chosen lookup direction). */
+  onSubmit?: () => void;
 }
 
 /**
@@ -18,7 +28,7 @@ interface Props {
  * the highlighted entry or runs a full search, Escape closes. Keys pressed while an input
  * method is composing Tamil text are ignored, so a half-typed syllable is never submitted.
  */
-export default function SearchBar({ compact = false, autoFocus = false, label }: Props) {
+export default function SearchBar({ compact = false, autoFocus = false, label, placeholder, buttonLabel, scope, variant = 'default', onSubmit }: Props) {
   const [params] = useSearchParams();
   const urlQuery = params.get('q') ?? '';
   const [query, setQuery] = useState(urlQuery);
@@ -46,14 +56,19 @@ export default function SearchBar({ compact = false, autoFocus = false, label }:
     const q = query.trim();
     setOpen(false);
     if (!q) { inputRef.current?.focus(); return; }
+    onSubmit?.();
     // Keep the current scope and filters when searching again from the results page.
     const next = new URLSearchParams(window.location.pathname === '/search' ? params : undefined);
     next.set('q', q);
+    next.delete('page');
+    if (scope) next.set('scope', scope);
+    searchHistory.add(q, scope ?? next.get('scope') ?? undefined);
     navigate(`/search?${next.toString()}`);
   }
 
   function choose(r: WordResult) {
     setOpen(false);
+    if (query.trim()) searchHistory.add(query, 'word');
     setQuery('');
     navigate(entryPath(r.entry.id));
   }
@@ -79,18 +94,19 @@ export default function SearchBar({ compact = false, autoFocus = false, label }:
   }
 
   return (
-    <div className={`search${compact ? ' search--compact' : ''}`} ref={wrapRef}>
+    <div className={`search${compact ? ' search--compact' : ''}${variant === 'plate' ? ' search--plate' : ''}`} ref={wrapRef}>
       <form role="search" onSubmit={(e) => { e.preventDefault(); submit(); }}>
         <label htmlFor={`${listId}-input`} className={label ? 'search__label' : 'visually-hidden'}>
           {label ?? 'சொல், பொருள் அல்லது பாடல் வரியைத் தேடுக'}
         </label>
         <div className="search__row">
+        {variant === 'plate' && <IconSearch className="search__lens" />}
         <input
           id={`${listId}-input`}
           ref={inputRef}
           type="search"
           className="search__field"
-          placeholder={compact ? 'தேடுக' : 'சொல் அல்லது பொருள் — எ.கா. நெஞ்சம், heart'}
+          placeholder={placeholder ?? (compact ? 'தேடுக' : 'சொல் அல்லது பொருள் — எ.கா. நெஞ்சம், heart')}
           value={query}
           lang="ta"
           autoFocus={autoFocus}
@@ -119,11 +135,11 @@ export default function SearchBar({ compact = false, autoFocus = false, label }:
             <span aria-hidden="true">×</span>
           </button>
         )}
-        <button type="submit" className="search__submit" aria-label={compact ? 'தேடு' : undefined}>
-          <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true">
+        <button type="submit" className="search__submit" aria-label={compact ? (buttonLabel ?? 'தேடு') : undefined}>
+          {variant !== 'plate' && <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true">
             <circle cx="11" cy="11" r="7" /><line x1="20" y1="20" x2="16" y2="16" />
-          </svg>
-          {!compact && <span>தேடு</span>}
+          </svg>}
+          {!compact && <span>{buttonLabel ?? 'தேடு'}</span>}
         </button>
         </div>
       </form>

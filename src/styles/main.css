@@ -1,25 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Tamil:wght@400;500;600;700&family=Noto+Sans+Tamil:wght@400;500;600&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Noto+Sans+Devanagari:wght@400;500&family=Noto+Sans+Malayalam:wght@400;500&family=Noto+Sans+Telugu:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Tamil:wght@400;500;600;700&family=Noto+Sans+Tamil:wght@400;500;600&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Noto+Sans+Devanagari:wght@400;500&family=Noto+Sans+Malayalam:wght@400;500&family=Noto+Sans+Telugu:wght@400;500&family=Noto+Sans+Kannada:wght@400;500&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap');
 
 /*
- * சங்கச் சொல் — design system.
- * The look of the interior pages of an old Tamil reference book, set for screens: flat paper,
- * black-brown ink, one maroon accent, fine rules, and type doing the work. No textures on text,
- * no gold, no shadows except where something floats above the page (menus, the word panel).
+ * சொல்வளம் — base design system: type, tokens and the components inside a page.
+ * The book itself (desk, leather boards, parchment leaves, masthead, home and explorer
+ * spreads) is in book.css. Text always sits on flat parchment; texture stays at the edges.
  */
 
 /* ─── Tokens ─────────────────────────────────────────────────────── */
 :root {
   /* Paper and ink. Contrast on --paper: ink 13.6:1, ink-2 5.7:1, accent 8.3:1, muted rule text ≥ 4.5:1. */
-  --paper: #f4eedf;
-  --surface: #faf6ec;
-  --ink: #29251f;
-  --ink-2: #5f574b;
-  --accent: #742936;
-  --accent-ink: #5b1f2a;
-  --accent-wash: #efe1d9;
-  --rule: #d5c8b3;
-  --rule-strong: #b3a387;
-  --mark: #ecdcb0;
+  --paper: #f1dcb5;
+  --surface: #f6e6c6;
+  --ink: #3b1d14;
+  --ink-2: #6a4a33;
+  --accent: #651e1b;
+  --accent-ink: #4d1512;
+  --accent-wash: #ead0aa;
+  --rule: #cfae7c;
+  --rule-strong: #a8793f;
+  --mark: #e6c27f;
+
+  /* The desk and the book (reference palette). */
+  --walnut: #28150e;
+  --wood: #3b2115;
+  --parchment: #e8c99b;
+  --parchment-light: #f4e1bf;
+  --bronze: #a8793f;
+  --gold-muted: #c49a5c;
+  --sepia: #97704c;
+  --ivory: #f1e2c4;
   --ok: #2f6346;
   --ok-wash: #e3ecdf;
   --warn: #7c5414;
@@ -36,7 +45,9 @@
 
   --serif: 'Noto Serif Tamil', 'Tamil MN', Georgia, serif;
   --sans: 'Noto Sans Tamil', 'Tamil Sangam MN', system-ui, sans-serif;
-  --latin: 'Crimson Text', Georgia, 'Times New Roman', serif;
+  /* Tamil fallbacks keep Tamil glyphs in the Tamil serif inside English-language elements. */
+  --latin: 'EB Garamond', 'Crimson Text', 'Noto Serif Tamil', Georgia, serif;
+  --display: 'Cormorant Garamond', 'EB Garamond', 'Noto Serif Tamil', Georgia, serif;
   --ui-latin: system-ui, -apple-system, 'Segoe UI', sans-serif;
 
   --w: 46rem;
@@ -53,13 +64,14 @@
 :lang(hi) { font-family: 'Noto Sans Devanagari', var(--sans); }
 :lang(ml) { font-family: 'Noto Sans Malayalam', var(--sans); }
 :lang(te) { font-family: 'Noto Sans Telugu', var(--sans); }
+:lang(kn) { font-family: 'Noto Sans Kannada', var(--sans); }
 :lang(en), :lang(ta-Latn) { font-family: var(--latin); }
 
 *, *::before, *::after { box-sizing: border-box; }
 * { margin: 0; padding: 0; }
 html { font-size: 18px; -webkit-text-size-adjust: 100%; text-rendering: optimizeLegibility; }
 body {
-  font-family: var(--sans);
+  font-family: var(--serif);
   font-size: 1rem;
   line-height: 1.75;
   background: var(--paper);

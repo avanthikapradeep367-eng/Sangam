@@ -6,7 +6,7 @@ import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 
 export const CSV_FILES = {
-  entries: ['id', 'headword', 'homograph', 'transliteration', 'pos', 'roman_aliases', 'spelling_variants', 'inflected_forms', 'related', 'topics', 'tinai', 'audio', 'status', 'source_id'],
+  entries: ['id', 'headword', 'homograph', 'transliteration', 'pos', 'roman_aliases', 'spelling_variants', 'inflected_forms', 'related', 'topics', 'tinai', 'audio', 'status', 'source_id', 'synonyms', 'antonyms'],
   senses: ['id', 'entry_id', 'number', 'definition_ta', 'source_id'],
   translations: ['sense_id', 'lang', 'text', 'explanatory', 'review_status', 'source_id'],
   citations: ['id', 'entry_id', 'sense_id', 'poem_id', 'line', 'form', 'featured', 'review_status', 'source_id'],
@@ -171,6 +171,7 @@ export function validate(c) {
     headwordKeys.set(hwKey, e.id);
     for (const r of list(e.related)) if (!entries.has(r)) err(e, `entry "${e.id}": related entry "${r}" does not exist`);
     for (const t of list(e.topics)) if (!topics.has(t)) err(e, `entry "${e.id}": unknown topic "${t}"`);
+    for (const w of [...list(e.synonyms), ...list(e.antonyms)]) if (!/^[஀-௿\s]+$/.test(w)) err(e, `entry "${e.id}": synonym/antonym "${w}" must be Tamil script`);
     if (e.tinai && !AKAM_TINAI.includes(e.tinai)) err(e, `entry "${e.id}": tinai must be one of ${AKAM_TINAI.join(', ')}`);
   }
   // Homographs: if two entries share a headword, both need a number.
@@ -307,6 +308,8 @@ export function compile(c) {
       spellingVariants: list(e.spelling_variants),
       inflectedForms: list(e.inflected_forms),
       relatedIds: list(e.related),
+      synonyms: list(e.synonyms),
+      antonyms: list(e.antonyms),
       topics: list(e.topics),
       ...(e.tinai ? { tinai: e.tinai } : {}),
       ...(e.audio ? { pronunciationAudio: e.audio } : {}),

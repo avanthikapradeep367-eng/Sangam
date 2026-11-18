@@ -36,3 +36,8 @@ scripts/vocab/extract.py
 public/source-pages/
 # Editor write temp file
 content/sources/vocab/review.json.tmp
+
+# Secrets: Azure keys live in .env on the server only
+.env
+.env.*
+!.env.example

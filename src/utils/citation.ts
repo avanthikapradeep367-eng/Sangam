@@ -2,7 +2,7 @@ import type { DictionaryEntry, LangCode, Sense } from '../types';
 import { entryPath, headwordLabel } from '../data';
 import { getSenseMeaning, LANGUAGE_LABEL } from './languages';
 
-export const SITE_NAME = 'சங்கச் சொல் — சங்க இலக்கிய அகராதி';
+export const SITE_NAME = 'சொல்வளம் — தமிழ்ச் சொல்லகராதி';
 
 export function absoluteUrl(path: string) {
   return new URL(path, window.location.origin).toString();

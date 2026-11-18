@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { BrowserRouter, Link, Route, Routes, useLocation, useNavigationType } from 'react-router-dom';
+import { BrowserRouter, Navigate, Route, Routes, useLocation, useNavigationType } from 'react-router-dom';
 import Header from './components/Header';
 import HomePage from './pages/HomePage';
 import SearchResultsPage from './pages/SearchResultsPage';
@@ -15,12 +15,21 @@ import NotFound from './pages/NotFound';
 import LettersPage from './pages/LettersPage';
 import TopicsPage from './pages/TopicsPage';
 import TodayPage from './pages/TodayPage';
-import { lazy, Suspense } from 'react';
+import HistoryPage from './pages/HistoryPage';
+import EtymologyPage from './pages/EtymologyPage';
+import { dictionaryPath } from './utils/wordOfDay';
+import { Corners } from './components/book/Book';
+import { UiLanguageProvider, useUi } from './context/UiLanguage';
+import { useMeaningLanguage } from './context/LanguageContext';
+import { languages } from './data';
+import { reader, stopWord } from './utils/speech';
+import { lazy, Suspense, type ReactNode } from 'react';
 
 // The editor exists only in development builds (npm run dev); production bundles leave it out.
 const EditorPage = import.meta.env.DEV ? lazy(() => import('./pages/EditorPage')) : null;
 import { LanguageProvider } from './context/LanguageContext';
 import './styles/main.css';
+import './styles/book.css';
 
 /**
  * Scroll handling: a new page starts at the top (unless the URL targets a sense or a poem line);
@@ -41,6 +50,26 @@ const scrollPositions = {
     } catch { /* storage unavailable: Back simply starts at the top */ }
   },
 };
+/** Leaving a page stops "Read this page" and any word pronunciation. */
+function StopAudioOnNavigate() {
+  const { pathname, search } = useLocation();
+  useEffect(() => () => { reader.stop(); stopWord(); }, [pathname, search]);
+  return null;
+}
+
+/**
+ * Keeps the stored-meaning language (search results, word lists) in step with the site language:
+ * the same language when the dictionary has meanings in it, otherwise English.
+ */
+function SyncMeaningLanguage() {
+  const { siteLang } = useUi();
+  const [, setLang] = useMeaningLanguage();
+  useEffect(() => {
+    setLang(languages.some((l) => l.code === siteLang) ? siteLang : 'en');
+  }, [siteLang, setLang]);
+  return null;
+}
+
 function ScrollReset() {
   const { pathname, hash, search, key } = useLocation();
   const navType = useNavigationType();
@@ -64,31 +93,50 @@ function ScrollReset() {
   return null;
 }
 
-function Footer() {
+/**
+ * Page furniture by route: the home page draws its own open book; the explorer (/entry/<id>)
+ * is a two-page spread; every other page is set on a single parchment leaf.
+ */
+function Frame({ children }: { children: ReactNode }) {
+  const { pathname } = useLocation();
+  if (pathname === '/') return <>{children}</>;
+  const spread = pathname.startsWith('/entry/');
   return (
-    <footer className="site-footer">
-      <div className="container container--wide">
-        <p><strong lang="ta">சங்கச் சொல்</strong> — சங்க இலக்கியச் சொல்லகராதி · வரைவுப் பதிப்பு</p>
-        <p>
-          பாடல் மூலம்: தமிழ் விக்கிமூலம் (CC BY-SA 4.0). நவீனத் தமிழ்ச் சொற்கள் மதிப்பாய்வுக்குக் காத்திருக்கும் படியெடுப்பு. வரையறைகளும் மொழிபெயர்ப்புகளும் மதிப்பாய்வுக்குக் காத்திருக்கும் வரைவுகள்.{' '}
-          <Link to="/sources">ஆதாரங்கள்</Link>
-        </p>
-      </div>
-    </footer>
+    <div className="desk">
+      <Header />
+      {spread ? children : (
+        <div className="book book--single">
+          <div className="book__edges" aria-hidden="true" />
+          <div className="book__pages">
+            <div className="leaf leaf--single">
+              <Corners />
+              <div className="turn-in" key={pathname}>{children}</div>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
   );
 }
 
 export default function App() {
   return (
+    <UiLanguageProvider>
     <LanguageProvider>
       <BrowserRouter>
         <ScrollReset />
+        <StopAudioOnNavigate />
+        <SyncMeaningLanguage />
         <a href="#main-content" className="skip-link">முதன்மை உள்ளடக்கத்திற்குச் செல்</a>
-        <Header />
+        <Frame>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/search" element={<SearchResultsPage />} />
+          {/* Old links to /explore open the dictionary at today's word. */}
+          <Route path="/explore" element={<Navigate to={dictionaryPath()} replace />} />
           <Route path="/entry/:id" element={<EntryPage />} />
+          <Route path="/history" element={<HistoryPage />} />
+          <Route path="/etymology" element={<EtymologyPage />} />
           <Route path="/works" element={<WorksPage />} />
           <Route path="/works/:workId" element={<WorkDetailPage />} />
           <Route path="/works/:workId/:number" element={<PoemPage />} />
@@ -104,8 +152,9 @@ export default function App() {
           <Route path="/sources" element={<SourcesPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-        <Footer />
+        </Frame>
       </BrowserRouter>
     </LanguageProvider>
+    </UiLanguageProvider>
   );
 }

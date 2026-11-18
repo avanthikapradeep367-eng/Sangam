@@ -107,6 +107,9 @@ export interface DictionaryEntry {
   spellingVariants: string[];
   inflectedForms: string[];
   relatedIds: string[];
+  /** Plain Tamil words; linked when the dictionary has them. Empty until sourced. */
+  synonyms?: string[];
+  antonyms?: string[];
   topics: string[];
   tinai?: string;
   pronunciationAudio?: string;

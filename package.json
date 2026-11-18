@@ -15,7 +15,8 @@
     "data:import": "node scripts/import.mjs",
     "vocab:extract": "python scripts/vocab/extract.py",
     "vocab:import": "node scripts/vocab/import.mjs",
-    "vocab:status": "node scripts/vocab/import.mjs --status"
+    "vocab:status": "node scripts/vocab/import.mjs --status",
+    "start": "node --env-file-if-exists=.env server/index.mjs"
   },
   "dependencies": {
     "react": "^19.3.1",
@@ -30,5 +31,8 @@
     "oxlint": "^1.90.0",
     "typescript": "~7.0.2",
     "vite": "^8.3.6"
+  },
+  "engines": {
+    "node": ">=22.9"
   }
 }

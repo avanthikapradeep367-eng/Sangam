@@ -42,12 +42,14 @@ one after publishing.
 CSV files are UTF-8 with a header row. Quote fields that contain commas. Use `|` to
 separate list values inside a field.
 
-**entries.csv**: `id, headword, homograph, transliteration, pos, roman_aliases, spelling_variants, inflected_forms, related, topics, tinai, audio, status, source_id`
+**entries.csv**: `id, headword, homograph, transliteration, pos, roman_aliases, spelling_variants, inflected_forms, related, topics, tinai, audio, status, source_id, synonyms, antonyms`
 - `homograph` is required (1, 2, …) when two entries share a spelling.
 - `related` lists entry IDs. `topics` lists IDs from topics.json.
 - `tinai` is one of the five akam tiṇai. Set it only when the word is a conventional marker of that landscape.
 - `audio` is a URL to a recording (modern pronunciation). Leave it empty when there is none.
-- `status` is `draft`, `reviewed` or `demo`.
+- `status` is `draft`, `reviewed` or `demo`. `demo` marks a record added only to show the page design (currently `aram`, at `/entry/aram`); it is labelled as a demonstration on its page.
+- `synonyms` and `antonyms` are `|`-separated Tamil words (linked when the dictionary has them). Fill them only from a dictionary you can name as the entry's source; empty fields show "ஆதாரம் இன்னும் சேர்க்கப்படவில்லை".
+- Etymology is a `notes.csv` row with `kind` = `etymology`. It appears under சொற்பிறப்பியல் on the entry and on `/etymology`. Do not add one without a published source.
 
 **senses.csv**: `id, entry_id, number, definition_ta, source_id`
 
@@ -78,7 +80,7 @@ Warnings (non-fatal): translations that contain Tamil script, and how many sense
 
 1. Add `{ "code": "kn", "label": "ಕನ್ನಡ", "englishName": "Kannada" }` to `languages.json`.
 2. Add `translations.csv` rows with `lang` = `kn`.
-3. Add a font rule for the script in `src/styles/main.css` (e.g. `:lang(kn) { font-family: 'Noto Sans Kannada', … }`) and the font to the Google Fonts import.
+3. Add a font rule for the script in `src/styles/main.css` (e.g. `:lang(kn) { font-family: 'Noto Sans Kannada', … }`) and the font to the Google Fonts import. Kannada is already set up this way; it has no translations yet.
 
 No other code changes are needed. The selector, entry pages, CSV export and sources page all read `languages.json`.
 

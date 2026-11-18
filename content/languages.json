@@ -3,5 +3,6 @@
   { "code": "en", "label": "English", "englishName": "English" },
   { "code": "hi", "label": "हिन्दी", "englishName": "Hindi" },
   { "code": "ml", "label": "മലയാളം", "englishName": "Malayalam" },
-  { "code": "te", "label": "తెలుగు", "englishName": "Telugu" }
+  { "code": "te", "label": "తెలుగు", "englishName": "Telugu" },
+  { "code": "kn", "label": "ಕನ್ನಡ", "englishName": "Kannada" }
 ]

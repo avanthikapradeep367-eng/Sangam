@@ -81,3 +81,12 @@ const TA_DAYS = ['ஞாயிறு', 'திங்கள்', 'செவ்வ
 export function tamilDate(d: Date, withDay = true) {
   return `${withDay ? `${TA_DAYS[d.getDay()]}, ` : ''}${d.getDate()} ${TA_MONTHS[d.getMonth()]} ${d.getFullYear()}`;
 }
+
+/**
+ * Where "the dictionary" opens (masthead அகராதி, home Browse, breadcrumbs): today's word in the
+ * two-page explorer, at its own /entry/<id> address. Changes at local midnight with the day's word.
+ */
+export function dictionaryPath(): string {
+  const id = wordForDate(new Date())?.entry.id ?? entries.find((e) => !e.supersededBy)?.id;
+  return id ? `/entry/${id}` : '/letters';
+}

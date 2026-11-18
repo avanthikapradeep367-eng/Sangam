@@ -1,96 +1,123 @@
-import { useState } from 'react';
+import { useState, type ComponentType, type SVGProps } from 'react';
 import { Link } from 'react-router-dom';
 import SearchBar from '../components/SearchBar';
-import LetterIndex from '../components/LetterIndex';
-import LanguageSelector from '../components/LanguageSelector';
-import EntryRow from '../components/EntryRow';
-import WordOfDay from '../components/WordOfDay';
-import { coverage, entries, entryById, poemsByWork, topics, works } from '../data';
+import { HomeNav } from '../components/Header';
+import { Book, Corners } from '../components/book/Book';
+import {
+  BookStack, Divider, IconBookmark, IconHistory, IconOpenBook, IconStar, InkpotQuill, LandscapeEngraving, LetterEmblem, TempleEngraving,
+} from '../components/book/Art';
+import { useMeaningLanguage } from '../context/LanguageContext';
+import { useUi } from '../context/UiLanguage';
 import { usePageTitle } from '../utils/usePageTitle';
-import { wordForDate } from '../utils/wordOfDay';
 
-/** A short, fixed sample that shows the range of the dictionary (landscape, people, plants, feeling). */
-const SAMPLE = ['nenjam', 'kelir', 'kurinji', 'natan', 'pasalai', 'matal', 'kanal', 'punnai', 'ma-horse', 'ma-mango'];
+/** The three directions of lookup. Each sets the search scope and the language meanings are shown in. */
+const MODES = [
+  {
+    id: 'ta-en', scope: 'word', lang: 'en',
+    label: { en: 'Tamil → English', ta: 'தமிழ் → ஆங்கிலம்' },
+    placeholder: { en: 'Search in Tamil or English…', ta: 'தமிழ் அல்லது ஆங்கிலத்தில் தேடுங்கள்…' },
+  },
+  {
+    id: 'en-ta', scope: 'meaning', lang: 'ta',
+    label: { en: 'English → Tamil', ta: 'ஆங்கிலம் → தமிழ்' },
+    placeholder: { en: 'Type an English word, e.g. heart, mountain…', ta: 'ஆங்கிலச் சொல்லைத் தட்டச்சிடுக — எ.கா. heart' },
+  },
+  {
+    id: 'ta-ta', scope: 'word', lang: 'ta',
+    label: { en: 'Tamil → Tamil', ta: 'தமிழ் → தமிழ்' },
+    placeholder: { en: 'Type a Tamil word…', ta: 'தமிழ்ச் சொல்லைத் தட்டச்சிடுக…' },
+  },
+] as const;
 
-/**
- * The opening page of the book: title and search, then the alphabet and a column of entries,
- * with the day's word and the ways into works and topics in the margin.
- */
+/** Home-page wording in each interface language (the தமிழ் / English switch). */
+const TEXT = {
+  title: { en: 'Sangam Literature', ta: 'சங்க இலக்கியம்' },
+  sub: { en: 'Tamil Dictionary', ta: 'தமிழ் அகராதி' },
+  searchLabel: { en: 'Search the dictionary', ta: 'அகராதியில் தேடுக' },
+  searchButton: { en: 'Search', ta: 'தேடு' },
+  modes: { en: 'Search direction', ta: 'தேடல் திசை' },
+  features: { en: 'Ways into the dictionary', ta: 'அகராதிப் பகுதிகள்' },
+} as const;
+
+const FEATURES: { to: string; en: string; ta: string; Icon: ComponentType<SVGProps<SVGSVGElement>> }[] = [
+  { to: '/letters', en: 'Browse Words', ta: 'சொற்கள் உலாவு', Icon: IconOpenBook },
+  { to: '/today', en: 'Word of the Day', ta: 'இன்றைய சொல்', Icon: IconBookmark },
+  { to: '/history', en: 'Recent Searches', ta: 'சமீபத் தேடல்கள்', Icon: IconHistory },
+  { to: '/saved', en: 'Favorites', ta: 'பிடித்த சொற்கள்', Icon: IconStar },
+];
+
+/** Reference 1: the dictionary lying open on the desk, title and search across the opening. */
 export default function HomePage() {
   usePageTitle();
-  const [today] = useState(() => wordForDate(new Date()));
-  const sample = SAMPLE.map((id) => entryById.get(id)).filter((e) => e !== undefined);
-  const indexed = works.filter((w) => poemsByWork.has(w.id));
-  const usedTopics = topics.filter((t) => t.scheme === 'sangam' && entries.some((e) => e.topics.includes(t.id)));
-  const poemTotal = Object.values(coverage.works).reduce((n, w) => n + w.poems, 0);
+  const [, setLang] = useMeaningLanguage();
+  const { ui } = useUi();
+  const [mode, setMode] = useState<(typeof MODES)[number]['id']>('ta-en');
+  const current = MODES.find((m) => m.id === mode)!;
 
   return (
-    <main id="main-content" className="page home">
-      <div className="container container--wide">
-        <section className="home-title" aria-labelledby="home-title">
-          <h1 id="home-title" className="home-title__h">சங்க இலக்கியச் சொல்லகராதி</h1>
-          <p className="home-title__desc">
-            சங்கப் பாடல்களில் வரும் சொற்களின் பொருள், அவை வரும் அடிகள், நவீனத் தமிழ், ஆங்கிலம், இந்தி, மலையாளம், தெலுங்கில் விளக்கம்.
-          </p>
-          {/* Autofocus only with a mouse/trackpad, so phones do not pop up the keyboard on load. */}
-          <SearchBar
-            label="சொல் அல்லது பொருளைத் தேடுக"
-            autoFocus={typeof window !== 'undefined' && window.matchMedia('(pointer: fine)').matches}
-          />
-          <LanguageSelector variant="pills" />
-        </section>
+    <div className="home-desk">
+      <HomeNav />
+      <main id="main-content" className="home">
+        <Book variant="flat">
+          <section className="leaf leaf--flat home__sheet" aria-labelledby="home-title">
+            <Corners />
+            <TempleEngraving className="engraving engraving--temple" />
+            <LandscapeEngraving className="engraving engraving--landscape" />
 
-        <div className="home-grid">
-          <div className="home-grid__main">
-            <LetterIndex />
+            <div className="home__head">
+              <LetterEmblem className="home__emblem" />
+              <h1 id="home-title" className="home__title" lang={ui}>{TEXT.title[ui]}</h1>
+              <Divider className="home__rule" width={560} />
+              {/* Each interface language shows only its own wording. */}
+              <p className="home__sub" lang={ui}>{TEXT.sub[ui]}</p>
+            </div>
 
-            <section aria-labelledby="sample-title" className="home__section">
-              <div className="section-head">
-                <h2 id="sample-title" className="section-label">சில சொற்கள்</h2>
-                <Link to="/search">எல்லாச் சொற்களும் ({coverage.entries}) →</Link>
+            <div className="home__search">
+              <SearchBar
+                variant="plate"
+                label={TEXT.searchLabel[ui]}
+                placeholder={current.placeholder[ui]}
+                buttonLabel={TEXT.searchButton[ui]}
+                scope={current.scope}
+                onSubmit={() => setLang(current.lang)}
+                autoFocus={typeof window !== 'undefined' && window.matchMedia('(pointer: fine)').matches}
+              />
+              <div className="mode-pills" role="radiogroup" aria-label={TEXT.modes[ui]}>
+                {MODES.map((m) => (
+                  <button
+                    key={m.id}
+                    type="button"
+                    role="radio"
+                    aria-checked={mode === m.id}
+                    className="mode-pill"
+                    lang={ui}
+                    onClick={() => { setMode(m.id); setLang(m.lang); }}
+                  >
+                    {m.label[ui]}
+                  </button>
+                ))}
               </div>
-              <ul className="entry-list">{sample.map((e) => <EntryRow key={e.id} entry={e} />)}</ul>
-            </section>
-          </div>
+            </div>
 
-          <aside className="home-grid__aside" aria-label="இன்றைய சொல், நூல்கள், தலைப்புகள்">
-            {today && (
-              <section aria-label="இன்றைய சொல்">
-                <WordOfDay word={today} variant="compact" />
-                <p className="home__wotd-more"><Link to="/today">கடந்த நாள்களின் சொற்கள் →</Link></p>
-              </section>
-            )}
+            <Divider className="home__rule home__rule--wide" width={1000} />
 
-            <section aria-labelledby="works-title">
-              <h2 id="works-title" className="section-label">நூல்கள்</h2>
-              <ul className="toc">
-                {indexed.map((w) => (
-                  <li key={w.id}>
-                    <Link to={`/works/${w.id}`} lang="ta">{w.title}</Link>
-                    <span className="toc__n">{coverage.works[w.id]?.poems} பாடல்</span>
+            <nav className="home__features" aria-label={TEXT.features[ui]}>
+              <ul>
+                {FEATURES.map(({ to, en, ta, Icon }) => (
+                  <li key={to}>
+                    <Link to={to} className="feature">
+                      <Icon className="feature__icon" />
+                      <span className="feature__main" lang={ui}>{ui === 'ta' ? ta : en}</span>
+                    </Link>
                   </li>
                 ))}
               </ul>
-              <p className="home__more"><Link to="/works">எல்லா நூல்களும் →</Link></p>
-            </section>
-
-            <section aria-labelledby="topics-title">
-              <h2 id="topics-title" className="section-label">தலைப்புகள்</h2>
-              <ul className="chips chips--links">
-                {usedTopics.map((t) => <li key={t.id}><Link className="chip" to={`/search?topic=${t.id}`}>{t.label}</Link></li>)}
-                <li><Link className="chip" to="/tinai">திணை</Link></li>
-              </ul>
-              <p className="home__more"><Link to="/topics">நவீனத் தமிழ்ச் சொற்களின் தலைப்புகள் →</Link></p>
-            </section>
-          </aside>
-        </div>
-
-        <p className="home__status">
-          வளர்ந்து வரும் வரைவுப் பதிப்பு: சங்கச் சொற்கள் {coverage.collections.sangam}, பாடல்கள் {poemTotal};
-          நவீனத் தமிழ் அடிப்படைச் சொற்கள் {coverage.collections.modern.total} (ஒப்புதல் பெற்றவை {coverage.collections.modern.approved}).
-          வரையறைகளும் மொழிபெயர்ப்புகளும் மதிப்பாய்வுக்குக் காத்திருக்கின்றன. <Link to="/sources">ஆதாரங்களும் உள்ளடக்க அளவும்</Link>
-        </p>
-      </div>
-    </main>
+            </nav>
+          </section>
+        </Book>
+        <BookStack className="desk-prop desk-prop--books" />
+        <InkpotQuill className="desk-prop desk-prop--ink" />
+      </main>
+    </div>
   );
 }

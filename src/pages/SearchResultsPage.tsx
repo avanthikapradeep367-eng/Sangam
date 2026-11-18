@@ -14,6 +14,8 @@ import { Breadcrumb, EmptyState, Marked } from '../components/common';
 import { LANGUAGE_LABEL, truncate } from '../utils/languages';
 import { normalize } from '../utils/tamil';
 import { usePageTitle } from '../utils/usePageTitle';
+import { dictionaryPath } from '../utils/wordOfDay';
+import Pagination, { pageSlice, usePage } from '../components/Pagination';
 
 const SCOPES: { id: SearchScope; label: string; hint: string }[] = [
   { id: 'word', label: 'சொல்', hint: 'தலைச்சொல், மாற்று எழுத்துக்கூட்டு, சொல் வடிவம், பேச்சு வழக்கு வடிவம், ஆங்கில எழுத்தில்' },
@@ -49,17 +51,20 @@ export default function SearchResultsPage() {
   const setParam = (key: string, value: string | null) => {
     const next = new URLSearchParams(params);
     if (value) next.set(key, value); else next.delete(key);
+    next.delete('page');
     setParams(next);
   };
   // Letter links filter the current results (and clear the letter when it is already chosen).
   const letterHref = (l: string) => {
     const next = new URLSearchParams(params);
     if (filters.letter === l) next.delete('letter'); else next.set('letter', l);
+    next.delete('page');
     return `/search?${next.toString()}`;
   };
   const scopeHref = (s: SearchScope) => {
     const next = new URLSearchParams(params);
     next.set('scope', s);
+    next.delete('page');
     return `/search?${next.toString()}`;
   };
   const clearFilters = () => {
@@ -74,6 +79,8 @@ export default function SearchResultsPage() {
   const browsed = !q ? browse(filters) : [];
   const suggestions = q && scope !== 'poem' ? spellingSuggestions(q).filter((e) => !words.some((w) => w.entry.id === e.id)) : [];
 
+  const listLen = !q ? browsed.length : scope === 'poem' ? poemHits.length : scope === 'word' && words.length ? words.length : meanings.length;
+  const [page, pages] = usePage(listLen);
   const count = scope === 'word' ? (words.length || meanings.length) : scope === 'meaning' ? meanings.length : poemHits.length;
   const filterLabel = [
     filters.letter && `எழுத்து: ${filters.letter}`,
@@ -89,7 +96,7 @@ export default function SearchResultsPage() {
   return (
     <main id="main-content" className="page search-page">
       <div className="container container--wide">
-        <Breadcrumb items={[{ to: '/', label: 'அகராதி' }, { label: q ? 'தேடல்' : 'உலாவுக' }]} running={filters.letter ? `எழுத்து: ${filters.letter}` : undefined} />
+        <Breadcrumb items={[{ to: dictionaryPath(), label: 'அகராதி' }, { label: q ? 'தேடல்' : 'உலாவுக' }]} running={filters.letter ? `எழுத்து: ${filters.letter}` : undefined} />
         <h1 className="page-title">{title}</h1>
 
         {q && (
@@ -121,7 +128,7 @@ export default function SearchResultsPage() {
             {/* Word scope */}
             {scope === 'word' && words.length > 0 && (
               <ul className="entry-list">
-                {words.map((r) => (
+                {pageSlice(words, page).map((r) => (
                   <EntryRow
                     key={r.entry.id}
                     entry={r.entry}
@@ -135,19 +142,19 @@ export default function SearchResultsPage() {
             {scope === 'word' && q && words.length === 0 && meanings.length > 0 && (
               <>
                 <p className="section-note">இது தலைச்சொல்லாகக் கிடைக்கவில்லை. பொருள்களில் பொருந்தியவை:</p>
-                <ul className="entry-list">{meanings.map((r) => <MeaningHit key={r.sense.id} r={r} lang={lang} />)}</ul>
+                <ul className="entry-list">{pageSlice(meanings, page).map((r) => <MeaningHit key={r.sense.id} r={r} lang={lang} />)}</ul>
               </>
             )}
 
             {/* Meaning scope */}
             {scope === 'meaning' && meanings.length > 0 && (
-              <ul className="entry-list">{meanings.map((r) => <MeaningHit key={r.sense.id} r={r} lang={lang} />)}</ul>
+              <ul className="entry-list">{pageSlice(meanings, page).map((r) => <MeaningHit key={r.sense.id} r={r} lang={lang} />)}</ul>
             )}
 
             {/* Poem scope */}
             {scope === 'poem' && poemHits.length > 0 && (
               <ul className="poem-hits">
-                {poemHits.map((h) => (
+                {pageSlice(poemHits, page).map((h) => (
                   <li key={`${h.poem.id}-${h.line}`}>
                     <span className="poem-hits__line" lang="ta"><Marked text={h.text} ranges={h.range ? [h.range] : []} /></span>
                     <Link to={poemPath(h.poem, { line: h.line })} className="poem-hits__ref">{poemRef(h.poem, h.line)}</Link>
@@ -158,7 +165,7 @@ export default function SearchResultsPage() {
 
             {/* Browse */}
             {!q && browsed.length > 0 && (
-              <ul className="entry-list">{browsed.map((e) => <EntryRow key={e.id} entry={e} />)}</ul>
+              <ul className="entry-list">{pageSlice(browsed, page).map((e) => <EntryRow key={e.id} entry={e} />)}</ul>
             )}
 
             {/* Empty states with a way forward */}
@@ -184,6 +191,8 @@ export default function SearchResultsPage() {
                 </p>
               </EmptyState>
             )}
+
+            <Pagination page={page} pages={pages} />
 
             {q && suggestions.length > 0 && count > 0 && scope !== 'poem' && (
               <p className="section-note">
