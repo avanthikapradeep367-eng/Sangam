@@ -67,12 +67,15 @@ separate list values inside a field.
 `{ id, workId, number, tinai, turai, speaker, poet, lines[], readings[{line, note}], sourceId, reviewStatus, provenance }`.
 Keep the original text and line breaks. Put alternate readings in `readings`, not in the line.
 
+**word-of-day.json** (optional): `{ "YYYY-MM-DD": "<entry id>" }`. A hand-picked word of the day for that date; every other day follows the fixed rotation in `src/utils/wordOfDay.ts`. The entry must have a citation with `featured` = `y`. Set it at `/admin/today`.
+
 ## What the validator rejects
 
 - Duplicate IDs (entries, senses, citations, notes, poems, works, sources), duplicate sense numbers within an entry, duplicate poem numbers within a work, duplicate sense × language translations.
 - References to things that do not exist: entry, sense, poem, work, source, topic, language, or related entry. It also rejects a sense cited under the wrong entry.
 - **Broken entry-to-poem links**: a line number outside the poem, or a `form` that does not occur in the cited line.
 - Two entries with the same headword without homograph numbers, non-Tamil headwords, entries with no senses, and unknown status values.
+- A word-of-day.json date that is not YYYY-MM-DD, or that names an entry without a featured citation.
 
 Warnings (non-fatal): translations that contain Tamil script, and how many sense × language pairs are still missing.
 

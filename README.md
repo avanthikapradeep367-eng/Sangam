@@ -99,6 +99,20 @@ On Azure App Service (Linux, Node 22), set the startup command to `npm start` an
 
 An optional second layer of about 1,000 modern-Tamil core words (literary and colloquial forms, Roman transcription, English meanings, verb classes, topics), imported from a reference book. Its data is kept outside this repository in `content/sources/vocab/`; without it the site builds with the Sangam dictionary only. Browse by letter at `/letters`, by topic at `/topics`; review in the dev-only editor at `/editor`. See DATA.md.
 
+## Admin (local, development only)
+
+`/admin` is for reviewing and correcting the dictionary. Run `npm run dev` and open http://localhost:5173/admin on the same computer. The site is static and has no login, so the admin and its API exist only in the dev server (`scripts/admin/admin-plugin.mjs`, `apply: 'serve'`). They answer only requests from this computer, and writes need a per-session token. Production builds contain neither: `/admin` is a normal not-found page there.
+
+- **Overview**: counts and a review queue. Search by Tamil headword, English meaning or transliteration, and filter by status, citations, topic, திணை or missing field.
+- **Entry editor**: edit the headword, meanings, translations, notes, forms and relations, with a live preview from the public entry component. **Save draft** and **Approve** (`status` = `reviewed`) write the CSV files in `content/` after the same validation as `npm run data`; nothing is written if validation fails. Machine translations (source origin `machine`) are labelled, and "Checked by a person" sets `review_status` = `reviewed`.
+- **Poems and citations**: find a poem by work and number, link a sense to one of its lines with the exact attested form, and mark it verified or featured. Broken links, unverified citations and entries with no source are flagged.
+- **Word of the day**: shows how `/today` picks its word, and lets you choose the word for a date (`content/word-of-day.json`).
+- **Import, export, publish**: preview a CSV import before applying it (new rows, updates, duplicates, missing fields, broken references), download each table exactly as stored, validate, and rebuild the site data.
+
+Saved edits are only in `content/`. To see them on the local site, use **Rebuild site data** (runs `scripts/build-data.mjs`). To publish them, commit `content/`, run `npm run build` and deploy `dist/`.
+
+Readers' error reports (`ReportDialog`) are not stored anywhere: the form only builds text for the reader to copy and send. A corrections inbox needs a submission endpoint and storage first, so there is no inbox in the admin.
+
 ## Content
 
 See [DATA.md](DATA.md) for the data model, stable IDs, the CSV/JSON import workflow, and

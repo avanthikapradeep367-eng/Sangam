@@ -90,7 +90,11 @@ export default function EntryPage() {
   );
 }
 
-function EntryLeaf({ entry, target, from }: { entry: DictionaryEntry; target: string; from?: FromState['from'] }) {
+/**
+ * The entry as readers see it. Also used by /admin for its live preview, which passes the
+ * citations compiled from the unsaved form instead of the published ones.
+ */
+export function EntryLeaf({ entry, target, from, citations }: { entry: DictionaryEntry; target: string; from?: FromState['from']; citations?: Citation[] }) {
   const { ui, t } = useUi();
   const [lang] = useMeaningLanguage();
   const glossLang = lang === BASE_LANG ? 'en' : lang;
@@ -101,7 +105,7 @@ function EntryLeaf({ entry, target, from }: { entry: DictionaryEntry; target: st
   });
   useEffect(() => { storage.set(SIZE_KEY, String(size)); }, [size]);
 
-  const all = useMemo(() => citationsByEntry.get(entry.id) ?? [], [entry]);
+  const all = useMemo(() => (citations ?? citationsByEntry.get(entry.id) ?? []).filter((c) => poemById.has(c.poemId)), [entry, citations]);
   const featured = all.filter((c) => c.featured);
   const shownQuotes = (featured.length ? featured : all).slice(0, 2);
   const others = all.filter((c) => !shownQuotes.includes(c));
@@ -300,11 +304,12 @@ function EntryLeaf({ entry, target, from }: { entry: DictionaryEntry; target: st
         {entry.senses.map((s) => (
           <dl key={s.id} className="multi__table">
             {entry.senses.length > 1 && <p className="multi__n">{s.number}.</p>}
-            {languages.map((l) => {
+            {/* Only the language chosen in the selector above is shown. */}
+            {languages.filter((l) => l.code === lang).map((l) => {
               const tr = l.base ? null : s.translations[l.code];
               const text = l.base ? s.definition : tr?.text;
               return (
-                <div key={l.code} className={l.code === lang ? 'is-chosen' : undefined}>
+                <div key={l.code}>
                   <dt lang={l.code}>{l.label}</dt>
                   {text ? (
                     <dd lang={l.code}>{text} {tr && <><OriginTag origin={tr.origin} /> <ReviewTag status={tr.reviewStatus} /></>}</dd>

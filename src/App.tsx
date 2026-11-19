@@ -27,6 +27,8 @@ import { lazy, Suspense, type ReactNode } from 'react';
 
 // The editor exists only in development builds (npm run dev); production bundles leave it out.
 const EditorPage = import.meta.env.DEV ? lazy(() => import('./pages/EditorPage')) : null;
+// Likewise /admin (content review and correction): development only, absent from production bundles.
+const AdminApp = import.meta.env.DEV ? lazy(() => import('./admin/AdminApp')) : null;
 import { LanguageProvider } from './context/LanguageContext';
 import './styles/main.css';
 import './styles/book.css';
@@ -99,7 +101,8 @@ function ScrollReset() {
  */
 function Frame({ children }: { children: ReactNode }) {
   const { pathname } = useLocation();
-  if (pathname === '/') return <>{children}</>;
+  // /admin draws its own layout (dev only; in production it is an ordinary not-found page).
+  if (pathname === '/' || (AdminApp && (pathname === '/admin' || pathname.startsWith('/admin/')))) return <>{children}</>;
   const spread = pathname.startsWith('/entry/');
   return (
     <div className="desk">
@@ -146,6 +149,7 @@ export default function App() {
           <Route path="/topics/:id" element={<TopicsPage />} />
           <Route path="/tinai" element={<TinaiPage />} />
           {EditorPage && <Route path="/editor" element={<Suspense fallback={<p className="page">…</p>}><EditorPage /></Suspense>} />}
+          {AdminApp && <Route path="/admin/*" element={<Suspense fallback={<p className="page">…</p>}><AdminApp /></Suspense>} />}
           <Route path="/saved" element={<SavedPage />} />
           <Route path="/bookmarks" element={<SavedPage />} />
           <Route path="/about" element={<AboutPage />} />

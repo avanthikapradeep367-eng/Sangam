@@ -4,6 +4,8 @@ import react from '@vitejs/plugin-react'
 import { defineConfig, loadEnv, type Plugin } from 'vite'
 // Dev-server only (apply: 'serve'): the /editor write API for reviewing the imported vocabulary.
 import vocabEditor from './scripts/vocab/editor-plugin.mjs'
+// Dev-server only (apply: 'serve'): the /admin API that reads and writes the CSV files in /content.
+import adminPlugin from './scripts/admin/admin-plugin.mjs'
 // Server-side Azure endpoints (/api/translate, /api/speak, …). Production uses server/index.mjs.
 import { createApi } from './server/api.mjs'
 
@@ -32,5 +34,5 @@ const azureApi = (env: Record<string, string>): Plugin => {
 
 // https://vite.dev/config/
 export default defineConfig(({ mode }) => ({
-  plugins: [react(), vocabEditor({ root: import.meta.dirname }), dropSourcePages(), azureApi(loadEnv(mode, import.meta.dirname, ''))],
+  plugins: [react(), vocabEditor({ root: import.meta.dirname }), adminPlugin({ root: import.meta.dirname }), dropSourcePages(), azureApi(loadEnv(mode, import.meta.dirname, ''))],
 }))

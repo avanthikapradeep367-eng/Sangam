@@ -762,7 +762,7 @@ html:lang(en) .masthead__nav a { font-size: 1.17rem; }
 .reader__msg:not(:empty) { padding: 0.25rem 0.6rem; border-radius: 6px; background: rgba(30, 14, 7, 0.92); border: 1px solid rgba(196, 154, 92, 0.45); }
 html:lang(en) .reader__btn, html:lang(en) .lang-pick select { font-family: var(--latin); font-size: 0.98rem; }
 
-@media (max-width: 1279px) {
+@media all {
   .reader__btn--main span:last-child { display: none; } /* icon-only; the accessible name stays on the group */
   .reader__btn--main { padding: 0.2rem 0.65rem; }
 }
@@ -791,3 +791,8 @@ html:lang(en) .reader__btn, html:lang(en) .lang-pick select { font-family: var(-
 }
 @keyframes pron-spin { to { transform: rotate(360deg); } }
 @media (prefers-reduced-motion: reduce) { .pron__spin { animation-duration: 2.4s; } }
+/* Icon-only reader button: a round bronze-ringed control the size of the bookmark. */
+@media all {
+  .reader__btn--main { width: 2.4rem; height: 2.4rem; min-height: 0; padding: 0; justify-content: center; }
+  .reader__btn--main .reader__icon { width: 1.15rem; height: 1.15rem; }
+}

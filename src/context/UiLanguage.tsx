@@ -110,7 +110,8 @@ const isCode = (s: string | null): s is string => Boolean(s && /^[a-zA-Z]{2,3}(-
 export function UiLanguageProvider({ children }: { children: ReactNode }) {
   const [siteLang, setSiteLang] = useState<string>(() => {
     const saved = storage.get(KEY) ?? storage.get(LEGACY_KEY);
-    return isCode(saved) ? saved : 'ta';
+    // The header switch offers Tamil and English only; an older saved choice of another language resets to Tamil.
+    return saved === 'en' ? 'en' : 'ta';
   });
   const ui: UiLang = (UI_LANGS as readonly string[]).includes(siteLang) ? (siteLang as UiLang) : FALLBACK_UI;
   useEffect(() => {

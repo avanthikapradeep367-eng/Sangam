@@ -10,6 +10,7 @@ import sourcesRaw from './generated/sources.json';
 import languagesRaw from './generated/languages.json';
 import topicsRaw from './generated/topics.json';
 import coverageRaw from './generated/coverage.json';
+import wordOfDayRaw from './generated/word-of-day.json';
 import type {
   Citation, Coverage, DictionaryEntry, Language, LiteraryWork, Poem, Sense, Source, Topic,
 } from '../types';
@@ -25,6 +26,8 @@ export const sources = sourcesRaw as Source[];
 export const languages = languagesRaw as Language[];
 export const topics = topicsRaw as Topic[];
 export const coverage = coverageRaw as Coverage;
+/** Dates given a hand-picked word of the day: { 'YYYY-MM-DD': entryId }. */
+export const wordOfDayChoices = wordOfDayRaw as Record<string, string>;
 
 export const entryById = new Map(entries.map((e) => [e.id, e]));
 export const senseById = new Map<string, { entry: DictionaryEntry; sense: Sense }>();

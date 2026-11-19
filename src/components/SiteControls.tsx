@@ -1,39 +1,14 @@
-import { useId, useMemo } from 'react';
 import { useUi } from '../context/UiLanguage';
-import { useContentLanguages } from '../utils/azure';
 import { reader, useReader } from '../utils/speech';
-import { IconGlobe, IconSpeaker } from './book/Art';
+import { IconSpeaker } from './book/Art';
 
-/**
- * Site language selector. Tamil and English have full interface strings; every other language in
- * Azure Translator's list translates the content and shows menus in English (said in the list
- * and beside the selector).
- */
+/** தமிழ் | English switch for the whole site (header and home bar). Tamil is the default. */
 export function LanguageSelect() {
-  const { siteLang, setSiteLang, ui, uiFallback, t } = useUi();
-  const { list, fromAzure } = useContentLanguages();
-  const id = useId();
-  const others = useMemo(
-    () => list.filter((l) => l.code !== 'ta' && l.code !== 'en').sort((a, b) => a.name.localeCompare(b.name)),
-    [list],
-  );
-  const current = list.find((l) => l.code === siteLang);
-
+  const { siteLang, setSiteLang, t } = useUi();
   return (
-    <div className="lang-pick">
-      <label htmlFor={id} className="visually-hidden">{t('siteLanguage')}</label>
-      <IconGlobe className="lang-pick__icon" />
-      <select id={id} value={siteLang} onChange={(e) => setSiteLang(e.target.value)} aria-describedby={uiFallback ? `${id}-note` : undefined}>
-        <option value="ta" lang="ta">தமிழ்</option>
-        <option value="en" lang="en">English</option>
-        <optgroup label={`${t('meaningsOnly')}${fromAzure ? '' : ' (offline list)'}`}>
-          {others.map((l) => (
-            <option key={l.code} value={l.code}>{l.nativeName}{l.nativeName !== l.name ? ` — ${l.name}` : ''}</option>
-          ))}
-          {!current && siteLang !== 'ta' && siteLang !== 'en' && <option value={siteLang}>{siteLang}</option>}
-        </optgroup>
-      </select>
-      {uiFallback && <span id={`${id}-note`} className="lang-pick__note" lang={ui}>{t('uiFallbackNote')}</span>}
+    <div className="ui-toggle" role="group" aria-label={t('siteLanguage')}>
+      <button type="button" aria-pressed={siteLang === 'ta'} onClick={() => setSiteLang('ta')} lang="ta">தமிழ்</button>
+      <button type="button" aria-pressed={siteLang === 'en'} onClick={() => setSiteLang('en')} lang="en">English</button>
     </div>
   );
 }
@@ -46,7 +21,7 @@ export function PageReader() {
   return (
     <div className="reader" role="group" aria-label={t('readPage')}>
       {state.status === 'idle' || busy ? (
-        <button type="button" className="reader__btn reader__btn--main" onClick={() => reader.play()} disabled={busy} aria-busy={busy}>
+        <button type="button" className="reader__btn reader__btn--main" onClick={() => reader.play()} disabled={busy} aria-busy={busy} aria-label={t('readPage')} title={t('readPage')}>
           <IconSpeaker className="reader__icon" />
           <span>{busy ? '…' : t('readPage')}</span>
         </button>

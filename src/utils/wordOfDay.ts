@@ -3,15 +3,18 @@
  *
  * Only words with a featured quotation are used, so each day's word comes with a real line
  * from an indexed poem. The pool is shuffled once with a fixed seed and walked one step per
- * day, so no word repeats until the whole pool has been shown.
+ * day, so no word repeats until the whole pool has been shown. A date chosen by hand in /admin
+ * (content/word-of-day.json) shows that word instead; the rotation itself is unchanged.
  */
 import type { Citation, DictionaryEntry } from '../types';
-import { citationsByEntry, entries } from '../data';
+import { citationsByEntry, entries, entryById, wordOfDayChoices } from '../data';
 
 export interface DailyWord {
   date: Date;
   entry: DictionaryEntry;
   quote: Citation;
+  /** Picked by hand for this date rather than by the rotation. */
+  chosen?: boolean;
 }
 
 const featured = (e: DictionaryEntry) => (citationsByEntry.get(e.id) ?? []).find((c) => c.featured);
@@ -44,6 +47,9 @@ function dayNumber(d: Date) {
 }
 
 export function wordForDate(date: Date): DailyWord | null {
+  const chosen = entryById.get(wordOfDayChoices[isoDate(date)] ?? '');
+  const chosenQuote = chosen && featured(chosen);
+  if (chosen && chosenQuote) return { date, entry: chosen, quote: chosenQuote, chosen: true };
   if (!POOL.length) return null;
   const n = dayNumber(date);
   const entry = POOL[((n % POOL.length) + POOL.length) % POOL.length];

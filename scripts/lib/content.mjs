@@ -81,6 +81,9 @@ export function loadContent(dir) {
   }
   // A locally imported reference vocabulary keeps its own source record next to its data
   // (content/sources/vocab/, not in the public repository).
+  // Optional manual word-of-the-day choices: { "YYYY-MM-DD": "<entry id>" } (set in /admin).
+  const daily = join(dir, 'word-of-day.json');
+  content.wordOfDay = existsSync(daily) ? JSON.parse(readFileSync(daily, 'utf8')) : {};
   const vocabSource = join(dir, 'sources', 'vocab', 'source.json');
   if (existsSync(vocabSource)) content.sources.push(JSON.parse(readFileSync(vocabSource, 'utf8')));
   content.poems = [];
@@ -230,6 +233,14 @@ export function validate(c) {
     if (ct.featured && ct.featured !== 'y') err(ct, `citation "${ct.id}": featured must be "y" or empty`);
     if (!REVIEW_STATUS.includes(ct.review_status)) err(ct, `citation "${ct.id}": review_status must be one of ${REVIEW_STATUS.join(', ')}`);
     needSource(ct, ct.source_id);
+  }
+
+  // Manual word-of-the-day choices: the page shows the word with its featured quotation.
+  for (const [date, id] of Object.entries(c.wordOfDay ?? {})) {
+    const at = `word-of-day.json: ${date}`;
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(date) || Number.isNaN(Date.parse(date))) errors.push(`${at}: date must be YYYY-MM-DD`);
+    if (!entries.has(id)) errors.push(`${at}: entry "${id}" does not exist`);
+    else if (!c.citations.some((ct) => ct.entry_id === id && ct.featured === 'y')) errors.push(`${at}: entry "${id}" has no featured quotation, which the word of the day needs`);
   }
 
   for (const n of c.notes) {
@@ -389,6 +400,7 @@ export function compile(c) {
     'languages.json': langs,
     'topics.json': [...c.topics.map((t) => ({ ...t, scheme: 'sangam', parent: null })), ...book.topics],
     'coverage.json': coverage,
+    'word-of-day.json': c.wordOfDay ?? {},
   };
 }
 
